@@ -1,0 +1,154 @@
+---
+import { FIELDS, HONEYPOT, type BookableEvent } from "../../worker/booking.ts";
+
+interface Props {
+  event: BookableEvent;
+  terms: string;
+}
+
+const { event, terms } = Astro.props;
+const siteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? "1x00000000000000000000AA";
+const heading = event.booking === "intresseanmalan" ? "Anmäl ditt intresse" : "Anmäl dig";
+const submitLabel = event.booking === "intresseanmalan" ? "Skicka intresseanmälan" : "Skicka anmälan";
+---
+
+<section class="booking" id="bokning" aria-labelledby="bokning-rubrik">
+  <h2 id="bokning-rubrik">{heading}</h2>
+  <p class="booking-event">{event.title}, {event.dateLabel}, kl. {event.time}, {event.place}</p>
+
+  <div class="notice notice-success" data-state="success" role="status" hidden>
+    <h3>Tack, din anmälan är skickad</h3>
+    <p>Vi har tagit emot din anmälan till {event.title} {event.dateLabel}. Vi hör av oss till e-postadressen du angav.</p>
+  </div>
+
+  <div class="notice notice-error" data-state="error" role="alert" hidden>
+    <p data-message></p>
+  </div>
+
+  <form method="post" action="/api/bokning" novalidate data-booking>
+    <input type="hidden" name="event" value={event.slug} />
+
+    <p class="required-hint">Fält markerade med <span aria-hidden="true">*</span><span class="visually-hidden">stjärna</span> är obligatoriska.</p>
+
+    <div class="fields">
+      {FIELDS.map((field) => (
+        <div class="field" data-field={field.name}>
+          <label for={`f-${field.name}`}>
+            {field.label}{field.required && <span class="req" aria-hidden="true"> *</span>}
+          </label>
+          {field.type === "select" ? (
+            <select id={`f-${field.name}`} name={field.name} required={field.required}
+              aria-describedby={`e-${field.name}`}>
+              <option value="">Välj</option>
+              {field.options?.map((o) => <option value={o}>{o}</option>)}
+            </select>
+          ) : (
+            <input id={`f-${field.name}`} name={field.name} type={field.type}
+              required={field.required} maxlength={field.maxLength}
+              autocomplete={field.autocomplete} inputmode={field.inputMode}
+              aria-describedby={`e-${field.name}`} />
+          )}
+          <p class="field-error" id={`e-${field.name}`}></p>
+        </div>
+      ))}
+    </div>
+
+    <div class="hp" aria-hidden="true">
+      <label for="f-hp">Lämna tomt</label>
+      <input id="f-hp" name={HONEYPOT} type="text" tabindex="-1" autocomplete="off" />
+    </div>
+
+    <div class="cf-turnstile" data-sitekey={siteKey} data-language="sv" data-action="booking"></div>
+
+    <p class="terms">{terms}</p>
+    <p class="privacy">Vi använder uppgifterna bara för att hantera din anmälan och sparar dem inte på webbplatsen. Läs mer i vår <a href="/integritetspolicy/">integritetspolicy</a>.</p>
+
+    <noscript>
+      <p class="notice notice-error">Formuläret behöver JavaScript. Du kan också anmäla dig genom att mejla <a href="mailto:info@pulsanalys.se">info@pulsanalys.se</a>.</p>
+    </noscript>
+
+    <button type="submit">{submitLabel}</button>
+  </form>
+</section>
+
+<script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+<script>
+  import { validateBooking } from "../../worker/booking.ts";
+
+  const form = document.querySelector<HTMLFormElement>("form[data-booking]");
+  const section = form?.closest("section");
+  const success = section?.querySelector<HTMLElement>('[data-state="success"]');
+  const error = section?.querySelector<HTMLElement>('[data-state="error"]');
+  const message = error?.querySelector<HTMLElement>("[data-message]");
+
+  function showErrors(errors: Record<string, string>) {
+    form!.querySelectorAll<HTMLElement>(".field").forEach((wrap) => {
+      const name = wrap.dataset.field!;
+      const input = wrap.querySelector<HTMLInputElement | HTMLSelectElement>("input, select")!;
+      const text = errors[name] ?? "";
+      wrap.querySelector(".field-error")!.textContent = text;
+      if (text) input.setAttribute("aria-invalid", "true");
+      else input.removeAttribute("aria-invalid");
+    });
+    const first = form!.querySelector<HTMLElement>('[aria-invalid="true"]');
+    first?.focus();
+  }
+
+  function showError(text: string) {
+    message!.textContent = text;
+    error!.hidden = false;
+    error!.scrollIntoView({ block: "center" });
+  }
+
+  // Coming back from a submission made without JavaScript.
+  const status = new URLSearchParams(location.search).get("bokning");
+  if (status === "skickad" && form && success) {
+    form.hidden = true;
+    success.hidden = false;
+  } else if (status === "fel") {
+    showError("Anmälan kunde inte skickas. Kontrollera uppgifterna och försök igen.");
+  }
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    error!.hidden = true;
+
+    const data = Object.fromEntries(new FormData(form));
+    // The server checks the date; here only the fields are checked.
+    const upcoming = { slug: "", title: "", dateLabel: "", start: "9999-12-31", time: "", place: "", price: "", booking: "bindande" as const };
+    const check = validateBooking(data, upcoming);
+    if (!check.ok) {
+      showErrors(check.errors as Record<string, string>);
+      return;
+    }
+    showErrors({});
+
+    const button = form.querySelector<HTMLButtonElement>("button[type=submit]")!;
+    button.disabled = true;
+    button.setAttribute("aria-busy", "true");
+    try {
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      const body = await res.json().catch(() => ({ ok: false }));
+      if (res.ok && body.ok) {
+        form.hidden = true;
+        success!.hidden = false;
+        success!.setAttribute("tabindex", "-1");
+        success!.focus();
+        return;
+      }
+      if (body.errors) showErrors(body.errors);
+      showError(body.message ?? "Anmälan kunde inte skickas. Försök igen om en stund.");
+      (window as any).turnstile?.reset();
+    } catch {
+      showError("Ingen kontakt med servern. Kontrollera uppkopplingen och försök igen.");
+    } finally {
+      button.disabled = false;
+      button.removeAttribute("aria-busy");
+    }
+  });
+</script>

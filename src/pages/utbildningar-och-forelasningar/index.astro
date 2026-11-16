@@ -1,0 +1,25 @@
+---
+import Base from "../../layouts/Base.astro";
+import { toBookable, upcomingEvents } from "../../lib/events.ts";
+
+const events = (await upcomingEvents()).map(toBookable);
+---
+
+<Base title="Utbildningar och föreläsningar – PulsAnalys DISC"
+  description="Här listar vi alla kommande utbildningstillfällen och inspirationsföreläsningar. Välj ett datum för att läsa mer och skicka in en anmälan.">
+  <h1>Utbildningar och föreläsningar</h1>
+  {events.length > 0 ? (
+    <ul class="event-list">
+      {events.map((e) => (
+        <li>
+          <a href={`/utbildningar-och-forelasningar/${e.slug}/`}>
+            <span class="event-title">{e.title}</span>
+            <span class="event-meta">{e.dateLabel} · {e.time} · {e.place}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p>Det finns inga inbokade datum just nu. Kontakta oss på <a href="mailto:info@pulsanalys.se">info@pulsanalys.se</a> så berättar vi när nästa tillfälle blir.</p>
+  )}
+</Base>
