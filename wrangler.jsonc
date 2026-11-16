@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "pulsanalys-web",
+  "main": "./worker/index.ts",
+  "compatibility_date": "2026-11-16",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "html_handling": "force-trailing-slash",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*", "/anmalan", "/anmalan/*", "/bokning", "/bokning/*"]
+  },
+  "send_email": [
+    {
+      "name": "EMAIL",
+      "allowed_destination_addresses": ["info@pulsanalys.se"]
+    }
+  ],
+  "vars": {
+    "MAIL_TO": "info@pulsanalys.se",
+    "MAIL_FROM": "bokning@pulsanalys.se",
+    "STAGING": "true"
+  },
+  "observability": { "enabled": true }
+}
