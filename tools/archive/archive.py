@@ -20,7 +20,7 @@ from pathlib import Path
 BASE = "https://pulsanalys.se"
 UA = "PulsAnalys-archive/1.0 (+https://pulsanalys.se)"
 LOC = re.compile(r"<loc>([^<]+)</loc>")
-UPLOAD = re.compile(r"/wp-content/uploads/[^\s\"'()<>,]+?\.(?:jpe?g|png|gif|webp|svg|pdf|docx?|woff2?)", re.I)
+UPLOAD = re.compile(r"/wp-content/uploads/[^\s\"'<>,]+?\.(?:jpe?g|png|gif|webp|svg|pdf|docx?|woff2?)(?=[\s\"'<>),?]|$)", re.I)
 # WordPress derivatives: -150x150, -scaled, and the -e1234567890 crop suffix.
 DERIVATIVE = re.compile(r"(-\d+x\d+|-scaled|-e\d{10,})(?=\.\w+$)")
 EXTRA_PAGES = ["/anmalan/?eventid=531", "/anmalan/?eventid=532", "/anmalan/?eventid=534",
