@@ -30,7 +30,7 @@ whole sentences are left out and nothing is reworded.
 | 19 | 360-profil text | "360-profilen visar hur andra uppfattar en persons beteende och öppnar för samtal om hur kollegor ser på dina styrkor. Ett verktyg för feedback, teamutveckling och konflikthantering – och för referenstagning och chefsbedömning vid rekrytering." | "kraftfullt" dropped; "chefs- och ledarassessment" → "chefsbedömning" (*or keep "assessment"*) |
 | 20 | (From /produkter/) Konsulttjänster | "Vill du hellre att vi gör profilerna åt er? Se våra konsulttjänster" | From the product pages: "Vi erbjuder även konsulter som hjälper dig … om du hellre föredrar det" |
 | 21 | Föreläsningar: "Vi erbjuder kostnadsfria inspirationsföreläsningar på olika orter. Under föreläsningen ger vi dig tips … Vill du gå på våra föreläsningar?" | H2 "Kostnadsfria inspirationsföreläsningar" + "Under föreläsningen ger vi dig tips och erfarenheter om hur du kan tänka när du möter andra människor i arbetslivet." Button "Se kommande föreläsningar" | "på olika orter" left out because the current dates are online – *keep if still true* |
-| 22 | "Några av våra kunder" | Same | – (Barilla logo follows once its file is archived) |
+| 22 | "Några av våra kunder" | Same | – |
 | 23 | "Omdömen" | H2 "Vad våra kunder säger" + link "Alla omdömen" | Clearer heading |
 | 24 | Quote, Linnéa Persson: "…Självklart tycker vi även att supporten är mycket bra och ni alla är trevliga och mycket hjälpsamma" | Last sentence left out on the homepage; full quote stays on /omdomen/ | Length |
 | 25 | Quote, Tommy Smedberg (Wästbygg), 4 sentences | First sentence only on the homepage; full quote on /omdomen/ | Length |

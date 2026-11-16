@@ -18,6 +18,7 @@ import jeLogo from "../assets/logos/jonkoping-energi.jpeg";
 import ffLogo from "../assets/logos/finansforbundet.png";
 import icaLogo from "../assets/logos/ica-maxi.png";
 import ox2Logo from "../assets/logos/ox2.png";
+import barillaLogo from "../assets/logos/barilla.png";
 
 const events = (await upcomingEvents()).map(toBookable);
 const courses = events.filter((e) => e.slug.startsWith("grundutbildning") || e.slug.startsWith("fordjupning"));
@@ -58,6 +59,7 @@ const clients = [
   { src: jeLogo, alt: "Jönköping Energi" },
   { src: ffLogo, alt: "Finansförbundet" },
   { src: icaLogo, alt: "ICA Maxi" },
+  { src: barillaLogo, alt: "Barilla" },
   { src: ox2Logo, alt: "OX2" },
 ];
 
