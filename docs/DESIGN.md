@@ -2,6 +2,18 @@
 
 Status: proposal for Hussein's approval with the homepage prototype (stage 2 gate).
 
+## 0. Positioning (Hussein, 17 November 2026)
+
+The site must read as a **serious, high-end consulting firm** selling B2B services to
+mature, senior buyers – C-level executives, HR directors, management teams – while
+being visibly modern in its build and behaviour. In practice:
+
+- **Restraint over expression.** One typographic scale, one image system, one grid. Nothing is larger than the H1; contact details are body text, not display type.
+- **Editorial serif for headings** (Source Serif 4) over a quiet grotesk for text (Schibsted Grotesk). Classic advisory tone, current typefaces.
+- **Square corners** (2 px) on buttons and photos; navy rules mark the start of each section.
+- **Every photo is 3:2** (the hero is 2:1 on screens from 768 px). In split sections the photo spans 5 of 12 columns and the text starts at column 7; products sit in an even 2 × 2 grid.
+- **Modern underneath:** scroll-driven CSS animation, AVIF/WebP, zero JavaScript on content pages, Lighthouse 100, WCAG 2.2 AA.
+
 ## 1. The idea
 
 PulsAnalys sells understanding between people, and its product is a graph: four factor
@@ -50,21 +62,21 @@ meaning alone – every bar has a text label.
 
 ## 4. Typography
 
-**Schibsted Grotesk** (variable 400–900, SIL Open Font License, self-hosted woff2, Latin and
-Latin Extended subsets – å, ä, ö included). A Scandinavian newspaper grotesk: sober and
-legible, with enough character in the headline weights to carry the page. One family
-only.
+**Source Serif 4** (variable weight, SIL Open Font License) for H1 and H2, weight 500.
+**Schibsted Grotesk** (variable, SIL Open Font License) for everything else – a sober
+Scandinavian newspaper grotesk. Both self-hosted as woff2 with Latin and Latin Extended
+subsets (å, ä, ö included).
 
 Avenir, used on today's site, is a commercial font; its web licence is unknown (see
 ASSET-GAPS.md), so it is not used.
 
 | Role | Size (mobile → desktop) | Line height | Weight | Tracking |
 |---|---|---|---|---|
-| Display (H1) | 2.6 → 5.25 rem | 1.02 | 600 | −0.03 em |
-| H2 | 2 → 3.25 rem | 1.08 | 600 | −0.02 em |
-| H3 | 1.25 → 1.5 rem | 1.2 | 600 | −0.01 em |
-| Lead | 1.2 → 1.45 rem | 1.45 | 400 | 0 |
-| Body | 1.0625 → 1.125 rem | 1.6 | 400 | 0 |
+| Display (H1, serif) | 2.25 → 3.75 rem | 1.08 | 500 | −0.015 em |
+| H2 (serif) | 1.75 → 2.625 rem | 1.15 | 500 | −0.01 em |
+| H3 (sans) | 1.125 → 1.25 rem | 1.3 | 600 | 0 |
+| Lead | 1.125 → 1.3125 rem | 1.55 | 400 | 0 |
+| Body | 1.0625 rem | 1.6 | 400 | 0 |
 | Small | 0.875 rem | 1.5 | 500 | 0 |
 
 Sentence case everywhere. No all-caps labels. Measure: body text at most 68 characters,
@@ -81,7 +93,8 @@ leads at most 52. Long Swedish compounds wrap with `hyphens: auto` and
 
 - Only the company's own photos (the 2020 session). No stock, no AI images.
 - Images are shown large or not at all. One photo per section at most.
-- Small radius (6 px) on photos only; everything else is square.
+- One format: 3:2 everywhere (hero 2:1 from 768 px). No portrait crops, no mixed sizes in a row.
+- 2 px radius on photos and buttons.
 - Delivered as AVIF/WebP with responsive sizes, width and height set, lazy-loaded below the fold.
 - Alt text describes what is in the picture, in both languages.
 
@@ -109,14 +122,14 @@ Rules (from the brief, all met in the prototype):
 | Component | Notes |
 |---|---|
 | Site header | Logo (horizontal, inline SVG), main navigation, "Logga in" to clientarea, language link. Mobile menu is a `<details>` disclosure – works without JavaScript |
-| Button | Navy fill, white text, 2.75 rem minimum height; secondary as text link with underline |
+| Button | Navy fill, white text, square corners (2 px), 2.75 rem minimum height; secondary as text link with underline |
 | Profile graph | Four labelled bars on a 0–100 baseline; static and pinned variants |
 | Steps | Numbered list – used only for real sequences (training → certification → subscription) |
-| Product rows | Photo + heading + text + link, alternating sides on desktop |
+| Product grid | 2 × 2 grid: 3:2 photo, heading, text, link – all four items the same size |
 | Date list | Course dates from the content collection, each row a link to its booking page |
 | Logo row | Client logos in greyscale at equal visual weight |
-| Quote rail | Testimonials in a horizontal scroll-snap row; keyboard-focusable; native touch scrolling |
-| Contact band | Closing section with phone, e-mail and link to the contact page |
+| Quote rail | Testimonials on white panels in a horizontal scroll-snap row, quotes in the serif; keyboard-focusable; native touch scrolling |
+| Contact band | Closing section: heading left, phone and e-mail as a small definition list right, at body size |
 | Booking form | Built in stage 1 work; takes the tokens above |
 
 Still to design in the build stage: 404 page, form error states in context, empty states for date lists, favicon set (SVG done).

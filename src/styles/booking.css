@@ -28,7 +28,7 @@
 .cf-turnstile { margin: 1.75rem 0 0.75rem; }
 .booking form button[type="submit"] {
   font: inherit; font-weight: 600; padding: 0.8rem 1.6rem; min-height: 2.75rem; margin-top: 0.5rem;
-  border: 0; border-radius: 999px; background: var(--navy); color: #fff; cursor: pointer;
+  border: 0; border-radius: 2px; background: var(--navy); color: #fff; cursor: pointer;
   transition: background-color 160ms var(--ease);
 }
 .booking form button[type="submit"]:hover { background: var(--navy-deep); }
