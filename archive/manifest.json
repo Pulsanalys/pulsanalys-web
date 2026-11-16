@@ -1,42 +1,42 @@
 {
   "source": "https://pulsanalys.se",
-  "fetched": "2026-11-16T22:37:43Z",
+  "fetched": "2026-11-16T23:06:05Z",
   "pages": [
     {
       "url": "https://pulsanalys.se/",
       "status": 200,
       "file": "html/index.html",
-      "bytes": 234720
+      "bytes": 235980
     },
     {
       "url": "https://pulsanalys.se/1000-anstallda/",
       "status": 200,
       "file": "html/1000-anstallda.html",
-      "bytes": 159614
+      "bytes": 160873
     },
     {
       "url": "https://pulsanalys.se/2021/01/15/nyhetsbrev-januari-2021/",
       "status": 200,
       "file": "html/2021/01/15/nyhetsbrev-januari-2021.html",
-      "bytes": 193637
+      "bytes": 193632
     },
     {
       "url": "https://pulsanalys.se/2021/02/15/nyhetsbrev-februari-2021/",
       "status": 200,
       "file": "html/2021/02/15/nyhetsbrev-februari-2021.html",
-      "bytes": 178532
+      "bytes": 178539
     },
     {
       "url": "https://pulsanalys.se/2021/03/15/nyhetsbrev-mars-2021/",
       "status": 200,
       "file": "html/2021/03/15/nyhetsbrev-mars-2021.html",
-      "bytes": 162753
+      "bytes": 164008
     },
     {
       "url": "https://pulsanalys.se/2021/04/15/nyhetsbrev-april-2021/",
       "status": 200,
       "file": "html/2021/04/15/nyhetsbrev-april-2021.html",
-      "bytes": 167100
+      "bytes": 168364
     },
     {
       "url": "https://pulsanalys.se/2021/04/29/pulsanalys-ab-och-business-match-scandinavia-poland-ingar-ett-internationellt-samarbete/",
@@ -48,13 +48,13 @@
       "url": "https://pulsanalys.se/360-profil/",
       "status": 200,
       "file": "html/360-profil.html",
-      "bytes": 181398
+      "bytes": 180139
     },
     {
       "url": "https://pulsanalys.se/6-anvandare/",
       "status": 200,
       "file": "html/6-anvandare.html",
-      "bytes": 160840
+      "bytes": 160846
     },
     {
       "url": "https://pulsanalys.se/abonnemangsresultat/",
@@ -72,19 +72,19 @@
       "url": "https://pulsanalys.se/anmalan/?eventid=531",
       "status": 200,
       "file": "html/anmalan__eventid=531.html",
-      "bytes": 167155
+      "bytes": 167159
     },
     {
       "url": "https://pulsanalys.se/anmalan/?eventid=532",
       "status": 200,
       "file": "html/anmalan__eventid=532.html",
-      "bytes": 167161
+      "bytes": 167156
     },
     {
       "url": "https://pulsanalys.se/anmalan/?eventid=534",
       "status": 200,
       "file": "html/anmalan__eventid=534.html",
-      "bytes": 165988
+      "bytes": 165983
     },
     {
       "url": "https://pulsanalys.se/anmalan/?eventid=536",
@@ -96,13 +96,13 @@
       "url": "https://pulsanalys.se/author/paul070707/",
       "status": 200,
       "file": "html/author/paul070707.html",
-      "bytes": 122461
+      "bytes": 122467
     },
     {
       "url": "https://pulsanalys.se/blogg/",
       "status": 200,
       "file": "html/blogg.html",
-      "bytes": 160306
+      "bytes": 160301
     },
     {
       "url": "https://pulsanalys.se/bokning/",
@@ -114,37 +114,37 @@
       "url": "https://pulsanalys.se/bokning/?eventid=531",
       "status": 200,
       "file": "html/bokning__eventid=531.html",
-      "bytes": 161649
+      "bytes": 161656
     },
     {
       "url": "https://pulsanalys.se/category/uncategorized-sv/",
       "status": 200,
       "file": "html/category/uncategorized-sv.html",
-      "bytes": 121371
+      "bytes": 120111
     },
     {
       "url": "https://pulsanalys.se/cvgeneratorn/",
       "status": 200,
       "file": "html/cvgeneratorn.html",
-      "bytes": 112686
+      "bytes": 111428
     },
     {
       "url": "https://pulsanalys.se/distributor/",
       "status": 200,
       "file": "html/distributor.html",
-      "bytes": 196505
+      "bytes": 196514
     },
     {
       "url": "https://pulsanalys.se/en/contact-us/",
       "status": 200,
       "file": "html/en/contact-us.html",
-      "bytes": 130279
+      "bytes": 130282
     },
     {
       "url": "https://pulsanalys.se/event/",
       "status": 200,
       "file": "html/event.html",
-      "bytes": 163951
+      "bytes": 165212
     },
     {
       "url": "https://pulsanalys.se/events/",
@@ -156,223 +156,223 @@
       "url": "https://pulsanalys.se/events/aw-mingel/",
       "status": 200,
       "file": "html/events/aw-mingel.html",
-      "bytes": 107975
+      "bytes": 109233
     },
     {
       "url": "https://pulsanalys.se/faq/",
       "status": 200,
       "file": "html/faq.html",
-      "bytes": 117636
+      "bytes": 117640
     },
     {
       "url": "https://pulsanalys.se/fordjupning-disc/",
       "status": 200,
       "file": "html/fordjupning-disc.html",
-      "bytes": 204263
+      "bytes": 202992
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/",
       "status": 200,
       "file": "html/fordjupnings-kurs.html",
-      "bytes": 118833
+      "bytes": 117573
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-december-3/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-december-3.html",
-      "bytes": 110655
+      "bytes": 110662
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-december-4/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-december-4.html",
-      "bytes": 110656
+      "bytes": 110661
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-feb-17/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-feb-17.html",
-      "bytes": 110563
+      "bytes": 110569
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-februari-11/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-februari-11.html",
-      "bytes": 110689
+      "bytes": 109418
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-februari-13/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-februari-13.html",
-      "bytes": 110674
+      "bytes": 109413
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-februari-15/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-februari-15.html",
-      "bytes": 109416
+      "bytes": 110677
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-maj-22/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-maj-22.html",
-      "bytes": 110575
+      "bytes": 110578
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-maj-6/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-maj-6.html",
-      "bytes": 110545
+      "bytes": 110547
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-maj-8/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-maj-8.html",
-      "bytes": 110551
+      "bytes": 109290
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-november-9/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-november-9.html",
-      "bytes": 110658
+      "bytes": 110663
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-oktober-2-2/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-oktober-2-2.html",
-      "bytes": 110657
+      "bytes": 110660
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-oktober-2/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-oktober-2.html",
-      "bytes": 109369
+      "bytes": 110631
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-september-12/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-september-12.html",
-      "bytes": 110497
+      "bytes": 110503
     },
     {
       "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-september-16/",
       "status": 200,
       "file": "html/fordjupnings-kurs/fordjupningskurs-disc-september-16.html",
-      "bytes": 110504
+      "bytes": 110500
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/",
       "status": 200,
       "file": "html/fordjupningskurs-sli.html",
-      "bytes": 119019
+      "bytes": 119018
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-december-3/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-december-3.html",
-      "bytes": 110750
+      "bytes": 110742
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-december-4/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-december-4.html",
-      "bytes": 110750
+      "bytes": 110743
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-februari-13/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-februari-13.html",
-      "bytes": 110760
+      "bytes": 110764
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-februari-15/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-februari-15.html",
-      "bytes": 109497
+      "bytes": 110758
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-februari-17/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-februari-17.html",
-      "bytes": 109496
+      "bytes": 110763
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-maj-22/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-maj-22.html",
-      "bytes": 109392
+      "bytes": 110659
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-maj-6/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-maj-6.html",
-      "bytes": 110635
+      "bytes": 109375
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-maj-8/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-maj-8.html",
-      "bytes": 110635
+      "bytes": 110639
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-november-9/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-november-9.html",
-      "bytes": 110750
+      "bytes": 110753
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-oktober-2-2/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-oktober-2-2.html",
-      "bytes": 110744
+      "bytes": 110745
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-oktober-2/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-oktober-2.html",
-      "bytes": 110717
+      "bytes": 109456
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-september-12/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-september-12.html",
-      "bytes": 109311
+      "bytes": 110572
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-september-16/",
       "status": 200,
       "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-september-16.html",
-      "bytes": 110582
+      "bytes": 110576
     },
     {
       "url": "https://pulsanalys.se/fordjupningskurser/",
       "status": 200,
       "file": "html/fordjupningskurser.html",
-      "bytes": 171629
+      "bytes": 172893
     },
     {
       "url": "https://pulsanalys.se/forelasningar/",
       "status": 200,
       "file": "html/forelasningar.html",
-      "bytes": 119070
+      "bytes": 119064
     },
     {
       "url": "https://pulsanalys.se/forelasningar/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer-2/",
       "status": 200,
       "file": "html/forelasningar/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer-2.html",
-      "bytes": 111584
+      "bytes": 111576
     },
     {
       "url": "https://pulsanalys.se/forelasningar/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer/",
       "status": 200,
       "file": "html/forelasningar/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer.html",
-      "bytes": 111523
+      "bytes": 110259
     },
     {
       "url": "https://pulsanalys.se/forelasningar/introduktion-till-ledarskapsutbildning-april-5/",
       "status": 200,
       "file": "html/forelasningar/introduktion-till-ledarskapsutbildning-april-5.html",
-      "bytes": 110951
+      "bytes": 110955
     },
     {
       "url": "https://pulsanalys.se/forelasningar/introduktion-till-ledarskapsutbildning-maj-3/",
@@ -384,271 +384,271 @@
       "url": "https://pulsanalys.se/forelasningar/kundevent-pulsanalys-ab/",
       "status": 200,
       "file": "html/forelasningar/kundevent-pulsanalys-ab.html",
-      "bytes": 110418
+      "bytes": 109161
     },
     {
       "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-augusti-17/",
       "status": 200,
       "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-augusti-17.html",
-      "bytes": 111836
+      "bytes": 111831
     },
     {
       "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-december-1/",
       "status": 200,
       "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-december-1.html",
-      "bytes": 111843
+      "bytes": 111840
     },
     {
       "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-februari-16/",
       "status": 200,
       "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-februari-16.html",
-      "bytes": 111859
+      "bytes": 110594
     },
     {
       "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-januari-12/",
       "status": 200,
       "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-januari-12.html",
-      "bytes": 111835
+      "bytes": 111840
     },
     {
       "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-juni-16/",
       "status": 200,
       "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-juni-16.html",
-      "bytes": 111518
+      "bytes": 111516
     },
     {
       "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-mars-10/",
       "status": 200,
       "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-mars-10.html",
-      "bytes": 111737
+      "bytes": 111740
     },
     {
       "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-november-11/",
       "status": 200,
       "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-november-11.html",
-      "bytes": 110594
+      "bytes": 110597
     },
     {
       "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-oktober-14/",
       "status": 200,
       "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-oktober-14.html",
-      "bytes": 111841
+      "bytes": 111835
     },
     {
       "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-september-8/",
       "status": 200,
       "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-september-8.html",
-      "bytes": 110594
+      "bytes": 111858
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra-2/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra-2.html",
-      "bytes": 112202
+      "bytes": 112209
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra.html",
-      "bytes": 110915
+      "bytes": 112172
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler.html",
-      "bytes": 111630
+      "bytes": 111632
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-saljstilar-2/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-saljstilar-2.html",
-      "bytes": 110394
+      "bytes": 110393
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-saljstilar-3/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-saljstilar-3.html",
-      "bytes": 110397
+      "bytes": 109131
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-saljstilar/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-saljstilar.html",
-      "bytes": 109101
+      "bytes": 110365
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-10/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-teamutveckling-10.html",
-      "bytes": 110560
+      "bytes": 109293
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-11/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-teamutveckling-11.html",
-      "bytes": 110488
+      "bytes": 110485
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-12/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-teamutveckling-12.html",
-      "bytes": 109222
+      "bytes": 110488
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-13/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-teamutveckling-13.html",
-      "bytes": 110489
+      "bytes": 110484
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-3/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-teamutveckling-3.html",
-      "bytes": 109199
+      "bytes": 110459
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-4/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-teamutveckling-4.html",
-      "bytes": 110461
+      "bytes": 109199
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-5/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-teamutveckling-5.html",
-      "bytes": 110472
+      "bytes": 109203
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-6/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-teamutveckling-6.html",
-      "bytes": 109206
+      "bytes": 109207
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-7/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-teamutveckling-7.html",
-      "bytes": 110468
+      "bytes": 109206
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-8/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-teamutveckling-8.html",
-      "bytes": 109207
+      "bytes": 109208
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-9/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-teamutveckling-9.html",
-      "bytes": 109082
+      "bytes": 109081
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling/",
       "status": 200,
       "file": "html/forelasningar/webbinarium-teamutveckling.html",
-      "bytes": 110481
+      "bytes": 109221
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-2/",
       "status": 200,
       "file": "html/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-2.html",
-      "bytes": 111685
+      "bytes": 111688
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-3/",
       "status": 200,
       "file": "html/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-3.html",
-      "bytes": 111701
+      "bytes": 111698
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-4/",
       "status": 200,
       "file": "html/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-4.html",
-      "bytes": 111692
+      "bytes": 111698
     },
     {
       "url": "https://pulsanalys.se/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler/",
       "status": 200,
       "file": "html/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler.html",
-      "bytes": 111653
+      "bytes": 111656
     },
     {
       "url": "https://pulsanalys.se/foretag/",
       "status": 200,
       "file": "html/foretag.html",
-      "bytes": 163675
+      "bytes": 163683
     },
     {
       "url": "https://pulsanalys.se/grund-polish-slide/",
       "status": 200,
       "file": "html/grund-polish-slide.html",
-      "bytes": 109517
+      "bytes": 110787
     },
     {
       "url": "https://pulsanalys.se/grund-polish-slide/podstawowy-kurs-disc-24-25-kwiecien/",
       "status": 200,
       "file": "html/grund-polish-slide/podstawowy-kurs-disc-24-25-kwiecien.html",
-      "bytes": 109295
+      "bytes": 110558
     },
     {
       "url": "https://pulsanalys.se/grund-polish-slide/podstawowy-kurs-disc-24-25-luty/",
       "status": 200,
       "file": "html/grund-polish-slide/podstawowy-kurs-disc-24-25-luty.html",
-      "bytes": 110656
+      "bytes": 110657
     },
     {
       "url": "https://pulsanalys.se/grund-polish-slide/podstawowy-kurs-disc-24-25-marzec/",
       "status": 200,
       "file": "html/grund-polish-slide/podstawowy-kurs-disc-24-25-marzec.html",
-      "bytes": 110705
+      "bytes": 110702
     },
     {
       "url": "https://pulsanalys.se/grund-polish-slide/podstawowy-kurs-disc-29-30-styczen/",
       "status": 200,
       "file": "html/grund-polish-slide/podstawowy-kurs-disc-29-30-styczen.html",
-      "bytes": 110521
+      "bytes": 110526
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-disc/",
       "status": 200,
       "file": "html/grundutbildning-disc.html",
-      "bytes": 200529
+      "bytes": 200533
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/",
       "status": 200,
       "file": "html/grundutbildning-slid.html",
-      "bytes": 119176
+      "bytes": 119181
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-april-16-17/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-april-16-17.html",
-      "bytes": 110722
+      "bytes": 109458
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-april-21-22/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-april-21-22.html",
-      "bytes": 109459
+      "bytes": 110723
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-april-28-29/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-april-28-29.html",
-      "bytes": 110723
+      "bytes": 110721
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-augusti-20-21/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-augusti-20-21.html",
-      "bytes": 109509
+      "bytes": 110767
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-augusti-22-23/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-augusti-22-23.html",
-      "bytes": 110826
+      "bytes": 110818
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-augusti-26-27-2/",
@@ -660,31 +660,31 @@
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-augusti-27-28/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-augusti-27-28.html",
-      "bytes": 110776
+      "bytes": 109509
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-december-10-11-2/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-december-10-11-2.html",
-      "bytes": 110825
+      "bytes": 110831
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-december-10-11/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-december-10-11.html",
-      "bytes": 110793
+      "bytes": 110798
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-december-11-12/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-december-11-12.html",
-      "bytes": 109535
+      "bytes": 109537
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-februari-18-19/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-februari-18-19.html",
-      "bytes": 110801
+      "bytes": 110794
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-februari-19-20-2/",
@@ -696,25 +696,25 @@
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-februari-19-20/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-februari-19-20.html",
-      "bytes": 109529
+      "bytes": 110793
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-januari-18-19/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-januari-18-19.html",
-      "bytes": 110777
+      "bytes": 110781
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-januari-28-29-2/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-januari-28-29-2.html",
-      "bytes": 110806
+      "bytes": 109544
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-januari-28-29/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-januari-28-29.html",
-      "bytes": 110779
+      "bytes": 109513
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-juli-1-2/",
@@ -726,43 +726,43 @@
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-juni-26-27/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-juni-26-27.html",
-      "bytes": 110706
+      "bytes": 110703
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-juni-27-28/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-juni-27-28.html",
-      "bytes": 110706
+      "bytes": 110702
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-juni-30-1/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-juni-30-1.html",
-      "bytes": 109422
+      "bytes": 110678
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-maj-14-15/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-maj-14-15.html",
-      "bytes": 110683
+      "bytes": 109419
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-maj-19-20/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-maj-19-20.html",
-      "bytes": 110678
+      "bytes": 110680
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-maj-21-22/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-maj-21-22.html",
-      "bytes": 110682
+      "bytes": 110681
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-maj-23-24/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-maj-23-24.html",
-      "bytes": 110472
+      "bytes": 109208
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-mars-11-12/",
@@ -774,7 +774,7 @@
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-mars-18-19/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-mars-18-19.html",
-      "bytes": 110709
+      "bytes": 110704
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-mars-26-27/",
@@ -786,97 +786,97 @@
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-november-19-20-2/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-november-19-20-2.html",
-      "bytes": 110830
+      "bytes": 110829
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-november-19-20/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-november-19-20.html",
-      "bytes": 110793
+      "bytes": 109533
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-november-22-23-2/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-november-22-23-2.html",
-      "bytes": 110828
+      "bytes": 109563
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-oktober-15-16/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-oktober-15-16.html",
-      "bytes": 110779
+      "bytes": 110774
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-oktober-20-21/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-oktober-20-21.html",
-      "bytes": 110570
+      "bytes": 110573
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-oktober-22-23/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-oktober-22-23.html",
-      "bytes": 109517
+      "bytes": 110780
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-oktober-24-25/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-oktober-24-25.html",
-      "bytes": 110778
+      "bytes": 110775
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-september-10-11/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-september-10-11.html",
-      "bytes": 110821
+      "bytes": 110814
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-september-13-14/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-september-13-14.html",
-      "bytes": 110812
+      "bytes": 110817
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-september-17-18-2/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-september-17-18-2.html",
-      "bytes": 110848
+      "bytes": 110850
     },
     {
       "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-september-17-18/",
       "status": 200,
       "file": "html/grundutbildning-slid/grundutbildning-disc-september-17-18.html",
-      "bytes": 110818
+      "bytes": 109556
     },
     {
       "url": "https://pulsanalys.se/grundutbildning/",
       "status": 200,
       "file": "html/grundutbildning.html",
-      "bytes": 185502
+      "bytes": 185499
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar-po/",
       "status": 200,
       "file": "html/grundutbildningar-po.html",
-      "bytes": 110877
+      "bytes": 110876
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar-po/podstawowy-kurs-disc-24-25-kwiecien/",
       "status": 200,
       "file": "html/grundutbildningar-po/podstawowy-kurs-disc-24-25-kwiecien.html",
-      "bytes": 110616
+      "bytes": 109349
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar-po/podstawowy-kurs-disc-24-25-luty/",
       "status": 200,
       "file": "html/grundutbildningar-po/podstawowy-kurs-disc-24-25-luty.html",
-      "bytes": 110714
+      "bytes": 110721
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar-po/podstawowy-kurs-disc-24-25-marzec/",
       "status": 200,
       "file": "html/grundutbildningar-po/podstawowy-kurs-disc-24-25-marzec.html",
-      "bytes": 110760
+      "bytes": 109497
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar-po/podstawowy-kurs-disc-29-30-styczen/",
@@ -888,25 +888,25 @@
       "url": "https://pulsanalys.se/grundutbildningar/",
       "status": 200,
       "file": "html/grundutbildningar.html",
-      "bytes": 119029
+      "bytes": 119024
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-april-16-17/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-april-16-17.html",
-      "bytes": 109388
+      "bytes": 109386
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-april-21-22/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-april-21-22.html",
-      "bytes": 110646
+      "bytes": 110652
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-april-28-29/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-april-28-29.html",
-      "bytes": 110652
+      "bytes": 109386
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-augusti-22-23/",
@@ -918,25 +918,25 @@
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-augusti-26-27-2/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-augusti-26-27-2.html",
-      "bytes": 109464
+      "bytes": 110732
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-augusti-27-28/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-augusti-27-28.html",
-      "bytes": 110696
+      "bytes": 109438
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-december-10-11-2/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-december-10-11-2.html",
-      "bytes": 110758
+      "bytes": 110752
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-december-10-11/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-december-10-11.html",
-      "bytes": 110723
+      "bytes": 110726
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-december-11-12/",
@@ -948,121 +948,121 @@
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-februari-18-19/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-februari-18-19.html",
-      "bytes": 110721
+      "bytes": 110722
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-februari-19-20-2/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-februari-19-20-2.html",
-      "bytes": 109486
+      "bytes": 110751
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-februari-19-20/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-februari-19-20.html",
-      "bytes": 110726
+      "bytes": 110722
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-januari-18-19/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-januari-18-19.html",
-      "bytes": 110702
+      "bytes": 110703
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-januari-28-29-2/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-januari-28-29-2.html",
-      "bytes": 110730
+      "bytes": 110736
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-januari-28-29/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-januari-28-29.html",
-      "bytes": 110703
+      "bytes": 110698
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-juli-1-2/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-juli-1-2.html",
-      "bytes": 110593
+      "bytes": 110592
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-juni-26-27/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-juni-26-27.html",
-      "bytes": 110633
+      "bytes": 109367
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-juni-27-28/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-juni-27-28.html",
-      "bytes": 110625
+      "bytes": 110631
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-juni-30-1/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-juni-30-1.html",
-      "bytes": 110607
+      "bytes": 110613
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-maj-14-15/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-maj-14-15.html",
-      "bytes": 110604
+      "bytes": 110610
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-maj-19-20/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-maj-19-20.html",
-      "bytes": 110605
+      "bytes": 110603
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-maj-21-22/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-maj-21-22.html",
-      "bytes": 109341
+      "bytes": 110609
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-maj-23-24/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-maj-23-24.html",
-      "bytes": 110401
+      "bytes": 109139
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-mars-11-12/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-mars-11-12.html",
-      "bytes": 110635
+      "bytes": 110629
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-mars-18-19/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-mars-18-19.html",
-      "bytes": 109372
+      "bytes": 110637
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-mars-26-27/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-mars-26-27.html",
-      "bytes": 109372
+      "bytes": 110636
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-november-19-20-2/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-november-19-20-2.html",
-      "bytes": 110756
+      "bytes": 110753
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-november-19-20/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-november-19-20.html",
-      "bytes": 109460
+      "bytes": 110726
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-november-22-23/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-november-22-23.html",
-      "bytes": 110730
+      "bytes": 109460
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-oktober-15-16/",
@@ -1074,13 +1074,13 @@
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-oktober-20-21/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-oktober-20-21.html",
-      "bytes": 110506
+      "bytes": 110507
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-oktober-22-23/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-oktober-22-23.html",
-      "bytes": 110702
+      "bytes": 110706
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-oktober-24-25/",
@@ -1092,55 +1092,55 @@
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-september-10-11/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-september-10-11.html",
-      "bytes": 110742
+      "bytes": 110737
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-september-13-14/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-september-13-14.html",
-      "bytes": 110745
+      "bytes": 110750
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-september-17-18-2/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-september-17-18-2.html",
-      "bytes": 110771
+      "bytes": 109513
     },
     {
       "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-september-17-18/",
       "status": 200,
       "file": "html/grundutbildningar/grundutbildning-disc-september-17-18.html",
-      "bytes": 110740
+      "bytes": 110739
     },
     {
       "url": "https://pulsanalys.se/inspirations-homepag/",
       "status": 200,
       "file": "html/inspirations-homepag.html",
-      "bytes": 114306
+      "bytes": 114300
     },
     {
       "url": "https://pulsanalys.se/inspirations-homepag/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer-2/",
       "status": 200,
       "file": "html/inspirations-homepag/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer-2.html",
-      "bytes": 111738
+      "bytes": 111728
     },
     {
       "url": "https://pulsanalys.se/inspirations-homepag/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer/",
       "status": 200,
       "file": "html/inspirations-homepag/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer.html",
-      "bytes": 111672
+      "bytes": 111671
     },
     {
       "url": "https://pulsanalys.se/inspirations-homepag/introduktion-till-ledarskapsutbildning-april-5/",
       "status": 200,
       "file": "html/inspirations-homepag/introduktion-till-ledarskapsutbildning-april-5.html",
-      "bytes": 111090
+      "bytes": 111093
     },
     {
       "url": "https://pulsanalys.se/inspirations-homepag/introduktion-till-ledarskapsutbildning-maj-3/",
       "status": 200,
       "file": "html/inspirations-homepag/introduktion-till-ledarskapsutbildning-maj-3.html",
-      "bytes": 111049
+      "bytes": 111046
     },
     {
       "url": "https://pulsanalys.se/inspirations-homepag/kundevent-pulsanalys-ab-november-10/",
@@ -1152,19 +1152,19 @@
       "url": "https://pulsanalys.se/inspirations-homepag/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-februari-16/",
       "status": 200,
       "file": "html/inspirations-homepag/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-februari-16.html",
-      "bytes": 110471
+      "bytes": 110470
     },
     {
       "url": "https://pulsanalys.se/inspirations-homepag/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-mars-10/",
       "status": 200,
       "file": "html/inspirations-homepag/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-mars-10.html",
-      "bytes": 111874
+      "bytes": 111878
     },
     {
       "url": "https://pulsanalys.se/inspirations-homepag/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler/",
       "status": 200,
       "file": "html/inspirations-homepag/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler.html",
-      "bytes": 111546
+      "bytes": 111545
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/",
@@ -1176,91 +1176,91 @@
       "url": "https://pulsanalys.se/inspirations-slide/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer-2/",
       "status": 200,
       "file": "html/inspirations-slide/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer-2.html",
-      "bytes": 110404
+      "bytes": 111669
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer/",
       "status": 200,
       "file": "html/inspirations-slide/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer.html",
-      "bytes": 111607
+      "bytes": 111605
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/introduktion-till-ledarskapsutbildning-april-5/",
       "status": 200,
       "file": "html/inspirations-slide/introduktion-till-ledarskapsutbildning-april-5.html",
-      "bytes": 111039
+      "bytes": 111038
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/introduktion-till-ledarskapsutbildning-maj-3/",
       "status": 200,
       "file": "html/inspirations-slide/introduktion-till-ledarskapsutbildning-maj-3.html",
-      "bytes": 110987
+      "bytes": 110994
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/kundevent-pulsanalys-ab/",
       "status": 200,
       "file": "html/inspirations-slide/kundevent-pulsanalys-ab.html",
-      "bytes": 109244
+      "bytes": 109247
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-augusti-17/",
       "status": 200,
       "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-augusti-17.html",
-      "bytes": 111665
+      "bytes": 110407
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-december-1/",
       "status": 200,
       "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-december-1.html",
-      "bytes": 110663
+      "bytes": 111925
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-februari-16/",
       "status": 200,
       "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-februari-16.html",
-      "bytes": 110680
+      "bytes": 110677
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-mars-10/",
       "status": 200,
       "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-mars-10.html",
-      "bytes": 111822
+      "bytes": 111826
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-november-11/",
       "status": 200,
       "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-november-11.html",
-      "bytes": 111948
+      "bytes": 111942
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-oktober-14/",
       "status": 200,
       "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-oktober-14.html",
-      "bytes": 111922
+      "bytes": 111924
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-september-8/",
       "status": 200,
       "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-september-8.html",
-      "bytes": 111943
+      "bytes": 111944
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra-2/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra-2.html",
-      "bytes": 112289
+      "bytes": 112285
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra.html",
-      "bytes": 111000
+      "bytes": 112264
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler.html",
-      "bytes": 111716
+      "bytes": 111718
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-saljstilar-2/",
@@ -1272,19 +1272,19 @@
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-saljstilar-3/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-saljstilar-3.html",
-      "bytes": 109219
+      "bytes": 110481
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-saljstilar/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-saljstilar.html",
-      "bytes": 109189
+      "bytes": 110455
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-10/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-teamutveckling-10.html",
-      "bytes": 110578
+      "bytes": 110572
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-11/",
@@ -1296,31 +1296,31 @@
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-12/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-teamutveckling-12.html",
-      "bytes": 110454
+      "bytes": 110452
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-13/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-teamutveckling-13.html",
-      "bytes": 110637
+      "bytes": 109377
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-2/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-teamutveckling-2.html",
-      "bytes": 110551
+      "bytes": 110554
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-3/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-teamutveckling-3.html",
-      "bytes": 110550
+      "bytes": 109283
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-4/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-teamutveckling-4.html",
-      "bytes": 110549
+      "bytes": 109287
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-5/",
@@ -1332,61 +1332,61 @@
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-6/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-teamutveckling-6.html",
-      "bytes": 110561
+      "bytes": 110554
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-7/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-teamutveckling-7.html",
-      "bytes": 110559
+      "bytes": 110555
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-8/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-teamutveckling-8.html",
-      "bytes": 110559
+      "bytes": 110557
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-9/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-teamutveckling-9.html",
-      "bytes": 110556
+      "bytes": 110554
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling/",
       "status": 200,
       "file": "html/inspirations-slide/webbinarium-teamutveckling.html",
-      "bytes": 109312
+      "bytes": 109315
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-2/",
       "status": 200,
       "file": "html/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-2.html",
-      "bytes": 111774
+      "bytes": 111771
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-3/",
       "status": 200,
       "file": "html/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-3.html",
-      "bytes": 111780
+      "bytes": 111783
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-4/",
       "status": 200,
       "file": "html/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-4.html",
-      "bytes": 111776
+      "bytes": 111777
     },
     {
       "url": "https://pulsanalys.se/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler/",
       "status": 200,
       "file": "html/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler.html",
-      "bytes": 111744
+      "bytes": 111736
     },
     {
       "url": "https://pulsanalys.se/integritetspolicy/",
       "status": 200,
       "file": "html/integritetspolicy.html",
-      "bytes": 170417
+      "bytes": 169155
     },
     {
       "url": "https://pulsanalys.se/konsulter/",
@@ -1398,61 +1398,61 @@
       "url": "https://pulsanalys.se/konsulttjanster/",
       "status": 200,
       "file": "html/konsulttjanster.html",
-      "bytes": 172564
+      "bytes": 173827
     },
     {
       "url": "https://pulsanalys.se/kontakta-oss/",
       "status": 200,
       "file": "html/kontakta-oss.html",
-      "bytes": 190056
+      "bytes": 190058
     },
     {
       "url": "https://pulsanalys.se/kurser/",
       "status": 200,
       "file": "html/kurser.html",
-      "bytes": 164205
+      "bytes": 165469
     },
     {
       "url": "https://pulsanalys.se/ledarskapsutbildning/",
       "status": 200,
       "file": "html/ledarskapsutbildning.html",
-      "bytes": 193416
+      "bytes": 194687
     },
     {
       "url": "https://pulsanalys.se/om-oss/",
       "status": 200,
       "file": "html/om-oss.html",
-      "bytes": 175139
+      "bytes": 175141
     },
     {
       "url": "https://pulsanalys.se/omdomen/",
       "status": 200,
       "file": "html/omdomen.html",
-      "bytes": 169212
+      "bytes": 169207
     },
     {
       "url": "https://pulsanalys.se/personprofil/",
       "status": 200,
       "file": "html/personprofil.html",
-      "bytes": 185591
+      "bytes": 185589
     },
     {
       "url": "https://pulsanalys.se/privacy-policy/",
       "status": 200,
       "file": "html/privacy-policy.html",
-      "bytes": 149977
+      "bytes": 149981
     },
     {
       "url": "https://pulsanalys.se/produkter/",
       "status": 200,
       "file": "html/produkter.html",
-      "bytes": 180517
+      "bytes": 180516
     },
     {
       "url": "https://pulsanalys.se/rekryteringsprofil/",
       "status": 200,
       "file": "html/rekryteringsprofil.html",
-      "bytes": 183732
+      "bytes": 184988
     },
     {
       "url": "https://pulsanalys.se/skaffa-abonnemang/",
@@ -1464,13 +1464,13 @@
       "url": "https://pulsanalys.se/studenter/",
       "status": 200,
       "file": "html/studenter.html",
-      "bytes": 148674
+      "bytes": 148680
     },
     {
       "url": "https://pulsanalys.se/tag/svenska/",
       "status": 200,
       "file": "html/tag/svenska.html",
-      "bytes": 108538
+      "bytes": 108534
     },
     {
       "url": "https://pulsanalys.se/teamprofil/",
@@ -1482,25 +1482,25 @@
       "url": "https://pulsanalys.se/utbildningar-och-forelasningar/",
       "status": 200,
       "file": "html/utbildningar-och-forelasningar.html",
-      "bytes": 202964
+      "bytes": 201703
     },
     {
       "url": "https://pulsanalys.se/vad-ar-disc/",
       "status": 200,
       "file": "html/vad-ar-disc.html",
-      "bytes": 170562
+      "bytes": 170566
     },
     {
       "url": "https://pulsanalys.se/vad-ar-pulsanalys/",
       "status": 200,
       "file": "html/vad-ar-pulsanalys.html",
-      "bytes": 175142
+      "bytes": 175148
     },
     {
       "url": "https://pulsanalys.se/webbinarier/",
       "status": 200,
       "file": "html/webbinarier.html",
-      "bytes": 155306
+      "bytes": 155312
     }
   ],
   "uploads": [
@@ -3633,8 +3633,11 @@
       "sha256": "f4a20b10d1052431b129528e6607d0117804d081d1aada1864f3af40cd9c8750"
     },
     {
-      "url": "https://pulsanalys.se/wp-content/uploads/2025/01/Barilla_brand_logo_2022-present.svg",
-      "status": 404
+      "url": "https://pulsanalys.se/wp-content/uploads/2025/01/Barilla_brand_logo_2022-present.svg.png",
+      "status": 200,
+      "file": "uploads/2025/01/Barilla_brand_logo_2022-present.svg.png",
+      "bytes": 52835,
+      "sha256": "4b245a27f309d79da23f828cd6c184789a9873c35af6a0c77e55f8f52ac839b3"
     },
     {
       "url": "https://pulsanalys.se/wp-content/uploads/2025/01/Finansförbundet-logotyp.png",
