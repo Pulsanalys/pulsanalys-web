@@ -1,0 +1,110 @@
+old_url,new_url,type,note
+/,/,keep,
+/produkter/,/produkter/,keep,
+/personprofil/,/personprofil/,keep,
+/teamprofil/,/teamprofil/,keep,
+/rekryteringsprofil/,/rekryteringsprofil/,keep,
+/360-profil/,/360-profil/,keep,
+/konsulttjanster/,/konsulttjanster/,keep,
+/kurser/,/kurser/,keep,
+/grundutbildning-disc/,/grundutbildning-disc/,keep,
+/fordjupning-disc/,/fordjupning-disc/,keep,
+/ledarskapsutbildning/,/ledarskapsutbildning/,keep,
+/utbildningar-och-forelasningar/,/utbildningar-och-forelasningar/,keep,calendar hub
+/grundutbildning/,/grundutbildning/,keep,date list
+/fordjupningskurser/,/fordjupningskurser/,keep,date list
+/webbinarier/,/webbinarier/,keep,date list
+/event/,/event/,keep,date list
+/vad-ar-pulsanalys/,/vad-ar-pulsanalys/,keep,
+/vad-ar-disc/,/vad-ar-disc/,keep,
+/om-oss/,/om-oss/,keep,
+/kontakta-oss/,/kontakta-oss/,keep,
+/omdomen/,/omdomen/,keep,
+/distributor/,/distributor/,keep,
+/skaffa-abonnemang/,/skaffa-abonnemang/,keep,questionnaire replaced (decision)
+/faq/,/faq/,keep,
+/blogg/,/blogg/,keep,
+/integritetspolicy/,/integritetspolicy/,keep,
+/2021/01/15/nyhetsbrev-januari-2021/,/blogg/nyhetsbrev-januari-2021/,301,
+/2021/02/15/nyhetsbrev-februari-2021/,/blogg/nyhetsbrev-februari-2021/,301,
+/2021/03/15/nyhetsbrev-mars-2021/,/blogg/nyhetsbrev-mars-2021/,301,
+/2021/04/15/nyhetsbrev-april-2021/,/blogg/nyhetsbrev-april-2021/,301,
+/2021/04/29/pulsanalys-ab-och-business-match-scandinavia-poland-ingar-ett-internationellt-samarbete/,/blogg/pulsanalys-ab-och-business-match-scandinavia-poland-ingar-ett-internationellt-samarbete/,301,
+/anmalan/?eventid=531,/utbildningar-och-forelasningar/grundutbildning-disc-2026-11-26/,301,query rule in Worker; id→slug table generated from the courses collection
+/anmalan/?eventid=532,/utbildningar-och-forelasningar/grundutbildning-disc-2026-12-08/,301,
+/anmalan/?eventid=534,/utbildningar-och-forelasningar/fordjupningskurs-disc-2026-11-25/,301,
+/anmalan/?eventid=536,/utbildningar-och-forelasningar/kundtraff-2026-11-19/,301,
+/anmalan/?eventid=*,/utbildningar-och-forelasningar/,301,any other or past event id
+/anmalan/,/utbildningar-och-forelasningar/,301,currently 500
+/bokning/?eventid=*,(booking decision),pending,currently the live booking form; must keep working until cutover
+/bokning/,/utbildningar-och-forelasningar/,301,currently 500
+/events/,/event/,301,currently 500
+/events/*,/event/,301,includes /events/aw-mingel/ and /events/index.php?eventid=N
+/grundutbildningar/*,/grundutbildning/,301,past course posts (sitemap: grund-utbildningar)
+/grundutbildning-slid/*,/grundutbildning/,301,past course slides
+/grundutbildningar-po/*,/grundutbildning/,301,Polish courses 2022
+/grund-polish-slide/*,/grundutbildning/,301,Polish courses 2022
+/fordjupnings-kurs/*,/fordjupningskurser/,301,
+/fordjupningskurs-sli/*,/fordjupningskurser/,301,
+/forelasningar/*,/webbinarier/,301,
+/inspirations-homepag/*,/webbinarier/,301,
+/inspirations-slide/*,/webbinarier/,301,
+/inspirationsforelasningar/,/webbinarier/,301,linked from home but 404 today
+/utbildningar-och-inspirationsforelasningar/,/utbildningar-och-forelasningar/,301,footer link 404 today
+/pulsanalys2019/*,/*,301,strip prefix; pulscertifiering-disc → /grundutbildning-disc/
+/privacy-policy/,/en/privacy-policy/,301,English text on Swedish URL
+/foretag/,/skaffa-abonnemang/,301,Lorem ipsum page (decision)
+/konsulter/,(decision),pending,real content; merge into /distributor/ or keep
+/studenter/,/kontakta-oss/,301,unfinished page (decision)
+/6-anvandare/,/skaffa-abonnemang/,301,questionnaire result (decision)
+/1000-anstallda/,/skaffa-abonnemang/,301,questionnaire result (decision)
+/abonnemangsresultat/,/skaffa-abonnemang/,301,500 today
+/cvgeneratorn/,/,301,broken shortcode only
+/author/*,/blogg/,301,
+/category/*,/blogg/,301,
+/tag/*,/blogg/,301,
+/feed/,/blogg/,301,WordPress feed
+/wp-admin/*,(none),410,
+/wp-login.php,(none),410,
+/wp-content/uploads/*,(none),410,old media URLs; new images live under /_astro/
+/en/,/en/,keep,
+/en/products-and-services/,/en/products/,301,shorter slug
+/en/personal-profile/,/en/personal-profile/,keep,
+/en/team-profile/,/en/team-profile/,keep,
+/en/recruitment-profile/,/en/recruitment-profile/,keep,
+/en/360-profile/,/en/360-profile/,keep,
+/en/consulting-services/,/en/consulting-services/,keep,
+/en/courses/,/en/courses/,keep,
+/en/basic-disc-training/,/en/basic-disc-training/,keep,
+/en/immersion-disc/,/en/advanced-disc-training/,301,mistranslation
+/en/leadership-training/,/en/leadership-training/,keep,
+/en/training-courses-and-lectures/,/en/courses-and-lectures/,301,shorter slug
+/en/basic-education/,/en/basic-disc-training/dates/,301,mistranslation
+/en/advanced-courses/,/en/advanced-disc-training/dates/,301,
+/en/lectures/,/en/webinars/,301,matches Swedish page
+(new),/en/events/,new,English twin of /event/ (same content)
+/en/what-is-pulseanalysis/,/en/what-is-pulsanalys/,301,brand misspelled
+/en/what-is-pulsanalys/,/en/what-is-pulsanalys/,keep,404 today; becomes the real page
+/en/what-is-disc/,/en/what-is-disc/,keep,
+/en/about-us/,/en/about-us/,keep,
+/en/contact-us/,/en/contact-us/,keep,
+/en/contact-us-for-more-information/,/en/contact-us/,301,duplicate
+/en/reviews/,/en/reviews/,keep,
+/en/become-a-distributor/,/en/become-a-distributor/,keep,
+/en/get-a-subscription/,/en/get-a-subscription/,keep,
+/en/faq/,/en/faq/,keep,
+/en/blog/,/en/blog/,keep,
+/en/privacy-policy/,/en/privacy-policy/,keep,
+/en/privacy-policy-2/,/en/privacy-policy/,301,duplicate
+/en/basic-disc-course/,/en/basic-disc-training/,301,linked but 404 today
+/en/basic-course/,/en/basic-disc-training/dates/,301,linked but 404 today
+/basic-courses/,/en/basic-disc-training/dates/,301,linked but 404 today
+/en/companies/,/en/get-a-subscription/,301,Lorem ipsum (decision)
+/en/consultants/,(decision),pending,as /konsulter/
+/en/students/,/en/contact-us/,301,(decision)
+/en/6-users/,/en/get-a-subscription/,301,(decision)
+/en/1000-employees/,/en/get-a-subscription/,301,(decision)
+/en/subscription-results/,/en/get-a-subscription/,301,500 today
+/en/cv-generators/,/en/,301,
+/en/booking/,/en/courses-and-lectures/,301,500 today
+/en/*,(see rows above),404,anything unmatched under /en/ gets the designed 404 page and is logged
