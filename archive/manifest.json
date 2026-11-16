@@ -1,0 +1,3731 @@
+{
+  "source": "https://pulsanalys.se",
+  "fetched": "2026-11-16T22:37:43Z",
+  "pages": [
+    {
+      "url": "https://pulsanalys.se/",
+      "status": 200,
+      "file": "html/index.html",
+      "bytes": 234720
+    },
+    {
+      "url": "https://pulsanalys.se/1000-anstallda/",
+      "status": 200,
+      "file": "html/1000-anstallda.html",
+      "bytes": 159614
+    },
+    {
+      "url": "https://pulsanalys.se/2021/01/15/nyhetsbrev-januari-2021/",
+      "status": 200,
+      "file": "html/2021/01/15/nyhetsbrev-januari-2021.html",
+      "bytes": 193637
+    },
+    {
+      "url": "https://pulsanalys.se/2021/02/15/nyhetsbrev-februari-2021/",
+      "status": 200,
+      "file": "html/2021/02/15/nyhetsbrev-februari-2021.html",
+      "bytes": 178532
+    },
+    {
+      "url": "https://pulsanalys.se/2021/03/15/nyhetsbrev-mars-2021/",
+      "status": 200,
+      "file": "html/2021/03/15/nyhetsbrev-mars-2021.html",
+      "bytes": 162753
+    },
+    {
+      "url": "https://pulsanalys.se/2021/04/15/nyhetsbrev-april-2021/",
+      "status": 200,
+      "file": "html/2021/04/15/nyhetsbrev-april-2021.html",
+      "bytes": 167100
+    },
+    {
+      "url": "https://pulsanalys.se/2021/04/29/pulsanalys-ab-och-business-match-scandinavia-poland-ingar-ett-internationellt-samarbete/",
+      "status": 200,
+      "file": "html/2021/04/29/pulsanalys-ab-och-business-match-scandinavia-poland-ingar-ett-internationellt-samarbete.html",
+      "bytes": 102379
+    },
+    {
+      "url": "https://pulsanalys.se/360-profil/",
+      "status": 200,
+      "file": "html/360-profil.html",
+      "bytes": 181398
+    },
+    {
+      "url": "https://pulsanalys.se/6-anvandare/",
+      "status": 200,
+      "file": "html/6-anvandare.html",
+      "bytes": 160840
+    },
+    {
+      "url": "https://pulsanalys.se/abonnemangsresultat/",
+      "status": 500,
+      "file": "html/abonnemangsresultat.html",
+      "bytes": 100402
+    },
+    {
+      "url": "https://pulsanalys.se/anmalan/",
+      "status": 500,
+      "file": "html/anmalan.html",
+      "bytes": 3001
+    },
+    {
+      "url": "https://pulsanalys.se/anmalan/?eventid=531",
+      "status": 200,
+      "file": "html/anmalan__eventid=531.html",
+      "bytes": 167155
+    },
+    {
+      "url": "https://pulsanalys.se/anmalan/?eventid=532",
+      "status": 200,
+      "file": "html/anmalan__eventid=532.html",
+      "bytes": 167161
+    },
+    {
+      "url": "https://pulsanalys.se/anmalan/?eventid=534",
+      "status": 200,
+      "file": "html/anmalan__eventid=534.html",
+      "bytes": 165988
+    },
+    {
+      "url": "https://pulsanalys.se/anmalan/?eventid=536",
+      "status": 200,
+      "file": "html/anmalan__eventid=536.html",
+      "bytes": 166544
+    },
+    {
+      "url": "https://pulsanalys.se/author/paul070707/",
+      "status": 200,
+      "file": "html/author/paul070707.html",
+      "bytes": 122461
+    },
+    {
+      "url": "https://pulsanalys.se/blogg/",
+      "status": 200,
+      "file": "html/blogg.html",
+      "bytes": 160306
+    },
+    {
+      "url": "https://pulsanalys.se/bokning/",
+      "status": 500,
+      "file": "html/bokning.html",
+      "bytes": 102488
+    },
+    {
+      "url": "https://pulsanalys.se/bokning/?eventid=531",
+      "status": 200,
+      "file": "html/bokning__eventid=531.html",
+      "bytes": 161649
+    },
+    {
+      "url": "https://pulsanalys.se/category/uncategorized-sv/",
+      "status": 200,
+      "file": "html/category/uncategorized-sv.html",
+      "bytes": 121371
+    },
+    {
+      "url": "https://pulsanalys.se/cvgeneratorn/",
+      "status": 200,
+      "file": "html/cvgeneratorn.html",
+      "bytes": 112686
+    },
+    {
+      "url": "https://pulsanalys.se/distributor/",
+      "status": 200,
+      "file": "html/distributor.html",
+      "bytes": 196505
+    },
+    {
+      "url": "https://pulsanalys.se/en/contact-us/",
+      "status": 200,
+      "file": "html/en/contact-us.html",
+      "bytes": 130279
+    },
+    {
+      "url": "https://pulsanalys.se/event/",
+      "status": 200,
+      "file": "html/event.html",
+      "bytes": 163951
+    },
+    {
+      "url": "https://pulsanalys.se/events/",
+      "status": 500,
+      "file": "html/events.html",
+      "bytes": 0
+    },
+    {
+      "url": "https://pulsanalys.se/events/aw-mingel/",
+      "status": 200,
+      "file": "html/events/aw-mingel.html",
+      "bytes": 107975
+    },
+    {
+      "url": "https://pulsanalys.se/faq/",
+      "status": 200,
+      "file": "html/faq.html",
+      "bytes": 117636
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupning-disc/",
+      "status": 200,
+      "file": "html/fordjupning-disc.html",
+      "bytes": 204263
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs.html",
+      "bytes": 118833
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-december-3/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-december-3.html",
+      "bytes": 110655
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-december-4/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-december-4.html",
+      "bytes": 110656
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-feb-17/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-feb-17.html",
+      "bytes": 110563
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-februari-11/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-februari-11.html",
+      "bytes": 110689
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-februari-13/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-februari-13.html",
+      "bytes": 110674
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-februari-15/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-februari-15.html",
+      "bytes": 109416
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-maj-22/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-maj-22.html",
+      "bytes": 110575
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-maj-6/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-maj-6.html",
+      "bytes": 110545
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-maj-8/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-maj-8.html",
+      "bytes": 110551
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-november-9/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-november-9.html",
+      "bytes": 110658
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-oktober-2-2/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-oktober-2-2.html",
+      "bytes": 110657
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-oktober-2/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-oktober-2.html",
+      "bytes": 109369
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-september-12/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-september-12.html",
+      "bytes": 110497
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupnings-kurs/fordjupningskurs-disc-september-16/",
+      "status": 200,
+      "file": "html/fordjupnings-kurs/fordjupningskurs-disc-september-16.html",
+      "bytes": 110504
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli.html",
+      "bytes": 119019
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-december-3/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-december-3.html",
+      "bytes": 110750
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-december-4/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-december-4.html",
+      "bytes": 110750
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-februari-13/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-februari-13.html",
+      "bytes": 110760
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-februari-15/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-februari-15.html",
+      "bytes": 109497
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-februari-17/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-februari-17.html",
+      "bytes": 109496
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-maj-22/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-maj-22.html",
+      "bytes": 109392
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-maj-6/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-maj-6.html",
+      "bytes": 110635
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-maj-8/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-maj-8.html",
+      "bytes": 110635
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-november-9/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-november-9.html",
+      "bytes": 110750
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-oktober-2-2/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-oktober-2-2.html",
+      "bytes": 110744
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-oktober-2/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-oktober-2.html",
+      "bytes": 110717
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-september-12/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-september-12.html",
+      "bytes": 109311
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurs-sli/fordjupningskurs-disc-september-16/",
+      "status": 200,
+      "file": "html/fordjupningskurs-sli/fordjupningskurs-disc-september-16.html",
+      "bytes": 110582
+    },
+    {
+      "url": "https://pulsanalys.se/fordjupningskurser/",
+      "status": 200,
+      "file": "html/fordjupningskurser.html",
+      "bytes": 171629
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/",
+      "status": 200,
+      "file": "html/forelasningar.html",
+      "bytes": 119070
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer-2/",
+      "status": 200,
+      "file": "html/forelasningar/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer-2.html",
+      "bytes": 111584
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer/",
+      "status": 200,
+      "file": "html/forelasningar/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer.html",
+      "bytes": 111523
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/introduktion-till-ledarskapsutbildning-april-5/",
+      "status": 200,
+      "file": "html/forelasningar/introduktion-till-ledarskapsutbildning-april-5.html",
+      "bytes": 110951
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/introduktion-till-ledarskapsutbildning-maj-3/",
+      "status": 200,
+      "file": "html/forelasningar/introduktion-till-ledarskapsutbildning-maj-3.html",
+      "bytes": 110907
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/kundevent-pulsanalys-ab/",
+      "status": 200,
+      "file": "html/forelasningar/kundevent-pulsanalys-ab.html",
+      "bytes": 110418
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-augusti-17/",
+      "status": 200,
+      "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-augusti-17.html",
+      "bytes": 111836
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-december-1/",
+      "status": 200,
+      "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-december-1.html",
+      "bytes": 111843
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-februari-16/",
+      "status": 200,
+      "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-februari-16.html",
+      "bytes": 111859
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-januari-12/",
+      "status": 200,
+      "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-januari-12.html",
+      "bytes": 111835
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-juni-16/",
+      "status": 200,
+      "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-juni-16.html",
+      "bytes": 111518
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-mars-10/",
+      "status": 200,
+      "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-mars-10.html",
+      "bytes": 111737
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-november-11/",
+      "status": 200,
+      "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-november-11.html",
+      "bytes": 110594
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-oktober-14/",
+      "status": 200,
+      "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-oktober-14.html",
+      "bytes": 111841
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-september-8/",
+      "status": 200,
+      "file": "html/forelasningar/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-september-8.html",
+      "bytes": 110594
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra-2/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra-2.html",
+      "bytes": 112202
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra.html",
+      "bytes": 110915
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler.html",
+      "bytes": 111630
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-saljstilar-2/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-saljstilar-2.html",
+      "bytes": 110394
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-saljstilar-3/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-saljstilar-3.html",
+      "bytes": 110397
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-saljstilar/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-saljstilar.html",
+      "bytes": 109101
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-10/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-teamutveckling-10.html",
+      "bytes": 110560
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-11/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-teamutveckling-11.html",
+      "bytes": 110488
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-12/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-teamutveckling-12.html",
+      "bytes": 109222
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-13/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-teamutveckling-13.html",
+      "bytes": 110489
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-3/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-teamutveckling-3.html",
+      "bytes": 109199
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-4/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-teamutveckling-4.html",
+      "bytes": 110461
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-5/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-teamutveckling-5.html",
+      "bytes": 110472
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-6/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-teamutveckling-6.html",
+      "bytes": 109206
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-7/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-teamutveckling-7.html",
+      "bytes": 110468
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-8/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-teamutveckling-8.html",
+      "bytes": 109207
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling-9/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-teamutveckling-9.html",
+      "bytes": 109082
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webbinarium-teamutveckling/",
+      "status": 200,
+      "file": "html/forelasningar/webbinarium-teamutveckling.html",
+      "bytes": 110481
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-2/",
+      "status": 200,
+      "file": "html/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-2.html",
+      "bytes": 111685
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-3/",
+      "status": 200,
+      "file": "html/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-3.html",
+      "bytes": 111701
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-4/",
+      "status": 200,
+      "file": "html/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-4.html",
+      "bytes": 111692
+    },
+    {
+      "url": "https://pulsanalys.se/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler/",
+      "status": 200,
+      "file": "html/forelasningar/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler.html",
+      "bytes": 111653
+    },
+    {
+      "url": "https://pulsanalys.se/foretag/",
+      "status": 200,
+      "file": "html/foretag.html",
+      "bytes": 163675
+    },
+    {
+      "url": "https://pulsanalys.se/grund-polish-slide/",
+      "status": 200,
+      "file": "html/grund-polish-slide.html",
+      "bytes": 109517
+    },
+    {
+      "url": "https://pulsanalys.se/grund-polish-slide/podstawowy-kurs-disc-24-25-kwiecien/",
+      "status": 200,
+      "file": "html/grund-polish-slide/podstawowy-kurs-disc-24-25-kwiecien.html",
+      "bytes": 109295
+    },
+    {
+      "url": "https://pulsanalys.se/grund-polish-slide/podstawowy-kurs-disc-24-25-luty/",
+      "status": 200,
+      "file": "html/grund-polish-slide/podstawowy-kurs-disc-24-25-luty.html",
+      "bytes": 110656
+    },
+    {
+      "url": "https://pulsanalys.se/grund-polish-slide/podstawowy-kurs-disc-24-25-marzec/",
+      "status": 200,
+      "file": "html/grund-polish-slide/podstawowy-kurs-disc-24-25-marzec.html",
+      "bytes": 110705
+    },
+    {
+      "url": "https://pulsanalys.se/grund-polish-slide/podstawowy-kurs-disc-29-30-styczen/",
+      "status": 200,
+      "file": "html/grund-polish-slide/podstawowy-kurs-disc-29-30-styczen.html",
+      "bytes": 110521
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-disc/",
+      "status": 200,
+      "file": "html/grundutbildning-disc.html",
+      "bytes": 200529
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/",
+      "status": 200,
+      "file": "html/grundutbildning-slid.html",
+      "bytes": 119176
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-april-16-17/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-april-16-17.html",
+      "bytes": 110722
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-april-21-22/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-april-21-22.html",
+      "bytes": 109459
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-april-28-29/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-april-28-29.html",
+      "bytes": 110723
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-augusti-20-21/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-augusti-20-21.html",
+      "bytes": 109509
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-augusti-22-23/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-augusti-22-23.html",
+      "bytes": 110826
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-augusti-26-27-2/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-augusti-26-27-2.html",
+      "bytes": 109540
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-augusti-27-28/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-augusti-27-28.html",
+      "bytes": 110776
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-december-10-11-2/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-december-10-11-2.html",
+      "bytes": 110825
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-december-10-11/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-december-10-11.html",
+      "bytes": 110793
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-december-11-12/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-december-11-12.html",
+      "bytes": 109535
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-februari-18-19/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-februari-18-19.html",
+      "bytes": 110801
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-februari-19-20-2/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-februari-19-20-2.html",
+      "bytes": 109557
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-februari-19-20/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-februari-19-20.html",
+      "bytes": 109529
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-januari-18-19/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-januari-18-19.html",
+      "bytes": 110777
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-januari-28-29-2/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-januari-28-29-2.html",
+      "bytes": 110806
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-januari-28-29/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-januari-28-29.html",
+      "bytes": 110779
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-juli-1-2/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-juli-1-2.html",
+      "bytes": 109395
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-juni-26-27/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-juni-26-27.html",
+      "bytes": 110706
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-juni-27-28/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-juni-27-28.html",
+      "bytes": 110706
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-juni-30-1/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-juni-30-1.html",
+      "bytes": 109422
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-maj-14-15/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-maj-14-15.html",
+      "bytes": 110683
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-maj-19-20/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-maj-19-20.html",
+      "bytes": 110678
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-maj-21-22/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-maj-21-22.html",
+      "bytes": 110682
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-maj-23-24/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-maj-23-24.html",
+      "bytes": 110472
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-mars-11-12/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-mars-11-12.html",
+      "bytes": 110706
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-mars-18-19/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-mars-18-19.html",
+      "bytes": 110709
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-mars-26-27/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-mars-26-27.html",
+      "bytes": 109447
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-november-19-20-2/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-november-19-20-2.html",
+      "bytes": 110830
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-november-19-20/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-november-19-20.html",
+      "bytes": 110793
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-november-22-23-2/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-november-22-23-2.html",
+      "bytes": 110828
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-oktober-15-16/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-oktober-15-16.html",
+      "bytes": 110779
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-oktober-20-21/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-oktober-20-21.html",
+      "bytes": 110570
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-oktober-22-23/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-oktober-22-23.html",
+      "bytes": 109517
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-oktober-24-25/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-oktober-24-25.html",
+      "bytes": 110778
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-september-10-11/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-september-10-11.html",
+      "bytes": 110821
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-september-13-14/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-september-13-14.html",
+      "bytes": 110812
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-september-17-18-2/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-september-17-18-2.html",
+      "bytes": 110848
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning-slid/grundutbildning-disc-september-17-18/",
+      "status": 200,
+      "file": "html/grundutbildning-slid/grundutbildning-disc-september-17-18.html",
+      "bytes": 110818
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildning/",
+      "status": 200,
+      "file": "html/grundutbildning.html",
+      "bytes": 185502
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar-po/",
+      "status": 200,
+      "file": "html/grundutbildningar-po.html",
+      "bytes": 110877
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar-po/podstawowy-kurs-disc-24-25-kwiecien/",
+      "status": 200,
+      "file": "html/grundutbildningar-po/podstawowy-kurs-disc-24-25-kwiecien.html",
+      "bytes": 110616
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar-po/podstawowy-kurs-disc-24-25-luty/",
+      "status": 200,
+      "file": "html/grundutbildningar-po/podstawowy-kurs-disc-24-25-luty.html",
+      "bytes": 110714
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar-po/podstawowy-kurs-disc-24-25-marzec/",
+      "status": 200,
+      "file": "html/grundutbildningar-po/podstawowy-kurs-disc-24-25-marzec.html",
+      "bytes": 110760
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar-po/podstawowy-kurs-disc-29-30-styczen/",
+      "status": 200,
+      "file": "html/grundutbildningar-po/podstawowy-kurs-disc-29-30-styczen.html",
+      "bytes": 109314
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/",
+      "status": 200,
+      "file": "html/grundutbildningar.html",
+      "bytes": 119029
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-april-16-17/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-april-16-17.html",
+      "bytes": 109388
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-april-21-22/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-april-21-22.html",
+      "bytes": 110646
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-april-28-29/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-april-28-29.html",
+      "bytes": 110652
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-augusti-22-23/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-augusti-22-23.html",
+      "bytes": 110750
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-augusti-26-27-2/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-augusti-26-27-2.html",
+      "bytes": 109464
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-augusti-27-28/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-augusti-27-28.html",
+      "bytes": 110696
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-december-10-11-2/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-december-10-11-2.html",
+      "bytes": 110758
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-december-10-11/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-december-10-11.html",
+      "bytes": 110723
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-december-11-12/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-december-11-12.html",
+      "bytes": 110727
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-februari-18-19/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-februari-18-19.html",
+      "bytes": 110721
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-februari-19-20-2/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-februari-19-20-2.html",
+      "bytes": 109486
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-februari-19-20/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-februari-19-20.html",
+      "bytes": 110726
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-januari-18-19/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-januari-18-19.html",
+      "bytes": 110702
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-januari-28-29-2/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-januari-28-29-2.html",
+      "bytes": 110730
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-januari-28-29/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-januari-28-29.html",
+      "bytes": 110703
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-juli-1-2/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-juli-1-2.html",
+      "bytes": 110593
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-juni-26-27/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-juni-26-27.html",
+      "bytes": 110633
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-juni-27-28/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-juni-27-28.html",
+      "bytes": 110625
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-juni-30-1/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-juni-30-1.html",
+      "bytes": 110607
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-maj-14-15/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-maj-14-15.html",
+      "bytes": 110604
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-maj-19-20/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-maj-19-20.html",
+      "bytes": 110605
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-maj-21-22/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-maj-21-22.html",
+      "bytes": 109341
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-maj-23-24/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-maj-23-24.html",
+      "bytes": 110401
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-mars-11-12/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-mars-11-12.html",
+      "bytes": 110635
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-mars-18-19/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-mars-18-19.html",
+      "bytes": 109372
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-mars-26-27/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-mars-26-27.html",
+      "bytes": 109372
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-november-19-20-2/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-november-19-20-2.html",
+      "bytes": 110756
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-november-19-20/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-november-19-20.html",
+      "bytes": 109460
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-november-22-23/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-november-22-23.html",
+      "bytes": 110730
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-oktober-15-16/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-oktober-15-16.html",
+      "bytes": 110701
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-oktober-20-21/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-oktober-20-21.html",
+      "bytes": 110506
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-oktober-22-23/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-oktober-22-23.html",
+      "bytes": 110702
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-oktober-24-25/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-oktober-24-25.html",
+      "bytes": 110704
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-september-10-11/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-september-10-11.html",
+      "bytes": 110742
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-september-13-14/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-september-13-14.html",
+      "bytes": 110745
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-september-17-18-2/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-september-17-18-2.html",
+      "bytes": 110771
+    },
+    {
+      "url": "https://pulsanalys.se/grundutbildningar/grundutbildning-disc-september-17-18/",
+      "status": 200,
+      "file": "html/grundutbildningar/grundutbildning-disc-september-17-18.html",
+      "bytes": 110740
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-homepag/",
+      "status": 200,
+      "file": "html/inspirations-homepag.html",
+      "bytes": 114306
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-homepag/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer-2/",
+      "status": 200,
+      "file": "html/inspirations-homepag/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer-2.html",
+      "bytes": 111738
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-homepag/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer/",
+      "status": 200,
+      "file": "html/inspirations-homepag/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer.html",
+      "bytes": 111672
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-homepag/introduktion-till-ledarskapsutbildning-april-5/",
+      "status": 200,
+      "file": "html/inspirations-homepag/introduktion-till-ledarskapsutbildning-april-5.html",
+      "bytes": 111090
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-homepag/introduktion-till-ledarskapsutbildning-maj-3/",
+      "status": 200,
+      "file": "html/inspirations-homepag/introduktion-till-ledarskapsutbildning-maj-3.html",
+      "bytes": 111049
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-homepag/kundevent-pulsanalys-ab-november-10/",
+      "status": 200,
+      "file": "html/inspirations-homepag/kundevent-pulsanalys-ab-november-10.html",
+      "bytes": 110870
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-homepag/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-februari-16/",
+      "status": 200,
+      "file": "html/inspirations-homepag/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-februari-16.html",
+      "bytes": 110471
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-homepag/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-mars-10/",
+      "status": 200,
+      "file": "html/inspirations-homepag/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-mars-10.html",
+      "bytes": 111874
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-homepag/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler/",
+      "status": 200,
+      "file": "html/inspirations-homepag/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler.html",
+      "bytes": 111546
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/",
+      "status": 200,
+      "file": "html/inspirations-slide.html",
+      "bytes": 119236
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer-2/",
+      "status": 200,
+      "file": "html/inspirations-slide/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer-2.html",
+      "bytes": 110404
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer/",
+      "status": 200,
+      "file": "html/inspirations-slide/forelasning-5-tips-for-att-oka-forstaelsen-mellan-anstallda-och-chefer.html",
+      "bytes": 111607
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/introduktion-till-ledarskapsutbildning-april-5/",
+      "status": 200,
+      "file": "html/inspirations-slide/introduktion-till-ledarskapsutbildning-april-5.html",
+      "bytes": 111039
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/introduktion-till-ledarskapsutbildning-maj-3/",
+      "status": 200,
+      "file": "html/inspirations-slide/introduktion-till-ledarskapsutbildning-maj-3.html",
+      "bytes": 110987
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/kundevent-pulsanalys-ab/",
+      "status": 200,
+      "file": "html/inspirations-slide/kundevent-pulsanalys-ab.html",
+      "bytes": 109244
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-augusti-17/",
+      "status": 200,
+      "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-augusti-17.html",
+      "bytes": 111665
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-december-1/",
+      "status": 200,
+      "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-december-1.html",
+      "bytes": 110663
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-februari-16/",
+      "status": 200,
+      "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-februari-16.html",
+      "bytes": 110680
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-mars-10/",
+      "status": 200,
+      "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-mars-10.html",
+      "bytes": 111822
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-november-11/",
+      "status": 200,
+      "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-november-11.html",
+      "bytes": 111948
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-oktober-14/",
+      "status": 200,
+      "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-oktober-14.html",
+      "bytes": 111922
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-september-8/",
+      "status": 200,
+      "file": "html/inspirations-slide/vi-ar-inte-omgivna-av-idioter-vi-omges-av-personer-med-olika-beteenden-september-8.html",
+      "bytes": 111943
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra-2/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra-2.html",
+      "bytes": 112289
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-fordomar-och-mikroaggressioner-hur-du-identifierar-och-atgardar-dem-hos-dig-och-andra.html",
+      "bytes": 111000
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler.html",
+      "bytes": 111716
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-saljstilar-2/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-saljstilar-2.html",
+      "bytes": 110480
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-saljstilar-3/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-saljstilar-3.html",
+      "bytes": 109219
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-saljstilar/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-saljstilar.html",
+      "bytes": 109189
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-10/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling-10.html",
+      "bytes": 110578
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-11/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling-11.html",
+      "bytes": 110569
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-12/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling-12.html",
+      "bytes": 110454
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-13/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling-13.html",
+      "bytes": 110637
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-2/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling-2.html",
+      "bytes": 110551
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-3/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling-3.html",
+      "bytes": 110550
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-4/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling-4.html",
+      "bytes": 110549
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-5/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling-5.html",
+      "bytes": 110551
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-6/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling-6.html",
+      "bytes": 110561
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-7/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling-7.html",
+      "bytes": 110559
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-8/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling-8.html",
+      "bytes": 110559
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling-9/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling-9.html",
+      "bytes": 110556
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webbinarium-teamutveckling/",
+      "status": 200,
+      "file": "html/inspirations-slide/webbinarium-teamutveckling.html",
+      "bytes": 109312
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-2/",
+      "status": 200,
+      "file": "html/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-2.html",
+      "bytes": 111774
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-3/",
+      "status": 200,
+      "file": "html/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-3.html",
+      "bytes": 111780
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-4/",
+      "status": 200,
+      "file": "html/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler-4.html",
+      "bytes": 111776
+    },
+    {
+      "url": "https://pulsanalys.se/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler/",
+      "status": 200,
+      "file": "html/inspirations-slide/webinarium-hur-forenklar-jag-mitt-arbete-genom-att-arbeta-med-disc-profiler.html",
+      "bytes": 111744
+    },
+    {
+      "url": "https://pulsanalys.se/integritetspolicy/",
+      "status": 200,
+      "file": "html/integritetspolicy.html",
+      "bytes": 170417
+    },
+    {
+      "url": "https://pulsanalys.se/konsulter/",
+      "status": 200,
+      "file": "html/konsulter.html",
+      "bytes": 156556
+    },
+    {
+      "url": "https://pulsanalys.se/konsulttjanster/",
+      "status": 200,
+      "file": "html/konsulttjanster.html",
+      "bytes": 172564
+    },
+    {
+      "url": "https://pulsanalys.se/kontakta-oss/",
+      "status": 200,
+      "file": "html/kontakta-oss.html",
+      "bytes": 190056
+    },
+    {
+      "url": "https://pulsanalys.se/kurser/",
+      "status": 200,
+      "file": "html/kurser.html",
+      "bytes": 164205
+    },
+    {
+      "url": "https://pulsanalys.se/ledarskapsutbildning/",
+      "status": 200,
+      "file": "html/ledarskapsutbildning.html",
+      "bytes": 193416
+    },
+    {
+      "url": "https://pulsanalys.se/om-oss/",
+      "status": 200,
+      "file": "html/om-oss.html",
+      "bytes": 175139
+    },
+    {
+      "url": "https://pulsanalys.se/omdomen/",
+      "status": 200,
+      "file": "html/omdomen.html",
+      "bytes": 169212
+    },
+    {
+      "url": "https://pulsanalys.se/personprofil/",
+      "status": 200,
+      "file": "html/personprofil.html",
+      "bytes": 185591
+    },
+    {
+      "url": "https://pulsanalys.se/privacy-policy/",
+      "status": 200,
+      "file": "html/privacy-policy.html",
+      "bytes": 149977
+    },
+    {
+      "url": "https://pulsanalys.se/produkter/",
+      "status": 200,
+      "file": "html/produkter.html",
+      "bytes": 180517
+    },
+    {
+      "url": "https://pulsanalys.se/rekryteringsprofil/",
+      "status": 200,
+      "file": "html/rekryteringsprofil.html",
+      "bytes": 183732
+    },
+    {
+      "url": "https://pulsanalys.se/skaffa-abonnemang/",
+      "status": 200,
+      "file": "html/skaffa-abonnemang.html",
+      "bytes": 150461
+    },
+    {
+      "url": "https://pulsanalys.se/studenter/",
+      "status": 200,
+      "file": "html/studenter.html",
+      "bytes": 148674
+    },
+    {
+      "url": "https://pulsanalys.se/tag/svenska/",
+      "status": 200,
+      "file": "html/tag/svenska.html",
+      "bytes": 108538
+    },
+    {
+      "url": "https://pulsanalys.se/teamprofil/",
+      "status": 200,
+      "file": "html/teamprofil.html",
+      "bytes": 183531
+    },
+    {
+      "url": "https://pulsanalys.se/utbildningar-och-forelasningar/",
+      "status": 200,
+      "file": "html/utbildningar-och-forelasningar.html",
+      "bytes": 202964
+    },
+    {
+      "url": "https://pulsanalys.se/vad-ar-disc/",
+      "status": 200,
+      "file": "html/vad-ar-disc.html",
+      "bytes": 170562
+    },
+    {
+      "url": "https://pulsanalys.se/vad-ar-pulsanalys/",
+      "status": 200,
+      "file": "html/vad-ar-pulsanalys.html",
+      "bytes": 175142
+    },
+    {
+      "url": "https://pulsanalys.se/webbinarier/",
+      "status": 200,
+      "file": "html/webbinarier.html",
+      "bytes": 155306
+    }
+  ],
+  "uploads": [
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/10/Logo_1000x270px-1-e1582321922831.jpg",
+      "status": 200,
+      "file": "uploads/2019/10/Logo_1000x270px-1-e1582321922831.jpg",
+      "bytes": 6766,
+      "sha256": "46df492be309b0c86fbb4eff415a8bcd753335790b5aba53f32e884a5396dc23"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/10/Logo_1000x270px-1.jpg",
+      "status": 200,
+      "file": "uploads/2019/10/Logo_1000x270px-1.jpg",
+      "bytes": 274206,
+      "sha256": "0b338087c61e634cb14cba634e0208191473160215ded8acff8b6878066b530b"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/10/ica_maxi-e1578821054324.png",
+      "status": 200,
+      "file": "uploads/2019/10/ica_maxi-e1578821054324.png",
+      "bytes": 24703,
+      "sha256": "8bf800123cc0f18207935d65908065e0e3ca07db0e40cdea275f47cb5e386903"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/10/ica_maxi.png",
+      "status": 200,
+      "file": "uploads/2019/10/ica_maxi.png",
+      "bytes": 34276,
+      "sha256": "91753dee3742b7b883de46b7997cc4f534a5259596eff3607117de9fd3cd2c0c"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/10/logo-100x100.png",
+      "status": 200,
+      "file": "uploads/2019/10/logo-100x100.png",
+      "bytes": 2717,
+      "sha256": "b3c13f4b4220335e4a818e84efb3af703b7e439c8c452424d864f65ed5da2687"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/10/logo-300x300.png",
+      "status": 200,
+      "file": "uploads/2019/10/logo-300x300.png",
+      "bytes": 17928,
+      "sha256": "b03fff72fdfb181dcd0ada160c725a9cbddc0dfbad49144a77fb7b1b03826afa"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/10/logo.png",
+      "status": 200,
+      "file": "uploads/2019/10/logo.png",
+      "bytes": 23368,
+      "sha256": "933e71a01a2bac2b1965ea63bf7f7551bfc42c215785b807cd4c466478427bea"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/11/Blå-e1579429287826.png",
+      "status": 200,
+      "file": "uploads/2019/11/Blå-e1579429287826.png",
+      "bytes": 3413,
+      "sha256": "271ab780ed5d87e33df87472eb8d09818aef4daea4e7d3108cf522bb6ed4acb4"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/11/Blå.png",
+      "status": 200,
+      "file": "uploads/2019/11/Blå.png",
+      "bytes": 29661,
+      "sha256": "6de7fc3d2e789687474033138ad1531ae761ff9e51e0398e08b49b94a08f8cb1"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/11/Grön-e1579429266313.png",
+      "status": 200,
+      "file": "uploads/2019/11/Grön-e1579429266313.png",
+      "bytes": 3322,
+      "sha256": "1e354bbdebcad4b80d6d961b429998bfb8eb3da950361db878adc017552bb8e9"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/11/Grön.png",
+      "status": 200,
+      "file": "uploads/2019/11/Grön.png",
+      "bytes": 29531,
+      "sha256": "9ba45c23c442d4aba00f900f7698cce565357df59abcfc6fc13f447be99849f8"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/11/Gul-e1579429225691.png",
+      "status": 200,
+      "file": "uploads/2019/11/Gul-e1579429225691.png",
+      "bytes": 3243,
+      "sha256": "e0dcc3d3973bef9487e1e8a58578ed4972c6cb41863211fbd794d86b09e299e2"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/11/Gul.png",
+      "status": 200,
+      "file": "uploads/2019/11/Gul.png",
+      "bytes": 29236,
+      "sha256": "e31d13d1aa5d223b159bc8feae7aa5c976742d25c3aee15f5fa2a2c59ea81d00"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/11/Röd-e1579429189645.png",
+      "status": 200,
+      "file": "uploads/2019/11/Röd-e1579429189645.png",
+      "bytes": 3277,
+      "sha256": "9678c1b09753ec758edce7f4588f0faca67ab84e55606962073ba415359877d1"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/11/Röd.png",
+      "status": 200,
+      "file": "uploads/2019/11/Röd.png",
+      "bytes": 30077,
+      "sha256": "e2f3e4f0e6910e726afe3c67f39f7b04be0586ad1d45432169b59bfe9603d24d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/11/William_Moulton_Marston_01.jpg",
+      "status": 200,
+      "file": "uploads/2019/11/William_Moulton_Marston_01.jpg",
+      "bytes": 14858,
+      "sha256": "72e031228acee6db93f3850151237088fdf039b8252d365910343909b2f0dfce"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/11/avenirblack.woff",
+      "status": 200,
+      "file": "uploads/2019/11/avenirblack.woff",
+      "bytes": 41284,
+      "sha256": "1e4b0637982a48f39439656036f36a282208eb0486e27129cbfb2289728b52ed"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/11/avenirbook.woff",
+      "status": 200,
+      "file": "uploads/2019/11/avenirbook.woff",
+      "bytes": 13732,
+      "sha256": "db9352d841273ae7e558eb7cce0f94a688a58a3a63f09957ea7467fd1ff63ea9"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2019/11/avenirmedium.woff",
+      "status": 200,
+      "file": "uploads/2019/11/avenirmedium.woff",
+      "bytes": 13792,
+      "sha256": "256b5375397080bcab438a87562d0921661a1122ef653870f80cc1b5f69e2504"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/360pi-278x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/360pi-278x300.jpg",
+      "bytes": 14345,
+      "sha256": "72714fbd2f3b47438fc6d0bde5cf62977ae1db62a448de66d6615668d24b4b18"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/360pi.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/360pi.jpg",
+      "bytes": 47798,
+      "sha256": "54888e252e0c1aeee398bbabc2f1d03753f3ad50c741fea5d6df8bb4b119688e"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/JPI-graf-278x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/JPI-graf-278x300.jpg",
+      "bytes": 14566,
+      "sha256": "041323eaec6f1c57e289742e900bd6f753f53552c9ac1d215a21c0fb763578cc"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/JPI-graf.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/JPI-graf.jpg",
+      "bytes": 47815,
+      "sha256": "c7e40ac4aedb4acf18cb59b51d2bd1ed70a01d4bfb7576b79cc231d8992259ea"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-10-min-1169x1536.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-10-min-1169x1536.jpg",
+      "bytes": 140829,
+      "sha256": "5968375f44fe6b5afc004ee2e4a11d07dedecb4bb9fd66f67fea3207d3ef05c9"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-10-min-228x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-10-min-228x300.jpg",
+      "bytes": 13325,
+      "sha256": "6ef61f2a3c413a4d4fb5f5d9dd3780d66f8638412f33439bd5d597ad703e673d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-10-min-768x1009.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-10-min-768x1009.jpg",
+      "bytes": 74779,
+      "sha256": "6a0c7e34d7e25060a13be2e014983e685037a07d9b09264c847e3904378b46f8"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-10-min-779x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-10-min-779x1024.jpg",
+      "bytes": 76438,
+      "sha256": "d85e19e0a1343e095eefc880be3f7045628bdb8ac9a0e602a63c3cd7dbb425e8"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-10-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-10-min.jpg",
+      "bytes": 245789,
+      "sha256": "5fdb35e611a59579be3579a8168cac5b34e66122a3631b0d3f3ca58c2763ee61"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-11-min-1024x683.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-11-min-1024x683.jpg",
+      "bytes": 85677,
+      "sha256": "3833e95821ca5a5c68ddfdbb3caa873273d2ad769f9b32bcdaa29c48d415b319"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-11-min-1536x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-11-min-1536x1024.jpg",
+      "bytes": 162063,
+      "sha256": "a402a1d6bce580923418a4564fa9c70aaccf155f95dfa3b9e55130de95c761f5"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-11-min-300x200.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-11-min-300x200.jpg",
+      "bytes": 13730,
+      "sha256": "e9d632dc0c0b7eb4080f32460a219cc88026b39f0b8f00a50513f22535041285"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-11-min-768x512.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-11-min-768x512.jpg",
+      "bytes": 55079,
+      "sha256": "f05be26576987ffaae4d894e05369f254251f150ece19fbf0e1ff0bc8f6dbbe1"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-11-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-11-min.jpg",
+      "bytes": 296863,
+      "sha256": "4b36f59d0986d2362a95852bdcb2d5862d519d52f10cf18b750132f42b17240a"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-15-min-1024x1536.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-15-min-1024x1536.jpg",
+      "bytes": 92281,
+      "sha256": "193d3106cfc70fb7b078ff5fab2476dfb52cc6c7b3ad3fca2fbefc797680e14c"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-15-min-200x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-15-min-200x300.jpg",
+      "bytes": 8563,
+      "sha256": "3ed0a76eb6153ddc398c0492bda65ade9408093222f5e32b48e5f25a3667056e"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-15-min-683x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-15-min-683x1024.jpg",
+      "bytes": 49010,
+      "sha256": "9750c335fb103b912e553e9e3492b233fe903ca2b88f4b9ab26c40858098b20d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-15-min-768x1152.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-15-min-768x1152.jpg",
+      "bytes": 58607,
+      "sha256": "503e20285844321594bf65f6767405cc8c8c59cc8ea2fb1500991a5e932bfca3"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-15-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-15-min.jpg",
+      "bytes": 160371,
+      "sha256": "910f7f8f78147d9b594fca7d3915942dcc458eda261955c6332fb149138fb863"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-16-min-1024x1536.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-16-min-1024x1536.jpg",
+      "bytes": 122410,
+      "sha256": "02cfe73244324caaad400ebfea28a42fb8aa446fbf3c318aa4aa48df001fd013"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-16-min-200x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-16-min-200x300.jpg",
+      "bytes": 11155,
+      "sha256": "b525f2df5964448c816d1c8ed745eddd4a3d8ac912ee4bcc434724c32d9fcd47"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-16-min-683x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-16-min-683x1024.jpg",
+      "bytes": 66573,
+      "sha256": "e5cf9129dbd5af9bfac14d76f4d9a79ae31a3b108d4178e279e4bd3d54b78c64"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-16-min-768x1152.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-16-min-768x1152.jpg",
+      "bytes": 79227,
+      "sha256": "4e21c4fabf95cc16a69774546477ba457beb2ae3ef2425ba318a3fdce83d77f5"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-16-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-16-min.jpg",
+      "bytes": 205971,
+      "sha256": "02997465b330b2b430a6cf995be9be070a6a3a1b3e37f8c041949c7362fe1ff1"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-17-min-1-1024x674.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-17-min-1-1024x674.jpg",
+      "bytes": 71673,
+      "sha256": "34815d93aedb6087f4cee9560418d1ab5844cd940bd7a586bd461e231bbcfa3c"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-17-min-1-1536x1012.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-17-min-1-1536x1012.jpg",
+      "bytes": 147771,
+      "sha256": "5df6f311415edb3039d5e757df736a35f03ec4ae3b4b14055569637a3c61c825"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-17-min-1-300x198.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-17-min-1-300x198.jpg",
+      "bytes": 11371,
+      "sha256": "bd78a295afc465048d8aaa9119e48cab554a21d9ad4162317be3676b73712bad"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-17-min-1-768x506.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-17-min-1-768x506.jpg",
+      "bytes": 44986,
+      "sha256": "b5f57df0f7934ca1af5d83f27ac42a157beca84ca6a14e8cb0bbee471174669f"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-17-min-1.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-17-min-1.jpg",
+      "bytes": 296342,
+      "sha256": "a9d44b45be098f697b1a54639ce803a220e7a9b30836365c9630f186ff81d7bd"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-2-min-e1582722412766-281x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-2-min-e1582722412766-281x300.jpg",
+      "bytes": 13326,
+      "sha256": "a2ab9bf6d72fc9e552473a3c7cf7932e844437394d7c4651ca5102e3df2425b8"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-2-min-e1582722412766-768x820.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-2-min-e1582722412766-768x820.jpg",
+      "bytes": 58399,
+      "sha256": "34468e40cfc2215ee83e482fc3179d306e5daef7db773296921c62d3969eabd9"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-2-min-e1582722412766-959x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-2-min-e1582722412766-959x1024.jpg",
+      "bytes": 84367,
+      "sha256": "9bf90b568badac922439e9b7a89bde9192cbe7da0f677374e37c74cc3dc751e5"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-2-min-e1582722412766.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-2-min-e1582722412766.jpg",
+      "bytes": 163914,
+      "sha256": "cc9a72e2932ba9ba9d6297c52c07aa311e050065d69b35233d37ce25dc77ef34"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-2-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-2-min.jpg",
+      "bytes": 242631,
+      "sha256": "66033ed2de00fb54ec13966701863714afc16178a715d53d08a27f4824e016a3"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-3-min-e1582711775183-1024x986.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-3-min-e1582711775183-1024x986.jpg",
+      "bytes": 66755,
+      "sha256": "9d0d50767c00e356bb7d778ff7e95832e940f08ffad7b869f54b5f73bdb20c56"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-3-min-e1582711775183-300x289.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-3-min-e1582711775183-300x289.jpg",
+      "bytes": 11271,
+      "sha256": "455811ab23e2a6ae09dc07b1c3531843ae59528ab448247f70aae4f2f8439f0e"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-3-min-e1582711775183-768x739.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-3-min-e1582711775183-768x739.jpg",
+      "bytes": 43828,
+      "sha256": "c1ce44e4c89d1e6c02399e1d2a817931841505e078dee1d15c550d5950a9d281"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-3-min-e1582711775183.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-3-min-e1582711775183.jpg",
+      "bytes": 105761,
+      "sha256": "6b60d25cc9c4cbcd259c93bdfe6fe71ebd939a6089d1c3178f365ffffcc23d76"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-3-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-3-min.jpg",
+      "bytes": 140979,
+      "sha256": "291d543ca8da26be02cd6428aacc3c441faf5e419d55256aa098723d1b2e6ee8"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-5-min-1024x683.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-5-min-1024x683.jpg",
+      "bytes": 54865,
+      "sha256": "19ec6958982955450a59458bd3b4602507386e99a1a74b7312cfc780d50bdf5d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-5-min-1536x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-5-min-1536x1024.jpg",
+      "bytes": 101193,
+      "sha256": "daa662802bc42671fd859eb364762d782bbb87a5c97c1ab4db14139ab463b926"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-5-min-300x200.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-5-min-300x200.jpg",
+      "bytes": 9024,
+      "sha256": "3649c2057e831e51c02a535653f11a6cdb9cb1a93b55c1d041c54c1136fd6203"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-5-min-768x512.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-5-min-768x512.jpg",
+      "bytes": 35425,
+      "sha256": "759337431ad13f600f3cc27441e03a2b903d52ae5b1e345a26f250515f4682e6"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-5-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-5-min.jpg",
+      "bytes": 169407,
+      "sha256": "c38fc2a87e7e51dc786fd1053494cf9abe41514ed458b9778bccf24c19a1e001"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-6-min-1-1024x502.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-6-min-1-1024x502.jpg",
+      "bytes": 94439,
+      "sha256": "8efc9926d5f9929bd31a10d89a4944982aed58e2dfb381ff776cc39ed18418a1"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-6-min-1-1536x753.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-6-min-1-1536x753.jpg",
+      "bytes": 184379,
+      "sha256": "fd67841d079381fb5ad9421c8de0539e3da50bcd6f164b1ddaf1e9df81431cc5"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-6-min-1-300x147.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-6-min-1-300x147.jpg",
+      "bytes": 12795,
+      "sha256": "1c7748a2033bba9f0e750e6de83df7868af92c57437164abb99f2006e736b84a"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-6-min-1-768x377.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-6-min-1-768x377.jpg",
+      "bytes": 59014,
+      "sha256": "2ca74ff4745de4e9e1ad4370d75e7d1b2fea075aa1ed356a0e7b5661fa23eb0f"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-6-min-1.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-6-min-1.jpg",
+      "bytes": 348098,
+      "sha256": "55e4b1c35f0143f6a903186d1b029c1eb5e761bebb0a2a79b3c5bfacacf789cc"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-9-min-e1582711639951-1024x1009.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-9-min-e1582711639951-1024x1009.jpg",
+      "bytes": 150045,
+      "sha256": "e4b186fb59a04111b97ae1d0db98daae032bd4420f730b4b5490764d5d2823cf"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-9-min-e1582711639951-1536x1514.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-9-min-e1582711639951-1536x1514.jpg",
+      "bytes": 287864,
+      "sha256": "7c64de05f5750ea611b0009e82752b8b8d43277bb1f0a55dfc0d05091a830fd6"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-9-min-e1582711639951-300x296.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-9-min-e1582711639951-300x296.jpg",
+      "bytes": 19897,
+      "sha256": "ef6e5f4a60077b9403d620805530481a7e7d9fa0797b7b696a67f499b7debb4b"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-9-min-e1582711639951-768x757.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-9-min-e1582711639951-768x757.jpg",
+      "bytes": 93703,
+      "sha256": "656b3026c1f8775927a1b8842446b7fd7aa7a7f2d9c57ca8015547513f897c9f"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-9-min-e1582711639951.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-9-min-e1582711639951.jpg",
+      "bytes": 354358,
+      "sha256": "b14e3c28efa3522635a9e437b0e56147a3ae04d02333fb4ca4cddc4498fb1dd4"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-9-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-9-min.jpg",
+      "bytes": 445358,
+      "sha256": "00da233c9b3c0d776396585a12c0625ade29e3f23ca066c469c3edc1b301fae4"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-min-e1582711225579-268x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-min-e1582711225579-268x300.jpg",
+      "bytes": 13965,
+      "sha256": "af946054ae1db1d075ce403ab6299a838dc7642586979fdfcc6d8456d0a94855"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-min-e1582711225579-768x861.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-min-e1582711225579-768x861.jpg",
+      "bytes": 62707,
+      "sha256": "540aa2550b1b94f7fd89a8812f799942e8ece374d0bf2eb4fd07fd331791e303"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-min-e1582711225579-914x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-min-e1582711225579-914x1024.jpg",
+      "bytes": 82393,
+      "sha256": "7e58a8709779806cdd4c7feee8520faa035dc5b13fe87a2d43e01a30b72f5c44"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-min-e1582711225579.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-min-e1582711225579.jpg",
+      "bytes": 130269,
+      "sha256": "6ee2f6ddfb7ec206fd13fc6ddf98bb15c2aa885102f9601d2366de81b90957ee"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-1-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-1-min.jpg",
+      "bytes": 222358,
+      "sha256": "96f37a35d6854b2c4704f9fe3e49a00bbbdcf541dcb176cb3d06a814f654d451"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-22-200x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-22-200x300.jpg",
+      "bytes": 14955,
+      "sha256": "1d6446cc799ec3d3006fa19f1483d593189abee447854f1b8aa78b5a193949e4"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-22.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-22.jpg",
+      "bytes": 116219,
+      "sha256": "b0b03b4f008d5db76a0c2bb796b66328e71ccacbf3d9f0222b532ff0d19fb0b1"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-50-200x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-50-200x300.jpg",
+      "bytes": 13716,
+      "sha256": "622489626e07e8852eb7845c74fd9cf4139c073838be59bbdb86942c1eb475a9"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-50.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-50.jpg",
+      "bytes": 60464,
+      "sha256": "b550f7ad73266161f9d1db0ca3ed05840ec56aeafaf39e2a46a74416fc90682c"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-89-e1582909225867.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-89-e1582909225867.jpg",
+      "bytes": 117042,
+      "sha256": "638760963e610d57c3a677fbd9798ad4a6525661462ec4d45ca8be3be92f13f7"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/02/pulsanalys-89.jpg",
+      "status": 200,
+      "file": "uploads/2020/02/pulsanalys-89.jpg",
+      "bytes": 99808,
+      "sha256": "062405bd6195304c4c062bd6d35c33a7e7d6452c411bdae277c1c32357eb5cf1"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/360-profil-ny-min-e1585597679199.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/360-profil-ny-min-e1585597679199.jpg",
+      "bytes": 53041,
+      "sha256": "0720fc75115f3f9d216f44216cc568e246b24621dc048c84e046d58822c19fca"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/360-profil-ny-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/360-profil-ny-min.jpg",
+      "bytes": 57568,
+      "sha256": "cb9539a06754c1f95e9de21f498ccbd804efd71d9c24f79fa6c9bad0ce1078eb"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/distributor-min-e1584652889564.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/distributor-min-e1584652889564.jpg",
+      "bytes": 49246,
+      "sha256": "94b7796a732648994a214cbdd2db8f1e3356f07f1bcf1e516221cf2be31ccbb8"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/distributor-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/distributor-min.jpg",
+      "bytes": 51516,
+      "sha256": "287190ef09a84a18970e900928ce32b5ca5e1582ceda42a5cc7f994d4147b223"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/fordjupning_corona-e1584704033360.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/fordjupning_corona-e1584704033360.jpg",
+      "bytes": 135740,
+      "sha256": "91b55906652a2cd99d0e4ca3d0c71b29e880cfbe3f6578ed7bd8ef8efcaf96fd"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/fordjupning_corona.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/fordjupning_corona.jpg",
+      "bytes": 158909,
+      "sha256": "d7b469289a315876650f93402ba20c3d0d3afae4b8e5c1f5f20541cec535fde3"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/fordjupningskurser-min-e1584653228997.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/fordjupningskurser-min-e1584653228997.jpg",
+      "bytes": 57386,
+      "sha256": "7f479f652558275730f39e34f83a1ced9a361e9f0f064b38e8cd766e4a959457"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/fordjupningskurser-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/fordjupningskurser-min.jpg",
+      "bytes": 66322,
+      "sha256": "2801bace548cd895a2feb9bd9c99b5e879fa861d3212861aef34841e788aeb5c"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/forstasida_corona-e1584704055111.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/forstasida_corona-e1584704055111.jpg",
+      "bytes": 101602,
+      "sha256": "7fb80445bba4c047a1195add7e6fa41a389ce548129234f3ef700ce12898d5b7"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/forstasida_corona.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/forstasida_corona.jpg",
+      "bytes": 105957,
+      "sha256": "85756be64e0ea07b700124077ccf75fcf62c203720e378872b058aa5fdd86fe9"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/grundutbildningdisc_corona-e1584704130584.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/grundutbildningdisc_corona-e1584704130584.jpg",
+      "bytes": 92234,
+      "sha256": "653af43af6ccb44a99c468878107a09f8a75ec5c8d4992cd3b3595a78e813d48"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/grundutbildningdisc_corona.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/grundutbildningdisc_corona.jpg",
+      "bytes": 112201,
+      "sha256": "47efb3ba61699b802ff04eeb3edf931eec8af8671efc7949f86bcc800bde77a0"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/kurser_corona-e1584704147893.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/kurser_corona-e1584704147893.jpg",
+      "bytes": 51313,
+      "sha256": "f87f9509678c29546e215c48f9718707b7ae10bb9b614a5c61646fd2a92674de"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/kurser_corona.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/kurser_corona.jpg",
+      "bytes": 67536,
+      "sha256": "70f769e37b1543bb724551fc4da21d0621793beed5dbf2db4a2a3a0bbc78adbd"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/om-oss-min-e1584653129115.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/om-oss-min-e1584653129115.jpg",
+      "bytes": 71082,
+      "sha256": "2152a919ae6a5b1f5fa4cc37fe357169991b1211f8c9dae15d58092420cfbb94"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/om-oss-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/om-oss-min.jpg",
+      "bytes": 87380,
+      "sha256": "f28f0bfd0c4d32f51a50ff5725640aa75c984c83bfb4e42c1c730e3ea3c945de"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/personprofil-min-e1584653109684.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/personprofil-min-e1584653109684.jpg",
+      "bytes": 74379,
+      "sha256": "943ab3263df78afd03a40d7fda01fabd919931e3a24212237ecae0adfa8c6a89"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/personprofil-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/personprofil-min.jpg",
+      "bytes": 83466,
+      "sha256": "1a2f6ed3c438653a8c51c9219224bbf3375c2d60607256ede06e065e2b0a53cf"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/produkter-min-e1584653087859.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/produkter-min-e1584653087859.jpg",
+      "bytes": 47146,
+      "sha256": "8461d671287753b2d3e7fdd2b148dfe67755beee55cb3903b14badfbd3890ac6"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/produkter-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/produkter-min.jpg",
+      "bytes": 53641,
+      "sha256": "2ac8e93d42bcb650c031016777e8b6d2df97e570bfccbbfd7e1f97159897eed6"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-15-min-1-182x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-15-min-1-182x300.jpg",
+      "bytes": 12149,
+      "sha256": "e9f8aa98271891a39e4fd8dff9b8cb50d8478d8551bb3d5257412714a1d0eac5"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-15-min-1-621x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-15-min-1-621x1024.jpg",
+      "bytes": 78402,
+      "sha256": "e747b61f37b0afc62b588e7564becb8df7bb7bc9f09f95dddece517f442cec99"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-15-min-1.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-15-min-1.jpg",
+      "bytes": 104939,
+      "sha256": "216733c1032ecda5a33b4ac5bfb4a551d352032e3afe71a53855dd2f48ee4877"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-16-min-1-1024x630.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-16-min-1-1024x630.jpg",
+      "bytes": 65273,
+      "sha256": "4d6da37eb258cc4db54f6558af6a5b2f0c6d0faa1393e38fba3f4ec4e753b3f0"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-16-min-1-300x184.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-16-min-1-300x184.jpg",
+      "bytes": 11061,
+      "sha256": "cab0021c3799be1f137b6da268f6eb3e078e3aebc8be420f47b4ec80042c622d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-16-min-1-768x472.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-16-min-1-768x472.jpg",
+      "bytes": 43303,
+      "sha256": "91c6f027f4222cccd923c20cb5b7b14c5657b86e1be465023bec10ba4a40e967"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-16-min-1.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-16-min-1.jpg",
+      "bytes": 84666,
+      "sha256": "843b93530c603ecb62413554af5db973ecabb40928990847cfdc668ad1cc086d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-19-min-e1583945600395-285x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-19-min-e1583945600395-285x300.jpg",
+      "bytes": 14176,
+      "sha256": "99906fec20ef3d71a52e14aea09b12522fc16ffee00bdc5591d9db933659fbbf"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-19-min-e1583945600395.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-19-min-e1583945600395.jpg",
+      "bytes": 52049,
+      "sha256": "56586e8776335b2a70a3e55a040f568150caf6987dd020c623d4625f6ab7ce8d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-19-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-19-min.jpg",
+      "bytes": 86472,
+      "sha256": "ba8b969768f3cecc399e4c889d3710dc22e5a03cefb481ad92b1a70ca5c5a789"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-2-min-e1583944312130-270x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-2-min-e1583944312130-270x300.jpg",
+      "bytes": 9501,
+      "sha256": "c00ee32fd9ba2a41310701fb31fedd68bd14f51e0aee0e6590a8720111a38316"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-2-min-e1583944312130.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-2-min-e1583944312130.jpg",
+      "bytes": 32295,
+      "sha256": "31fb18020fe689b6bcb542f88fb85ece1d9df60f159722323438f06e7fbcc939"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-2-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-2-min.jpg",
+      "bytes": 64039,
+      "sha256": "3934ecd706f7a1a938727791ef99bebd12e05873d4c95c71a6f2ed06e5744597"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-26-min-216x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-26-min-216x300.jpg",
+      "bytes": 14419,
+      "sha256": "6ef04de3ef21f7cd007c4a06bd5d483f7f16a25d30e993131053cf3dee73efa3"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-26-min-739x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-26-min-739x1024.jpg",
+      "bytes": 86041,
+      "sha256": "6c28797709873ed638be408882a804b32a5cf52002a38490de50a75c8c5fadb9"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-26-min-768x1065.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-26-min-768x1065.jpg",
+      "bytes": 90708,
+      "sha256": "2ac3bcf8c47d000446fcf781b5db489a64a2a3cf3d69dca60e7a94eaaf5f44b5"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-26-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-26-min.jpg",
+      "bytes": 110900,
+      "sha256": "10b9f97511c4fbf6024330b9789a77f62735ce145e270af9c444c4bc8e8c45d1"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-27-min-206x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-27-min-206x300.jpg",
+      "bytes": 12831,
+      "sha256": "dba1d2c798b3d436cb9e2b2c9d0aa4b02b9903bfe5c9f20b53e54b17559a13ff"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-27-min-703x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-27-min-703x1024.jpg",
+      "bytes": 77067,
+      "sha256": "d46347e55cc623c1f5fb64be1140e9328d3eeba49e5f5bc358899b3be7c4f4f0"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-27-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-27-min.jpg",
+      "bytes": 101546,
+      "sha256": "6910ea5287d4eccd93523d6216a14da5b02c371d4fccc920461f636992be2835"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-29-min-1024x580.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-29-min-1024x580.jpg",
+      "bytes": 73019,
+      "sha256": "0fc932a4c79a3a9a9d0d3e66ab4048f164a8bc70e95e310f239d06e6151a9038"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-29-min-300x170.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-29-min-300x170.jpg",
+      "bytes": 11619,
+      "sha256": "49612290d2c92d5a7c5b889abb8b9db09f55c22edc828b7ecf5cffb2565f562d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-29-min-768x435.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-29-min-768x435.jpg",
+      "bytes": 47301,
+      "sha256": "b04a7823fa0634e72e0e8b83de155d0408bf9e13e2ca76e95f22157d45132913"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-29-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-29-min.jpg",
+      "bytes": 98455,
+      "sha256": "95e1fb858e5fd8a4c1a8fa7aceeaa9b98d2e05508b1a4361051207579573dbd0"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-3-min-e1583944507829-263x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-3-min-e1583944507829-263x300.jpg",
+      "bytes": 9095,
+      "sha256": "4476a1ad2a299a7d8a81d007e1e2bc5da51b2defd5e2b44add39bec39d836629"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-3-min-e1583944507829.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-3-min-e1583944507829.jpg",
+      "bytes": 47928,
+      "sha256": "2cf6970dd86836391fac63a6e404b526c789435f592f252375983968d7404993"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-3-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-3-min.jpg",
+      "bytes": 57575,
+      "sha256": "d35709e1aabaefe1bf0c333c640a7161eca0ce515b747725eb57e0b0c074310b"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-30-min-1024x649.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-30-min-1024x649.jpg",
+      "bytes": 65644,
+      "sha256": "4ad284987c5e3d98cfa23bdb4375e44d4012a389b512459af0b34fa932674b68"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-30-min-300x190.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-30-min-300x190.jpg",
+      "bytes": 11362,
+      "sha256": "340cdab8cf2e90a343f7647397a58dc58c90403f5cf5c959f89b01620348bde9"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-30-min-768x486.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-30-min-768x486.jpg",
+      "bytes": 43142,
+      "sha256": "1532de2994053cd7a1a001619ace967e1665acb2432618bfe741d09c5fb9e9cd"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-30-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-30-min.jpg",
+      "bytes": 85399,
+      "sha256": "3ddf74590098911aa5c4c3ab286e2510b04af3bc832e3c3bc88becd5ba46c0ca"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-35-min-200x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-35-min-200x300.jpg",
+      "bytes": 11910,
+      "sha256": "be5666f788d1ec866143defca5f52de5499a726bca7a18e70d684dc77d792045"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-35-min-683x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-35-min-683x1024.jpg",
+      "bytes": 72598,
+      "sha256": "b243ca44467fa84e41d816d24c190fe075025b6a8788092e4e8944f41760bb72"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-35-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-35-min.jpg",
+      "bytes": 94959,
+      "sha256": "5166aa0c16540e1a6c809c1b125d8c0ff3f1cf73c5ef8a44e025e3726ae6165a"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-4-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-4-min.jpg",
+      "bytes": 77536,
+      "sha256": "e92a07c949482df0779ffd4c0f7b0ea643082eba10cbe99d7e5f366e85dc1d6d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-44-min-e1583945114653-289x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-44-min-e1583945114653-289x300.jpg",
+      "bytes": 8361,
+      "sha256": "ebfce7b4f53f6e3f430ccf025ebc319028db65363bc275efed3fdfdc8833d253"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-44-min-e1583945114653.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-44-min-e1583945114653.jpg",
+      "bytes": 31028,
+      "sha256": "ece946a5dd39d0ecb7d886e9753fb511b84b943027edefb338f95ad98065bdf7"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-44-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-44-min.jpg",
+      "bytes": 47559,
+      "sha256": "1bb7fec1bfc7c2a344acb20cd05923f6669b2a03d32c8bd08dacb6deeec4907d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-51-min-200x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-51-min-200x300.jpg",
+      "bytes": 7855,
+      "sha256": "3d60e11832e39a4c827ad57f5221e5c01ddce677f4b32443a5752123e86d43cf"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-51-min-683x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-51-min-683x1024.jpg",
+      "bytes": 45340,
+      "sha256": "0fe6bdf21af05bf7dc6e3c7a360359831221eabd08d3914d47d35e5f70bc6c9e"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-51-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-51-min.jpg",
+      "bytes": 54772,
+      "sha256": "c7a6b1182c738f5199a362ae1777fee6a93d39e2204a86ca64f8e371c9fe5973"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6309-min-1-1024x1536.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6309-min-1-1024x1536.jpg",
+      "bytes": 118046,
+      "sha256": "18c7dcd6534469309a6237202625af32fedd73a415042adfdc5b47acae7efae0"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6309-min-1-200x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6309-min-1-200x300.jpg",
+      "bytes": 11335,
+      "sha256": "90a255b128b00b856fd38252e06af6fb92eec5819ebb4ebfb7c8e604031bbeb0"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6309-min-1-683x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6309-min-1-683x1024.jpg",
+      "bytes": 64226,
+      "sha256": "f73cf938427a29e9b736ed7049b2ca0f94f1f99b5babd1548efe82e9f39d7745"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6309-min-1-768x1152.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6309-min-1-768x1152.jpg",
+      "bytes": 76959,
+      "sha256": "26c8c3e0a40a0d5d30303cf49fd851f2bf1c56c8c82dda97f3d2a6f22ceaf4aa"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6309-min-1.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6309-min-1.jpg",
+      "bytes": 202673,
+      "sha256": "fb53c1c7390f4c72772b658f1ece944ea7fdf7427649a621e8d9f6f14307e86c"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6335-min-1-1024x1536.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6335-min-1-1024x1536.jpg",
+      "bytes": 125277,
+      "sha256": "6b6030889eec4896b6f31e65242de88d0cff46000a9ff741167fa82c1f3c1705"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6335-min-1-200x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6335-min-1-200x300.jpg",
+      "bytes": 11666,
+      "sha256": "d9b072eb0f73b3399f5a3b7d8a3a7561da6e9a5eddd795e228f0860d8caf5c66"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6335-min-1-683x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6335-min-1-683x1024.jpg",
+      "bytes": 68974,
+      "sha256": "571e29f624865e5266690f1175cec2a6b7caf3eb82741c7434d98bed72c6e036"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6335-min-1-768x1152.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6335-min-1-768x1152.jpg",
+      "bytes": 81611,
+      "sha256": "b13124ce14781143be035db5f329d858a097e13eb1dca44a2438347318e47fdd"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6335-min-1.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6335-min-1.jpg",
+      "bytes": 210786,
+      "sha256": "b5c32d2b03d65abddd6efbe6e266c9194b0d95fb941aefdd82bb88038817ff0a"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6453-min-1024x1536.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6453-min-1024x1536.jpg",
+      "bytes": 115901,
+      "sha256": "b81c5837b814c2f7ba99d2abf3ec3e74170b9126f3dba1f05a8ddfb179fa658d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6453-min-200x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6453-min-200x300.jpg",
+      "bytes": 10439,
+      "sha256": "2445a2ee5eb9b3cc618c687b61b87f7cbb3661420748e6d5bcba0f016f0658fb"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6453-min-683x1024.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6453-min-683x1024.jpg",
+      "bytes": 65150,
+      "sha256": "3d8e46188967c65ef47addf5eec6c1a7e765160b138a34c73500f300832c7efc"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6453-min-768x1152.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6453-min-768x1152.jpg",
+      "bytes": 76864,
+      "sha256": "5b94711916b60f96acb86e65027332929a8ddcfb693dbb95ea270057cb0dd8c8"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6453-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6453-min.jpg",
+      "bytes": 188577,
+      "sha256": "ea5e88d7a58e6e90a123d6498a7a7dbc513fe678b98acad45731dac87c46147d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6484-min-1024x827.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6484-min-1024x827.jpg",
+      "bytes": 101283,
+      "sha256": "f63ec1b33f601cf5427a9333b392e4a25eb127fe6f9027b91b0b2019f3542d36"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6484-min-1536x1241.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6484-min-1536x1241.jpg",
+      "bytes": 192663,
+      "sha256": "625d34d14be95698895757349535d5cff3de5633aa643edf9e3f881fba996f34"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6484-min-300x242.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6484-min-300x242.jpg",
+      "bytes": 14781,
+      "sha256": "f9e4f41363c74396b9c1e848c27342b72ba29277cad9d1b88c738d5bc09f9aa4"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6484-min-768x621.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6484-min-768x621.jpg",
+      "bytes": 64176,
+      "sha256": "cc29c14c19b4c0184258807197a5a89f80cd6781198b27f38457f58fc237752e"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-6484-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-6484-min.jpg",
+      "bytes": 354105,
+      "sha256": "3b78aef3530861b7d0b5d31ec45a20e4f6c44d7ab9810804fc8e1f75567ac38b"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-7-min-e1583944373259-256x300.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-7-min-e1583944373259-256x300.jpg",
+      "bytes": 15174,
+      "sha256": "3c1cadaadef3a40aeafe14af67f68f7f4c94250ecec139fc9a9a41cb2dde5f6b"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-7-min-e1583944373259.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-7-min-e1583944373259.jpg",
+      "bytes": 70581,
+      "sha256": "74127c85125a35e3da022e7d80cdf7257209e1fec3f41728e2c8c70f6ca34163"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys-7-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys-7-min.jpg",
+      "bytes": 115693,
+      "sha256": "38e934b8c023082bb7deb695e413321eda37b899dfc2f59b3cb76daf1dd76023"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys_forelasning-1024x528.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys_forelasning-1024x528.jpg",
+      "bytes": 77688,
+      "sha256": "a55d4f1d2c8fda76f6a22edb8fef70f09f591033f04c8b9e61ff1fba40e97f33"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys_forelasning-1536x792.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys_forelasning-1536x792.jpg",
+      "bytes": 142514,
+      "sha256": "bfee2166ecc7dc53465da63829d51e750feff92840726b93fc20a991084f1f75"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys_forelasning-300x155.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys_forelasning-300x155.jpg",
+      "bytes": 12153,
+      "sha256": "5c1a062dfe85cc67c1ccc7f1bcf7461f9bf61a082b36ee111ec37ede4f74ac8c"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys_forelasning-768x396.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys_forelasning-768x396.jpg",
+      "bytes": 50803,
+      "sha256": "257b50cae0d599282fa0a188a0e5be567883d3dae3e242d01a19fd3cfecbb542"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys_forelasning-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys_forelasning-min.jpg",
+      "bytes": 154928,
+      "sha256": "f12fe6a43b1b22c5afeba8417e27856e524c68ccce3c600a1970b3f82cca4903"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/pulsanalys_forelasning.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/pulsanalys_forelasning.jpg",
+      "bytes": 211891,
+      "sha256": "1b58e8019e274c949082cedd0903d2a241f7ba87c4445cde79776e4874caf65d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/rekrytering-min-e1584653069284.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/rekrytering-min-e1584653069284.jpg",
+      "bytes": 65849,
+      "sha256": "f7195054a02ff2fd189aed04000faca611818a0039cedfe00f640df705cb5500"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/rekrytering-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/rekrytering-min.jpg",
+      "bytes": 63437,
+      "sha256": "04fd4026c549c1df9aef653130ff0c9956cfbd4c2ce349902182f86ad5af9704"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/teamprofil-ny-min-e1585597638990.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/teamprofil-ny-min-e1585597638990.jpg",
+      "bytes": 76503,
+      "sha256": "bbb5265363ad09b10cc9cffdada2e6b114035fcb74ab2149c2eb456758c0a130"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/teamprofil-ny-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/teamprofil-ny-min.jpg",
+      "bytes": 82462,
+      "sha256": "e009121f8115f8074e93999131148ea6e79297c37e659b303232aa2b1cac4ef9"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/utbildningar-och-forelasningar-min-e1584653028334.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/utbildningar-och-forelasningar-min-e1584653028334.jpg",
+      "bytes": 82482,
+      "sha256": "30944701ba34be66e55092e086e85dd8d4fde6bcd1168c2e61ca174ff1fde2c8"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/utbildningar-och-forelasningar-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/utbildningar-och-forelasningar-min.jpg",
+      "bytes": 91155,
+      "sha256": "e0a99301a7a0dcccba03075fc105cf0bec088a9f42adf079be9402956accb8bf"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/vad-ar-disc-min-e1584653949299.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/vad-ar-disc-min-e1584653949299.jpg",
+      "bytes": 71103,
+      "sha256": "7a79359bb93775542dfd9029455797ce20df707a7c5c194eccb4567de44860b5"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/vad-ar-disc-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/vad-ar-disc-min.jpg",
+      "bytes": 77808,
+      "sha256": "ac2eb71d9275602c73bbf4ff334282d18cb50821f26469d4cdae84fc0b26bad5"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/vad-ar-pulsanalys-ny-min-e1585597699168.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/vad-ar-pulsanalys-ny-min-e1585597699168.jpg",
+      "bytes": 96486,
+      "sha256": "7f44c4d913f5e94e33b55a7044d385fb7a04d2f639f1e55f702ba18a607886d6"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/03/vad-ar-pulsanalys-ny-min.jpg",
+      "status": 200,
+      "file": "uploads/2020/03/vad-ar-pulsanalys-ny-min.jpg",
+      "bytes": 101556,
+      "sha256": "6448140ea63bf78316bee7efa0388baecc0e48e4a7a49713493dea6912279d8e"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/04/omdomen-e1586852903304.jpg",
+      "status": 200,
+      "file": "uploads/2020/04/omdomen-e1586852903304.jpg",
+      "bytes": 73562,
+      "sha256": "68aa9038d38e88c6ad9330c1f1bf5c2f4c537b5a0aff74551527576340069697"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/04/omdomen.jpg",
+      "status": 200,
+      "file": "uploads/2020/04/omdomen.jpg",
+      "bytes": 92144,
+      "sha256": "4cb1a6fd2d5e7f1e5ba02b9225664a0f6db15fc23aba782c6ea6d6345fa9c23f"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/06/Sverigekarta-Landskap-450x1024-1-132x300.png",
+      "status": 200,
+      "file": "uploads/2020/06/Sverigekarta-Landskap-450x1024-1-132x300.png",
+      "bytes": 17320,
+      "sha256": "3a7ed280ab4dc36fd4baf8facd9152f2fe3a687a00b792975d22bf3166b58639"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/06/Sverigekarta-Landskap-450x1024-1.png",
+      "status": 200,
+      "file": "uploads/2020/06/Sverigekarta-Landskap-450x1024-1.png",
+      "bytes": 84707,
+      "sha256": "4c35e52cd67c23b200f77f09e40fb4dd0ad44a6a28f064d87a9bf0e823106521"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/08/pulsanalys-13-min-kim-adeholm-profilbild-e1598691722294.jpg",
+      "status": 200,
+      "file": "uploads/2020/08/pulsanalys-13-min-kim-adeholm-profilbild-e1598691722294.jpg",
+      "bytes": 65027,
+      "sha256": "177a349d5c0be98a3ffa8a93db4e4a485fe15619f11ad82c5ded76acbf850164"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/08/pulsanalys-13-min-kim-adeholm-profilbild.jpg",
+      "status": 200,
+      "file": "uploads/2020/08/pulsanalys-13-min-kim-adeholm-profilbild.jpg",
+      "bytes": 87860,
+      "sha256": "4b7cac2ae01d00d39733919c87a8a05f343863175c2b77672026d62adaa08cb2"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/09/career_2020-300x239.png",
+      "status": 200,
+      "file": "uploads/2020/09/career_2020-300x239.png",
+      "bytes": 37751,
+      "sha256": "5bb6dda6cdb5788565ccfe2f2f8b63a4fd9aaeacb3e69c89aec52e5930600816"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/09/career_2020.png",
+      "status": 200,
+      "file": "uploads/2020/09/career_2020.png",
+      "bytes": 161088,
+      "sha256": "d93ffa5710edfe06739b634c18454fe61078ad7313225e0ee6c47ad688a54357"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/09/rosa_gubbar-300x203.png",
+      "status": 200,
+      "file": "uploads/2020/09/rosa_gubbar-300x203.png",
+      "bytes": 18390,
+      "sha256": "113ccb2de41abda64b6814062d4255b9e95d85cbcbc4d3474f90a48bb4c774df"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/09/rosa_gubbar.png",
+      "status": 200,
+      "file": "uploads/2020/09/rosa_gubbar.png",
+      "bytes": 79826,
+      "sha256": "0a2490f5d8a5ce3fb5f5f4fe5f6fe9d3881630dfa51f29120d458564572a78d0"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/09/talent_wins_games-1024x683.png",
+      "status": 200,
+      "file": "uploads/2020/09/talent_wins_games-1024x683.png",
+      "bytes": 528705,
+      "sha256": "c7c0dc6fd629e8be4e8d9c88b7636cf744019c4e6bcd5ecaddefd96a02db5579"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/09/talent_wins_games-1536x1024.png",
+      "status": 200,
+      "file": "uploads/2020/09/talent_wins_games-1536x1024.png",
+      "bytes": 1119965,
+      "sha256": "7f4188fd806f67a4db08894dddaab0f508499880b077eb99b2fd68502475b358"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/09/talent_wins_games-2048x1365.png",
+      "status": 200,
+      "file": "uploads/2020/09/talent_wins_games-2048x1365.png",
+      "bytes": 1888842,
+      "sha256": "30473e3d6bb56ea2c85da4efe5fd5b2246305bf412f98054cb9f030607729c82"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/09/talent_wins_games-300x200.png",
+      "status": 200,
+      "file": "uploads/2020/09/talent_wins_games-300x200.png",
+      "bytes": 54646,
+      "sha256": "c8d50aa631edf5d0880cf3079ef086ef7f2a0e3e52d1589a4a342e11460c3a35"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/09/talent_wins_games-768x512.png",
+      "status": 200,
+      "file": "uploads/2020/09/talent_wins_games-768x512.png",
+      "bytes": 310877,
+      "sha256": "d63556c754b86ed9a9c85e9e036202b0ad054e8252b814b1b021178115e7c2e6"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/09/talent_wins_games.png",
+      "status": 200,
+      "file": "uploads/2020/09/talent_wins_games.png",
+      "bytes": 2779765,
+      "sha256": "9752c63fea30dbb8808a94fc0b7fd4cf69ef62df9e3af5e6e6a1312dc1ffde47"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/09/valentine_wheel-293x300.png",
+      "status": 200,
+      "file": "uploads/2020/09/valentine_wheel-293x300.png",
+      "bytes": 55969,
+      "sha256": "2aaa20a5d23a25e8a7168adb1f12182a08fdb69690b3b4cfbe85e841e1e623f3"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/09/valentine_wheel.png",
+      "status": 200,
+      "file": "uploads/2020/09/valentine_wheel.png",
+      "bytes": 226511,
+      "sha256": "20281fa3330fbe86c12160d331902ad973755522216f5c64f8f0a5b14b1062ec"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/11/Vektor_LogoSE_ver.2020_liggande-1024x189.png",
+      "status": 200,
+      "file": "uploads/2020/11/Vektor_LogoSE_ver.2020_liggande-1024x189.png",
+      "bytes": 26878,
+      "sha256": "d161f1c515f5e66b3fed34e41d0ca9784c12e3e76218f8ec67cf7601364299d6"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/11/Vektor_LogoSE_ver.2020_liggande-1536x283.png",
+      "status": 200,
+      "file": "uploads/2020/11/Vektor_LogoSE_ver.2020_liggande-1536x283.png",
+      "bytes": 43740,
+      "sha256": "209269ba8b69aff9cd4fcf6db042a9f2fd3b2bf1785b0b2709fc3ee6f5532973"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/11/Vektor_LogoSE_ver.2020_liggande-175x32.png",
+      "status": 200,
+      "file": "uploads/2020/11/Vektor_LogoSE_ver.2020_liggande-175x32.png",
+      "bytes": 3526,
+      "sha256": "7fb86873840b71c4d2c475698dfc0950bf04df8751c7b7a10e66edd52749b43d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/11/Vektor_LogoSE_ver.2020_liggande-2048x377.png",
+      "status": 200,
+      "file": "uploads/2020/11/Vektor_LogoSE_ver.2020_liggande-2048x377.png",
+      "bytes": 60874,
+      "sha256": "4351709f44a670eefd601a1ba2249bee99979e2894d57a78583fb300d0336792"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/11/Vektor_LogoSE_ver.2020_liggande-300x55.png",
+      "status": 200,
+      "file": "uploads/2020/11/Vektor_LogoSE_ver.2020_liggande-300x55.png",
+      "bytes": 6556,
+      "sha256": "1408b9a57be477c3aeb6e633a9b4275ca1067acf5993cb60602170bb2c26bd49"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/11/Vektor_LogoSE_ver.2020_liggande-768x141.png",
+      "status": 200,
+      "file": "uploads/2020/11/Vektor_LogoSE_ver.2020_liggande-768x141.png",
+      "bytes": 18943,
+      "sha256": "968ce6d5d76ad667093055d24f7f88739a7e1c2f6bee181d0a1ace68151d571e"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/11/Vektor_LogoSE_ver.2020_liggande.png",
+      "status": 200,
+      "file": "uploads/2020/11/Vektor_LogoSE_ver.2020_liggande.png",
+      "bytes": 49569,
+      "sha256": "480be9058b64e50814025e1cc87f8d04d5c96dcedd2f8acea915acf2b08db97d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/11/pulsanalyspng-1-300x84.png",
+      "status": 200,
+      "file": "uploads/2020/11/pulsanalyspng-1-300x84.png",
+      "bytes": 15858,
+      "sha256": "ce26decce7d66e7a88940a09bc8c6f10930b82ce2a7c29430e8898b1bc90f740"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2020/11/pulsanalyspng-1.png",
+      "status": 200,
+      "file": "uploads/2020/11/pulsanalyspng-1.png",
+      "bytes": 25842,
+      "sha256": "858af96e8a8108d35b3f6ff56b2f347428696ff28882f082cf68c9c06de03bf9"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/diplom_januari_2021-1024x768.png",
+      "status": 200,
+      "file": "uploads/2021/01/diplom_januari_2021-1024x768.png",
+      "bytes": 717825,
+      "sha256": "eb55818ccc5843b370d3c6e765369b197c866c20ccfb24448e5b96eb95dc5338"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/diplom_januari_2021-300x225.png",
+      "status": 200,
+      "file": "uploads/2021/01/diplom_januari_2021-300x225.png",
+      "bytes": 73542,
+      "sha256": "cd88e2057aad189c8e31fd092f4123f531eafd59ab917f0d45b7326194c3f7ff"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/diplom_januari_2021-768x576.png",
+      "status": 200,
+      "file": "uploads/2021/01/diplom_januari_2021-768x576.png",
+      "bytes": 415461,
+      "sha256": "3f071c1ebd7d85d8fbdcf47e17272bcf2b236c367304642601533d3f3546a819"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/diplom_januari_2021.png",
+      "status": 200,
+      "file": "uploads/2021/01/diplom_januari_2021.png",
+      "bytes": 224097,
+      "sha256": "09ea9df7c6d726ee4900e1f68cc891b89a2e908773465030b042211b829ea456"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/group_picture_januari_2021-300x225.png",
+      "status": 200,
+      "file": "uploads/2021/01/group_picture_januari_2021-300x225.png",
+      "bytes": 121389,
+      "sha256": "94e47650f991e8aca2fb39061b14d30e4a447bd45b47b13536b1b7bb3ac3c466"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/group_picture_januari_2021-768x576.png",
+      "status": 200,
+      "file": "uploads/2021/01/group_picture_januari_2021-768x576.png",
+      "bytes": 679766,
+      "sha256": "a9a421ae845f7996bc6828b6b8c382bd7c581a30151018839a3cdf2117881514"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/group_picture_januari_2021.png",
+      "status": 200,
+      "file": "uploads/2021/01/group_picture_januari_2021.png",
+      "bytes": 246297,
+      "sha256": "30b62fc35517f4b3233b76a4d141eb6b92afe0d53969f51cbacad5071439b444"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/julklapp_januari_2021-1024x768.png",
+      "status": 200,
+      "file": "uploads/2021/01/julklapp_januari_2021-1024x768.png",
+      "bytes": 1048035,
+      "sha256": "65660f4ddff4b0b3a40eebd1003aa43b9ba465a9033e2cab8e3627627baf7e83"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/julklapp_januari_2021-300x225.png",
+      "status": 200,
+      "file": "uploads/2021/01/julklapp_januari_2021-300x225.png",
+      "bytes": 106508,
+      "sha256": "7c30b03dd90cc41e309c5f1309daef607cf322bbf2c1f985aa8a39b2912d8300"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/julklapp_januari_2021-768x576.png",
+      "status": 200,
+      "file": "uploads/2021/01/julklapp_januari_2021-768x576.png",
+      "bytes": 595048,
+      "sha256": "a52f2636744e1094dca7dd76b2738df6436460033e3bba0959e568115c670f07"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/julklapp_januari_2021.png",
+      "status": 200,
+      "file": "uploads/2021/01/julklapp_januari_2021.png",
+      "bytes": 381315,
+      "sha256": "0f5960fcae0b0b26852d2ee3613dc3d21c4ddd9448d1eb6b078ebafc8a86b280"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/mia_presenterar_januari_2021-1024x768.png",
+      "status": 200,
+      "file": "uploads/2021/01/mia_presenterar_januari_2021-1024x768.png",
+      "bytes": 925517,
+      "sha256": "2dfab91371c7583ea19e3c70a26443132bc8ac1b334b23911fbe8399d4bef488"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/mia_presenterar_januari_2021-300x225.png",
+      "status": 200,
+      "file": "uploads/2021/01/mia_presenterar_januari_2021-300x225.png",
+      "bytes": 97638,
+      "sha256": "83351e24bc178c7f710f6d19f9b3aaba390a079c2ca88292d1531298f694ba36"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/mia_presenterar_januari_2021-768x576.png",
+      "status": 200,
+      "file": "uploads/2021/01/mia_presenterar_januari_2021-768x576.png",
+      "bytes": 530291,
+      "sha256": "9870faaaf19676ce414487e6f9c643c5c9731862fb89cb02bf255490ecb1b6af"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/mia_presenterar_januari_2021.png",
+      "status": 200,
+      "file": "uploads/2021/01/mia_presenterar_januari_2021.png",
+      "bytes": 352983,
+      "sha256": "3c34820a597e8d83fd373277220a9f8908007bbdc98e8c0ed71d3493dada9c05"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/picture_man_januari_2021-300x131.png",
+      "status": 200,
+      "file": "uploads/2021/01/picture_man_januari_2021-300x131.png",
+      "bytes": 47141,
+      "sha256": "dd002b2682c963c69fe1703a15f3dd752c8fec760bd64282e9bfdd623dfcaf16"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/picture_man_januari_2021.png",
+      "status": 200,
+      "file": "uploads/2021/01/picture_man_januari_2021.png",
+      "bytes": 63634,
+      "sha256": "4b98b1878bcf503d12bb00ed11e22b17f268290bcba79e6ec7a5d32b6b61c811"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/quote_picture_januari_2021-1024x576.png",
+      "status": 200,
+      "file": "uploads/2021/01/quote_picture_januari_2021-1024x576.png",
+      "bytes": 718999,
+      "sha256": "84bd9d3b5be375ca874bc84ba5ee8935e23dbca4f3606875ffb6de3ccbd0b317"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/quote_picture_januari_2021-300x169.png",
+      "status": 200,
+      "file": "uploads/2021/01/quote_picture_januari_2021-300x169.png",
+      "bytes": 63852,
+      "sha256": "744a7826504f269f3a25d3c9d3c8a9ce3cd4e4f53af0346044e36115ac5ec747"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/quote_picture_januari_2021-768x432.png",
+      "status": 200,
+      "file": "uploads/2021/01/quote_picture_januari_2021-768x432.png",
+      "bytes": 393085,
+      "sha256": "e38957f5a24398b12cedb4c0c1ab50a37802f57d8d7455228300fbcc9f4f17db"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/quote_picture_januari_2021.png",
+      "status": 200,
+      "file": "uploads/2021/01/quote_picture_januari_2021.png",
+      "bytes": 288595,
+      "sha256": "e5ca5e335d7a8a2dc8715b8cea4044fee440452a120323d499a9c21f6831807c"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/torbjorn_januari_2021-300x152.png",
+      "status": 200,
+      "file": "uploads/2021/01/torbjorn_januari_2021-300x152.png",
+      "bytes": 64504,
+      "sha256": "82badc783e1aef8f81391d70325b0e25590f37206ab0835b088e400df5f902f2"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/torbjorn_januari_2021-768x389.png",
+      "status": 200,
+      "file": "uploads/2021/01/torbjorn_januari_2021-768x389.png",
+      "bytes": 403424,
+      "sha256": "9541337f36c67e20a2afbfa3fbfbb59ddffd00c15073f6bdfb9c82532193af1a"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/01/torbjorn_januari_2021.png",
+      "status": 200,
+      "file": "uploads/2021/01/torbjorn_januari_2021.png",
+      "bytes": 165822,
+      "sha256": "cb7c71a5f34a269e899bf08b3664d645cec107684e16331d0c5b294fc77eb95c"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/daniel_pulsanalys-214x300.jpg",
+      "status": 200,
+      "file": "uploads/2021/04/daniel_pulsanalys-214x300.jpg",
+      "bytes": 9279,
+      "sha256": "8972edceb66b5ec53db4b14ae3b533ddca59c718df7552ec6e2baee260e6c64f"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/daniel_pulsanalys-730x1024.jpg",
+      "status": 200,
+      "file": "uploads/2021/04/daniel_pulsanalys-730x1024.jpg",
+      "bytes": 56375,
+      "sha256": "3e4318b1f9999e6b334538b2ad8435359b047b3b9f1a5a3468d3d1766af05456"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/daniel_pulsanalys-768x1077.jpg",
+      "status": 200,
+      "file": "uploads/2021/04/daniel_pulsanalys-768x1077.jpg",
+      "bytes": 61362,
+      "sha256": "18e09959d549d20922d2e616f1a586ef79a2e5e920f21fdb54ba1cdff1aebc08"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/daniel_pulsanalys.jpg",
+      "status": 200,
+      "file": "uploads/2021/04/daniel_pulsanalys.jpg",
+      "bytes": 116719,
+      "sha256": "3c2eed79ba1cdea9c6d55f3ef20fe8d296efe388982d163b0a1dbda90a70f059"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/glad_pask-1-300x200.png",
+      "status": 200,
+      "file": "uploads/2021/04/glad_pask-1-300x200.png",
+      "bytes": 127145,
+      "sha256": "38f2beaebccbd34d9180abfbc007339ff7856fcb7e93135bba8de492ea004a5f"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/glad_pask-1-768x513.png",
+      "status": 200,
+      "file": "uploads/2021/04/glad_pask-1-768x513.png",
+      "bytes": 729787,
+      "sha256": "e80acd44b17bdf33e59111d400c5c095072f5eb3b9bf64addb5ec2beba3346fe"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/glad_pask-1.png",
+      "status": 200,
+      "file": "uploads/2021/04/glad_pask-1.png",
+      "bytes": 382769,
+      "sha256": "3a955cecfc2dbe5c6ec357b3600f4112e8cb029e7f91073d77da9c65a27e975b"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/meeting_pulsanalys-300x75.png",
+      "status": 200,
+      "file": "uploads/2021/04/meeting_pulsanalys-300x75.png",
+      "bytes": 47054,
+      "sha256": "e7a3ddb1ba2745758881fb5747ad98847fea96630026330a7e7e332f65723404"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/meeting_pulsanalys-768x191.png",
+      "status": 200,
+      "file": "uploads/2021/04/meeting_pulsanalys-768x191.png",
+      "bytes": 239952,
+      "sha256": "0340fbb0bdca9ba10e36ffc04e4a5856ed895c35dc37150235cf12930dd7a309"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/meeting_pulsanalys.png",
+      "status": 200,
+      "file": "uploads/2021/04/meeting_pulsanalys.png",
+      "bytes": 386080,
+      "sha256": "649da59d6c4332ddc6601349c5c596973cbcf1b3ede0cdfc6e22a2924701b0b2"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/mia_kamila_polish-1-1024x640.png",
+      "status": 200,
+      "file": "uploads/2021/04/mia_kamila_polish-1-1024x640.png",
+      "bytes": 868517,
+      "sha256": "f2b4313c18b7e46b46e9336d0bbc1b7d1fe42d9ab84b7a92b3a6017378be80fb"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/mia_kamila_polish-1-300x187.png",
+      "status": 200,
+      "file": "uploads/2021/04/mia_kamila_polish-1-300x187.png",
+      "bytes": 82520,
+      "sha256": "e543758c36a37088fa2fc80b498b0b765076a0e0835a481d6957d670cf44f35f"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/mia_kamila_polish-1-768x480.png",
+      "status": 200,
+      "file": "uploads/2021/04/mia_kamila_polish-1-768x480.png",
+      "bytes": 502325,
+      "sha256": "ee44f223955490690f5bae5cdbc74d21d22aaa638945a0694d9c22b397457b82"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/mia_kamila_polish-1.png",
+      "status": 200,
+      "file": "uploads/2021/04/mia_kamila_polish-1.png",
+      "bytes": 412999,
+      "sha256": "00b9b48675cc9cec061f6daff166d060ce446c7680827b7c4fd4cc90b638ba7e"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/peter_lovgren-215x300.jpg",
+      "status": 200,
+      "file": "uploads/2021/04/peter_lovgren-215x300.jpg",
+      "bytes": 9232,
+      "sha256": "18c7f9e5f35f95fe63aad422141dbe3af641a7c7a417bbd0826fa345a6b06367"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/04/peter_lovgren.jpg",
+      "status": 200,
+      "file": "uploads/2021/04/peter_lovgren.jpg",
+      "bytes": 118962,
+      "sha256": "836ecfe85bbcf4336acecbcb3cf86e38e925342f56ab3c15b5fde940c924a898"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/05/grundutbildningar_corona.jpg",
+      "status": 200,
+      "file": "uploads/2021/05/grundutbildningar_corona.jpg",
+      "bytes": 68687,
+      "sha256": "f11dcd30695466cec54a89aa219f38b220e113e99077b6ef8f3f7788396789aa"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/06/pulsanalys-1-1024x683.jpg",
+      "status": 200,
+      "file": "uploads/2021/06/pulsanalys-1-1024x683.jpg",
+      "bytes": 83468,
+      "sha256": "3eb862cf2215b4fd102dda49922b54249ca0cade8974dad1231eeb9351123669"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/06/pulsanalys-1-300x200.jpg",
+      "status": 200,
+      "file": "uploads/2021/06/pulsanalys-1-300x200.jpg",
+      "bytes": 15170,
+      "sha256": "8f681a1c09aa81a48dc2c57af521c3eaaf88a78c75754e8ecaeacfe10d5a4c5d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/06/pulsanalys-1-768x512.jpg",
+      "status": 200,
+      "file": "uploads/2021/06/pulsanalys-1-768x512.jpg",
+      "bytes": 55368,
+      "sha256": "6a99f4dde10926f895988b90e696a22f16c52163d9a87994e50d77711040df70"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/06/pulsanalys-1.jpg",
+      "status": 200,
+      "file": "uploads/2021/06/pulsanalys-1.jpg",
+      "bytes": 421430,
+      "sha256": "a08e1011d2a94966085c9a105d0610e59f871bda2227fe05037efdc83f7fbd78"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/06/pulsanalys-13-min-1024x710.jpg",
+      "status": 200,
+      "file": "uploads/2021/06/pulsanalys-13-min-1024x710.jpg",
+      "bytes": 67922,
+      "sha256": "c7a2762fb262bfe4cb12b36baa0614505e8913a21c08354276dea2d1a2732d75"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/06/pulsanalys-13-min-300x208.jpg",
+      "status": 200,
+      "file": "uploads/2021/06/pulsanalys-13-min-300x208.jpg",
+      "bytes": 10842,
+      "sha256": "0b00b1734618e1200d8dcca098618fd43d5b74b3cf8e34f07affeb6f3b06c7a9"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/06/pulsanalys-13-min-768x533.jpg",
+      "status": 200,
+      "file": "uploads/2021/06/pulsanalys-13-min-768x533.jpg",
+      "bytes": 44228,
+      "sha256": "fe5a20d13e6411201b9afc9aaa31157d207160664d1729f78abb80bc65c4283d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/06/pulsanalys-13-min.jpg",
+      "status": 200,
+      "file": "uploads/2021/06/pulsanalys-13-min.jpg",
+      "bytes": 86888,
+      "sha256": "a89f4c31f87ec9f37f270c7d0866ae9d7818d5f7f731aff2b29c3d35d0930411"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/10/nathalie_johansdotter_profilbild-1-e1634126582975-199x300.jpg",
+      "status": 200,
+      "file": "uploads/2021/10/nathalie_johansdotter_profilbild-1-e1634126582975-199x300.jpg",
+      "bytes": 23942,
+      "sha256": "aa078c38d7f565c589c545579c59bb176983fcbe3baea4705642dfd2a5f7a115"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/10/nathalie_johansdotter_profilbild-1-e1634126582975.jpg",
+      "status": 200,
+      "file": "uploads/2021/10/nathalie_johansdotter_profilbild-1-e1634126582975.jpg",
+      "bytes": 103883,
+      "sha256": "9858cb4f18c54b730d0d72959484a17c6c6d4ec464916e64927af96ac63e0496"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2021/10/nathalie_johansdotter_profilbild-1.jpg",
+      "status": 200,
+      "file": "uploads/2021/10/nathalie_johansdotter_profilbild-1.jpg",
+      "bytes": 104542,
+      "sha256": "19007ba737d3d2e609523ae311c0967828574d75f464671e8c1b7bfd73e1e204"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/02/PHOTO-2022-02-10-17-21-20-e1646059851178-212x300.jpg",
+      "status": 200,
+      "file": "uploads/2022/02/PHOTO-2022-02-10-17-21-20-e1646059851178-212x300.jpg",
+      "bytes": 15536,
+      "sha256": "bedaee942334e76bae427684a5938acbd239748275bd9ccf868d28680aaba8f6"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/02/PHOTO-2022-02-10-17-21-20-e1646059851178.jpg",
+      "status": 200,
+      "file": "uploads/2022/02/PHOTO-2022-02-10-17-21-20-e1646059851178.jpg",
+      "bytes": 42933,
+      "sha256": "cbf383543155859b505c1bcab08d6499c954bb9736fa04b83915081e69542f03"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/02/PHOTO-2022-02-10-17-21-20.jpg",
+      "status": 200,
+      "file": "uploads/2022/02/PHOTO-2022-02-10-17-21-20.jpg",
+      "bytes": 76693,
+      "sha256": "a6f9e9a12b1dd70d8276efbefdfdecc0271f14d1d6780e3480892173750993ad"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/10/1263-min-scaled-e1666896698128-1289x1536.jpg",
+      "status": 200,
+      "file": "uploads/2022/10/1263-min-scaled-e1666896698128-1289x1536.jpg",
+      "bytes": 204935,
+      "sha256": "bd416a2a2237c4a3ff0c439f2079dca3ad73fdad619e299128def0be113d6e1f"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/10/1263-min-scaled-e1666896698128-252x300.jpg",
+      "status": 200,
+      "file": "uploads/2022/10/1263-min-scaled-e1666896698128-252x300.jpg",
+      "bytes": 13082,
+      "sha256": "6e552f944654c4ceadb98495353f949559bef63d41588aaf2ec2092fe3f8c3d5"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/10/1263-min-scaled-e1666896698128-768x915.jpg",
+      "status": 200,
+      "file": "uploads/2022/10/1263-min-scaled-e1666896698128-768x915.jpg",
+      "bytes": 85301,
+      "sha256": "7f051cf199b65acfe81c9785feca7a38ecc8b97ec8d4d7d2ca51fe2bb1d24d1c"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/10/1263-min-scaled-e1666896698128-860x1024.jpg",
+      "status": 200,
+      "file": "uploads/2022/10/1263-min-scaled-e1666896698128-860x1024.jpg",
+      "bytes": 103251,
+      "sha256": "4331a847c9afa18ea67f4226d03fc670d19d957ccdb42eb0ba9b1371da8dae3a"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/10/1263-min-scaled-e1666896698128.jpg",
+      "status": 200,
+      "file": "uploads/2022/10/1263-min-scaled-e1666896698128.jpg",
+      "bytes": 263321,
+      "sha256": "2d40898c76422774c885f128c4c9e8c1e2df61fb00ef8e845fc2232da50a9d1d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/10/1263-min-scaled.jpg",
+      "status": 200,
+      "file": "uploads/2022/10/1263-min-scaled.jpg",
+      "bytes": 337130,
+      "sha256": "f926d253b8db035aa87ce212e0c9d4069ec6f9ff206a6cb1f2eb1f88fafb8efb"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/IMG_7074-scaled-e1667983509896-1291x1536.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/IMG_7074-scaled-e1667983509896-1291x1536.jpg",
+      "bytes": 263583,
+      "sha256": "295bcf26856b3f142b5eb0fa968eaf8159e2bfe73e21fab004d0f2074616a2af"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/IMG_7074-scaled-e1667983509896-1722x2048.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/IMG_7074-scaled-e1667983509896-1722x2048.jpg",
+      "bytes": 398897,
+      "sha256": "50bf1695e4c62d7c89e89d33c1708e20f38eb7227bb3dd02729c21a639c053b7"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/IMG_7074-scaled-e1667983509896-252x300.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/IMG_7074-scaled-e1667983509896-252x300.jpg",
+      "bytes": 22446,
+      "sha256": "475b47f3b56063256dadb11f80b78b2cb2803c0c5d2daf58d17f206c74ab6089"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/IMG_7074-scaled-e1667983509896-768x914.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/IMG_7074-scaled-e1667983509896-768x914.jpg",
+      "bytes": 116880,
+      "sha256": "249480a33cf048bb6f2946280d191dba9d21be92200f7ce4c75dc80779c35b9f"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/IMG_7074-scaled-e1667983509896-861x1024.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/IMG_7074-scaled-e1667983509896-861x1024.jpg",
+      "bytes": 140827,
+      "sha256": "2591618878dae3a16e5a5f4b46e857ec68a53d12dfb5c2d5de46ca09e9f1ca68"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/IMG_7074-scaled-e1667983509896.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/IMG_7074-scaled-e1667983509896.jpg",
+      "bytes": 478579,
+      "sha256": "a37a716edaf60d9ac87f09c3bfaee61635e1eeeebafac6bd3224f7e574f67ad8"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/IMG_7074-scaled.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/IMG_7074-scaled.jpg",
+      "bytes": 538000,
+      "sha256": "4a0b68a505d2c73b2ee89c90cd6bc7fa1638550551eeaf31843deabd0a25a013"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/Marita-Larenhjelm-e1667982542893-1290x1536.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/Marita-Larenhjelm-e1667982542893-1290x1536.jpg",
+      "bytes": 246620,
+      "sha256": "0c91832ea856e5b2662bf7dfbbfca58768db827f72a653b966513a1423962500"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/Marita-Larenhjelm-e1667982542893-252x300.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/Marita-Larenhjelm-e1667982542893-252x300.jpg",
+      "bytes": 15023,
+      "sha256": "e143736987f3b81b277d11e6daed718420ce0d0788e58021e204276382fddc35"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/Marita-Larenhjelm-e1667982542893-768x914.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/Marita-Larenhjelm-e1667982542893-768x914.jpg",
+      "bytes": 102852,
+      "sha256": "4fe0640d4290afefea420989b69ae527c4f8ba2726f7af5ea786842947dda4c3"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/Marita-Larenhjelm-e1667982542893-860x1024.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/Marita-Larenhjelm-e1667982542893-860x1024.jpg",
+      "bytes": 124619,
+      "sha256": "4a989ede029dd16f7f7edd8acf9d85505fbfc2d260cf816ee65bc23e839b18e8"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/Marita-Larenhjelm-e1667982542893.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/Marita-Larenhjelm-e1667982542893.jpg",
+      "bytes": 278779,
+      "sha256": "d4b47d9be60c147219564a41185ec423491f26099261dcfcdd4e5b8a9079f7c3"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/Marita-Larenhjelm.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/Marita-Larenhjelm.jpg",
+      "bytes": 447985,
+      "sha256": "6640d115a59b99da5d48b63a5f6f52b8437e8435bd056312d3257a2d0f5c90ef"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/byggcheferna-1024x768.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/byggcheferna-1024x768.jpg",
+      "bytes": 142740,
+      "sha256": "fc843a994f29587869967a9248bb8865659c6b5fc45c204a83ddb6664d96fd54"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/byggcheferna-1536x1152.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/byggcheferna-1536x1152.jpg",
+      "bytes": 298020,
+      "sha256": "ad3beacc2e2a28ad44bb8256ee73434b9726bbfd4110bb72aa3d54550875a060"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/byggcheferna-2048x1536.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/byggcheferna-2048x1536.jpg",
+      "bytes": 510366,
+      "sha256": "3d61bdfa43cd728a0990568eeea411621679c4135db15404446f5b562035acfc"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/byggcheferna-300x225.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/byggcheferna-300x225.jpg",
+      "bytes": 21340,
+      "sha256": "e3be97267ba7c96cfd0c520c8a29db21f258ea6a5391c07d6f064c8e8e5180ed"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/byggcheferna-768x576.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/byggcheferna-768x576.jpg",
+      "bytes": 88674,
+      "sha256": "58dd0e2d7cbbf96d389c56b866c5075c87988909a5b07f77f4aec498dec13c38"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/byggcheferna-scaled.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/byggcheferna-scaled.jpg",
+      "bytes": 763050,
+      "sha256": "ce0ed9c9ead007d92627cd6df10a0d06c29c9cb1c89b13481a1681e27a8a6894"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/byggcheferna.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/byggcheferna.jpg",
+      "bytes": 2964603,
+      "sha256": "47846a9dc82d995f48db65d25b67a9b774be4326a5f72eef519a6c714837dd9d"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/catarinabyberg-e1667982580121-252x300.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/catarinabyberg-e1667982580121-252x300.jpg",
+      "bytes": 14393,
+      "sha256": "6ea31cd176b09be3ec2ffcbb083a8bb04792260144a54603123f7e37261df053"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/catarinabyberg-e1667982580121-768x915.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/catarinabyberg-e1667982580121-768x915.jpg",
+      "bytes": 78584,
+      "sha256": "c5702d5a310d4edbb0258b454d090cb68f60e2cf8898623d7164ebb1eb608085"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/catarinabyberg-e1667982580121.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/catarinabyberg-e1667982580121.jpg",
+      "bytes": 84474,
+      "sha256": "fda5fd4363b09395310e9dc76378195083f0de43894b5c72473ac5266b899698"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/catarinabyberg.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/catarinabyberg.jpg",
+      "bytes": 550640,
+      "sha256": "2933bb79ac6cd4740885dea192efcdebddc8332ffcfd503b7b7e33e52cec93ab"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/jessicahillholm-e1667982608153-252x300.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/jessicahillholm-e1667982608153-252x300.jpg",
+      "bytes": 11322,
+      "sha256": "5a662335f174a735e77cc28eb003cade257dfb271166e2b2d365a87371a6518c"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/jessicahillholm-e1667982608153-768x914.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/jessicahillholm-e1667982608153-768x914.jpg",
+      "bytes": 66409,
+      "sha256": "def4a772a42dc06be129fd60cc0e1eaff17ab65e0427f9012938457c12159548"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/jessicahillholm-e1667982608153-860x1024.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/jessicahillholm-e1667982608153-860x1024.jpg",
+      "bytes": 82737,
+      "sha256": "c515758c45d2c6230a0d98fbde99cc7c737e28c053381c0ac5dfc217346969d9"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/jessicahillholm-e1667982608153.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/jessicahillholm-e1667982608153.jpg",
+      "bytes": 106778,
+      "sha256": "f71331b1618c55f2cc180641cfdfa8c8d935abab56c445eae6f3d766ba01bba1"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2022/11/jessicahillholm.jpg",
+      "status": 200,
+      "file": "uploads/2022/11/jessicahillholm.jpg",
+      "bytes": 176029,
+      "sha256": "e2b0319c92dc14aa2270396bd32d6d24c8f58292f955ef97b565934bf5cdf4a6"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2024/08/pulsanalys_eng_logo_login-1.png",
+      "status": 200,
+      "file": "uploads/2024/08/pulsanalys_eng_logo_login-1.png",
+      "bytes": 5110,
+      "sha256": "610683c06db31b34ecf94bcd8185420027086a60d2b34d878197b5662a5cc284"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2025/01/AZ_logo.png",
+      "status": 200,
+      "file": "uploads/2025/01/AZ_logo.png",
+      "bytes": 52723,
+      "sha256": "f4a20b10d1052431b129528e6607d0117804d081d1aada1864f3af40cd9c8750"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2025/01/Barilla_brand_logo_2022-present.svg",
+      "status": 404
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2025/01/Finansförbundet-logotyp.png",
+      "status": 200,
+      "file": "uploads/2025/01/Finansförbundet-logotyp.png",
+      "bytes": 150916,
+      "sha256": "52922de074144f7318548c045f83b9c4c987d33e98f4bb5eb08f7d859be71753"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2025/01/jonkoping-energi.jpeg",
+      "status": 200,
+      "file": "uploads/2025/01/jonkoping-energi.jpeg",
+      "bytes": 7913,
+      "sha256": "458e2156cc184c1ec0fe5daa0789370cbb05195529c359e969a472fa19e8c5db"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2025/01/ox2-logo.png",
+      "status": 200,
+      "file": "uploads/2025/01/ox2-logo.png",
+      "bytes": 27779,
+      "sha256": "d2460f6e03d3a7784b53d48b77554a2e9a0dc20d4071763255f7f6cb8d195fc3"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2025/10/Skärmavbild-2025-10-16-kl.-08.59.01-e1760598111974.png",
+      "status": 200,
+      "file": "uploads/2025/10/Skärmavbild-2025-10-16-kl.-08.59.01-e1760598111974.png",
+      "bytes": 971461,
+      "sha256": "7845fa98c8316d5e4a0f0b0152fde937ecb47a487fdae02a23d26e811e3c72d7"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2025/10/Skärmavbild-2025-10-16-kl.-08.59.01.png",
+      "status": 200,
+      "file": "uploads/2025/10/Skärmavbild-2025-10-16-kl.-08.59.01.png",
+      "bytes": 2589563,
+      "sha256": "034b536c40f0a65f6215cb63a7f6f3d6febaa0ea270bd073cee8b409e8c14974"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2026/09/Inbjudan-Mingel-200x300.png",
+      "status": 200,
+      "file": "uploads/2026/09/Inbjudan-Mingel-200x300.png",
+      "bytes": 94961,
+      "sha256": "fff3d8cf9835e64f76767672a5fd7351f54babd7478f9bcf3fcc8c9bd3470570"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2026/09/Inbjudan-Mingel-683x1024.png",
+      "status": 200,
+      "file": "uploads/2026/09/Inbjudan-Mingel-683x1024.png",
+      "bytes": 767727,
+      "sha256": "eec8e51dd0b59cf5b36ddf0eb5c6144dbc6dc92a09244dd688219b4662e5f343"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2026/09/Inbjudan-Mingel-768x1152.png",
+      "status": 200,
+      "file": "uploads/2026/09/Inbjudan-Mingel-768x1152.png",
+      "bytes": 938404,
+      "sha256": "58c79b18afad5ad616dc9dee40c4cce297cbf10d70c15e2dd7e3c74f4ea542ac"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2026/09/Inbjudan-Mingel.png",
+      "status": 200,
+      "file": "uploads/2026/09/Inbjudan-Mingel.png",
+      "bytes": 1930686,
+      "sha256": "f195573ace2fc0295b329f02cf85c690e35b326a70f57cab4001d57ab3d8a2bb"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2026/10/Kim-Mia-Okt-26-240x300.jpg",
+      "status": 200,
+      "file": "uploads/2026/10/Kim-Mia-Okt-26-240x300.jpg",
+      "bytes": 15441,
+      "sha256": "f1a379d49db6cc30d96e1b3528bcebb0a95009bfd9613a51a9d084f9e8500bb6"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2026/10/Kim-Mia-Okt-26-768x960.jpg",
+      "status": 200,
+      "file": "uploads/2026/10/Kim-Mia-Okt-26-768x960.jpg",
+      "bytes": 64346,
+      "sha256": "f93dab506337741bf16074cd7ffa54621f8069e779cd8abc1373b6c897d5f025"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2026/10/Kim-Mia-Okt-26-819x1024.jpg",
+      "status": 200,
+      "file": "uploads/2026/10/Kim-Mia-Okt-26-819x1024.jpg",
+      "bytes": 70887,
+      "sha256": "b6b9a8d8501f540c3b7e1f556be0c155e0e9071a9a89e88548df5675a73fb8f5"
+    },
+    {
+      "url": "https://pulsanalys.se/wp-content/uploads/2026/10/Kim-Mia-Okt-26.jpg",
+      "status": 200,
+      "file": "uploads/2026/10/Kim-Mia-Okt-26.jpg",
+      "bytes": 242326,
+      "sha256": "a6ed1d6f2fa6f26ab1e34e4501c7a908613b2b32d09bf59de5ee9084ef292429"
+    }
+  ]
+}
