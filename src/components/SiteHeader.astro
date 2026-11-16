@@ -1,0 +1,151 @@
+---
+import Logo from "./Logo.astro";
+
+const nav = [
+  { href: "/produkter/", label: "Produkter" },
+  { href: "/kurser/", label: "Kurser" },
+  { href: "/utbildningar-och-forelasningar/", label: "Anmäl dig" },
+  { href: "/konsulttjanster/", label: "Konsulttjänster" },
+  { href: "/om-oss/", label: "Om oss" },
+  { href: "/kontakta-oss/", label: "Kontakt" },
+];
+const current = Astro.url.pathname;
+---
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="home" href="/" aria-label="PulsAnalys – till startsidan">
+      <Logo class="logo" />
+    </a>
+
+    <nav class="primary" aria-label="Huvudmeny">
+      <ul>
+        {nav.map((item) => (
+          <li><a href={item.href} aria-current={current.startsWith(item.href) ? "page" : undefined}>{item.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <a class="login" href="https://clientarea.pulsanalys.com/">Logga in</a>
+
+    <details class="menu">
+      <summary><span>Meny</span></summary>
+      <nav aria-label="Huvudmeny, mobil">
+        <ul>
+          {nav.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+          <li><a href="https://clientarea.pulsanalys.com/">Logga in</a></li>
+        </ul>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    isolation: isolate;
+  }
+  .site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgb(255 255 255 / 0.96);
+    border-bottom: 1px solid var(--line);
+    opacity: 1;
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    min-height: 4.5rem;
+  }
+  .home { display: block; flex: none; color: var(--navy); }
+  .home :global(.logo) { width: clamp(9.5rem, 8rem + 4vw, 11.5rem); }
+
+  .primary { margin-left: auto; }
+  .primary ul, .menu ul { list-style: none; margin: 0; padding: 0; }
+  .primary ul { display: flex; gap: clamp(1rem, 2vw, 1.75rem); }
+  .primary a, .login {
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding-block: 0.5rem;
+    background: linear-gradient(currentColor, currentColor) 0 100% / 0 1.5px no-repeat;
+    transition: background-size 200ms var(--ease);
+  }
+  .primary a:hover, .primary a:focus-visible, .primary a[aria-current="page"],
+  .login:hover, .login:focus-visible { background-size: 100% 1.5px; }
+
+  .login {
+    flex: none;
+    padding: 0.45rem 1rem;
+    border: 1px solid var(--navy);
+    border-radius: 999px;
+    background: none;
+    transition: background-color 160ms var(--ease), color 160ms var(--ease);
+  }
+  .login:hover, .login:focus-visible { background: var(--navy); color: #fff; }
+
+  .menu { display: none; margin-left: auto; }
+  .menu summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--navy);
+    padding: 0.6rem 0;
+    min-height: 2.75rem;
+    display: flex;
+    align-items: center;
+  }
+  .menu summary::-webkit-details-marker { display: none; }
+  .menu summary::after {
+    content: "";
+    width: 0.55em;
+    height: 0.55em;
+    margin-left: 0.5em;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-0.15em) rotate(45deg);
+    transition: transform 160ms var(--ease);
+  }
+  .menu[open] summary::after { transform: translateY(0.1em) rotate(-135deg); }
+  .menu nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    padding: 0.5rem var(--margin) 1.5rem;
+  }
+  .menu nav a {
+    display: block;
+    padding: 0.75rem 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  @media (max-width: 66rem) {
+    .primary, .login { display: none; }
+    .menu { display: block; }
+  }
+
+  @supports (animation-timeline: scroll()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .site-header::before {
+        animation: header-solid linear both;
+        animation-timeline: scroll(root);
+        animation-range: 0 80px;
+      }
+    }
+  }
+  @keyframes header-solid {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>

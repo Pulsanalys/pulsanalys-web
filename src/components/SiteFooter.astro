@@ -1,0 +1,95 @@
+---
+import Logo from "./Logo.astro";
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="wrap grid">
+    <div class="brand">
+      <Logo class="logo" />
+      <p>Wollmar Yxkullsgatan 7<br />118 50 Stockholm</p>
+      <p>Org.nr 556600-3868</p>
+    </div>
+
+    <div>
+      <h2 class="label">Kontakt</h2>
+      <ul>
+        <li><a href="tel:+46706762375">070-676 23 75</a></li>
+        <li><a href="mailto:info@pulsanalys.se">info@pulsanalys.se</a></li>
+        <li><a href="mailto:support@pulsanalys.se">support@pulsanalys.se</a> (kundsupport)</li>
+      </ul>
+    </div>
+
+    <nav aria-label="Sidfot">
+      <h2 class="label">Webbplatsen</h2>
+      <ul>
+        <li><a href="/produkter/">Produkter</a></li>
+        <li><a href="/kurser/">Kurser</a></li>
+        <li><a href="/utbildningar-och-forelasningar/">Anmäl dig</a></li>
+        <li><a href="/skaffa-abonnemang/">Skaffa abonnemang</a></li>
+        <li><a href="/omdomen/">Omdömen</a></li>
+        <li><a href="/distributor/">Bli distributör</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Om PulsAnalys">
+      <h2 class="label">PulsAnalys</h2>
+      <ul>
+        <li><a href="/om-oss/">Om oss</a></li>
+        <li><a href="/kontakta-oss/">Kontakta oss</a></li>
+        <li><a href="/vad-ar-disc/">Vad är DISC?</a></li>
+        <li><a href="/blogg/">Blogg</a></li>
+        <li><a href="/integritetspolicy/">Integritetspolicy</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="wrap legal">
+    <p>© {year} PulsAnalys AB</p>
+    <ul class="social">
+      <li><a href="https://www.linkedin.com/company/pulsanalys-ab/">LinkedIn</a></li>
+      <li><a href="https://www.facebook.com/PulsAnalysAb/">Facebook</a></li>
+      <li><a href="https://www.instagram.com/pulsanalysab/">Instagram</a></li>
+    </ul>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--navy);
+    color: #e6e9f0;
+    padding-block: clamp(3.5rem, 7vw, 6rem) 2rem;
+    font-size: 0.95rem;
+  }
+  .site-footer a { color: #fff; text-decoration-color: rgb(255 255 255 / 0.4); }
+  .site-footer a:hover { text-decoration-color: #fff; }
+  .site-footer :focus-visible { outline-color: #fff; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2.5rem var(--gutter);
+  }
+  .brand { color: #fff; }
+  .brand :global(.logo) { width: 11rem; margin-bottom: 1.5rem; }
+  .brand p { color: #e6e9f0; }
+  .label {
+    font-size: 0.95rem;
+    letter-spacing: 0;
+    color: #fff;
+    margin-bottom: 0.75rem;
+  }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li + li { margin-top: 0.4rem; }
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgb(255 255 255 / 0.2);
+    font-size: var(--step-small);
+  }
+  .social { display: flex; gap: 1.25rem; }
+  .social li + li { margin-top: 0; }
+</style>

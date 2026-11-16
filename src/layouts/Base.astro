@@ -1,5 +1,7 @@
 ---
 import "../styles/base.css";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
 
 interface Props {
   title: string;
@@ -21,19 +23,20 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     {description && <meta name="description" content={description} />}
     {staging && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#2e3e60" />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang === "sv" ? "sv_SE" : "en_GB"} />
     <slot name="head" />
   </head>
   <body>
     <a class="skip" href="#main">Hoppa till innehållet</a>
-    <header class="site-header">
-      <a class="brand" href="/">PulsAnalys DISC</a>
-      <a class="login" href="https://clientarea.pulsanalys.com/">Logga in</a>
-    </header>
+    <SiteHeader />
     <main id="main" tabindex="-1">
       <slot />
     </main>
-    <footer class="site-footer">
-      <p>PulsAnalys AB · Org.nr 556600-3868 · <a href="mailto:info@pulsanalys.se">info@pulsanalys.se</a> · 070-676 23 75</p>
-    </footer>
+    <SiteFooter />
   </body>
 </html>
