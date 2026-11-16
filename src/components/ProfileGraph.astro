@@ -1,0 +1,200 @@
+---
+/**
+ * The homepage's one strong moment: an example PulsAnalys graph that changes between
+ * the three things the profile measures while the section is pinned.
+ * Without scroll-driven animation support, or with reduced motion, the three graphs
+ * are shown side by side instead.
+ */
+const factors = [
+  { key: "d", letter: "D", name: "Pådrivande" },
+  { key: "i", letter: "I", name: "Utåtriktad" },
+  { key: "s", letter: "S", name: "Lyhörd" },
+  { key: "c", letter: "C", name: "Systematisk" },
+] as const;
+
+// Example values (0–100), one set per state. Illustrative only.
+const states = [
+  { title: "Grundbeteende", text: "Det sociala jaget – där du trivs som allra bäst.", values: { d: 68, i: 52, s: 30, c: 44 } },
+  { title: "I arbetssituationen", text: "Hur du anpassar dig till krav och förväntningar på jobbet.", values: { d: 56, i: 40, s: 38, c: 70 } },
+  { title: "Under press", text: "Hur du anpassar dig när det blir pressat.", values: { d: 82, i: 26, s: 22, c: 58 } },
+];
+---
+
+<section class="profile" aria-labelledby="profil-rubrik">
+  <div class="sticky">
+    <div class="wrap layout">
+      <div class="text">
+        <h2 id="profil-rubrik">En graf som visar tre sidor av samma person</h2>
+        <p class="intro">Personprofilen mäter var du trivs som allra bäst, hur du anpassar dig i en arbetssituation och hur du anpassar dig under press.</p>
+        <ul class="states">
+          {states.map((s, n) => (
+            <li class={`state state-${n + 1}`}>
+              <h3>{s.title}</h3>
+              <p>{s.text}</p>
+            </li>
+          ))}
+        </ul>
+        <p class="note">Exempel på en profil. Vi använder ett helt neutralt språk och det finns inga bra eller dåliga profiler.</p>
+      </div>
+
+      <div class="graphs">
+        <div class="graph live" aria-hidden="true">
+          {factors.map((f) => (
+            <div class="factor">
+              <div class="track">
+                <span class={`fill fill-${f.key}`}
+                  style={`--s1:${states[0].values[f.key] / 100};--s2:${states[1].values[f.key] / 100};--s3:${states[2].values[f.key] / 100}`}></span>
+              </div>
+              <span class="letter">{f.letter}</span>
+              <span class="name">{f.name}</span>
+            </div>
+          ))}
+        </div>
+
+        {states.map((s) => (
+          <figure class="graph static">
+            <div class="bars" role="img"
+              aria-label={`${s.title}: ${factors.map((f) => `${f.name} ${s.values[f.key]} av 100`).join(", ")}`}>
+              {factors.map((f) => (
+                <div class="factor">
+                  <div class="track">
+                    <span class={`fill fill-${f.key}`} style={`--v:${s.values[f.key] / 100}`}></span>
+                  </div>
+                  <span class="letter">{f.letter}</span>
+                  <span class="name">{f.name}</span>
+                </div>
+              ))}
+            </div>
+            <figcaption>{s.title}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .profile { background: var(--mist); }
+  .sticky { padding-block: var(--section); }
+  .layout {
+    display: grid;
+    gap: clamp(2.5rem, 5vw, 5rem);
+    align-items: center;
+  }
+  @media (min-width: 60rem) {
+    .layout { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+  }
+  h2 { max-width: 16ch; }
+  .intro { font-size: var(--step-lead); line-height: 1.45; margin-top: 1.25rem; max-width: 40ch; }
+  .states { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: 1.25rem; }
+  .state { position: relative; padding-left: 1rem; border-left: 2px solid var(--line); }
+  .state::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--navy);
+    opacity: 0;
+  }
+  .state h3 { font-size: 1.15rem; }
+  .state p { color: var(--muted); margin-top: 0.15rem; }
+  .note { margin-top: 2rem; font-size: var(--step-small); color: var(--muted); max-width: 44ch; }
+
+  .graphs { display: grid; gap: 2rem var(--gutter); grid-template-columns: repeat(auto-fit, minmax(11.5rem, 1fr)); }
+  .bars, .graph.live { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+  .graph.live { display: none; gap: clamp(0.75rem, 2vw, 1.75rem); }
+  figure { margin: 0; }
+  figcaption { margin-top: 0.75rem; font-weight: 600; color: var(--navy); }
+
+  .factor { display: grid; grid-template-rows: auto auto auto; align-content: start; justify-items: center; gap: 0.35rem; min-width: 0; }
+  .track {
+    position: relative;
+    width: 100%;
+    height: 9rem;
+    background:
+      linear-gradient(var(--line), var(--line)) 0 50% / 100% 1px no-repeat,
+      var(--paper);
+    border-bottom: 2px solid var(--navy);
+    overflow: hidden;
+  }
+  .fill {
+    position: absolute;
+    inset: 0 18%;
+    transform-origin: 50% 100%;
+    transform: scaleY(var(--v, var(--s1)));
+  }
+  .fill-d { background: var(--d); }
+  .fill-i { background: var(--i); }
+  .fill-s { background: var(--s); }
+  .fill-c { background: var(--c); }
+  .letter { font-weight: 700; color: var(--navy); line-height: 1; }
+  .name { font-size: 0.75rem; color: var(--muted); text-align: center; hyphens: auto; overflow-wrap: normal; max-width: 100%; }
+
+  /* Pinned, scroll-driven version. */
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .profile {
+        height: 320svh;
+        view-timeline: --profile block;
+      }
+      .sticky {
+        position: sticky;
+        top: 0;
+        min-height: 100svh;
+        display: grid;
+        align-items: center;
+        padding-block: 5.5rem 2rem;
+      }
+      .graph.static { display: none; }
+      .graph.live { display: grid; }
+      .graphs { grid-template-columns: 1fr; }
+      .graph.live .track { height: clamp(11rem, 38svh, 22rem); }
+      .graph.live .name { font-size: clamp(0.75rem, 0.6rem + 0.5vw, 0.95rem); }
+      .graph.live .letter { font-size: 1.25rem; }
+
+      .graph.live .fill {
+        animation: morph linear both;
+        animation-timeline: --profile;
+        animation-range: contain 0% contain 100%;
+      }
+      .state::before {
+        animation: linear both;
+        animation-timeline: --profile;
+        animation-range: contain 0% contain 100%;
+      }
+      .state-1::before { animation-name: state-1; }
+      .state-2::before { animation-name: state-2; }
+      .state-3::before { animation-name: state-3; }
+
+      @media (max-width: 59.99rem) {
+        .sticky { padding-block: 5rem 1.5rem; }
+        .intro, .note { display: none; }
+        .states { margin-top: 1rem; gap: 0.6rem; }
+        .state p { font-size: 0.95rem; }
+        .graph.live .track { height: clamp(9rem, 30svh, 14rem); }
+      }
+    }
+  }
+
+  @keyframes morph {
+    0%, 22% { transform: scaleY(var(--s1)); }
+    40%, 60% { transform: scaleY(var(--s2)); }
+    78%, 100% { transform: scaleY(var(--s3)); }
+  }
+  /* Marks which of the three states the graph is showing. */
+  @keyframes state-1 {
+    0%, 30% { opacity: 1; }
+    36%, 100% { opacity: 0; }
+  }
+  @keyframes state-2 {
+    0%, 30% { opacity: 0; }
+    36%, 64% { opacity: 1; }
+    70%, 100% { opacity: 0; }
+  }
+  @keyframes state-3 {
+    0%, 64% { opacity: 0; }
+    70%, 100% { opacity: 1; }
+  }
+</style>

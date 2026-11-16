@@ -1,4 +1,5 @@
 ---
+import "../../styles/booking.css";
 import Base from "../../layouts/Base.astro";
 import { toBookable, upcomingEvents } from "../../lib/events.ts";
 
@@ -7,6 +8,7 @@ const events = (await upcomingEvents()).map(toBookable);
 
 <Base title="Utbildningar och föreläsningar – PulsAnalys DISC"
   description="Här listar vi alla kommande utbildningstillfällen och inspirationsföreläsningar. Välj ett datum för att läsa mer och skicka in en anmälan.">
+  <div class="wrap page">
   <h1>Utbildningar och föreläsningar</h1>
   {events.length > 0 ? (
     <ul class="event-list">
@@ -22,4 +24,5 @@ const events = (await upcomingEvents()).map(toBookable);
   ) : (
     <p>Det finns inga inbokade datum just nu. Kontakta oss på <a href="mailto:info@pulsanalys.se">info@pulsanalys.se</a> så berättar vi när nästa tillfälle blir.</p>
   )}
+  </div>
 </Base>

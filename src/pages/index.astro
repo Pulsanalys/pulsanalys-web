@@ -1,0 +1,437 @@
+---
+import { Picture } from "astro:assets";
+import Base from "../layouts/Base.astro";
+import ProfileGraph from "../components/ProfileGraph.astro";
+import { toBookable, upcomingEvents } from "../lib/events.ts";
+
+import teamPhoto from "../assets/photos/team-vid-bordet.jpg";
+import lecturePhoto from "../assets/photos/forelasning.jpg";
+import cardsPhoto from "../assets/photos/disc-kort.jpg";
+import personPhoto from "../assets/photos/personprofil.jpg";
+import teamProfilePhoto from "../assets/photos/teamprofil.jpg";
+import recruitPhoto from "../assets/photos/rekryteringsprofil.jpg";
+import threeSixtyPhoto from "../assets/photos/360-profil.jpg";
+import distributorPhoto from "../assets/photos/distributor.jpg";
+
+import azLogo from "../assets/logos/astrazeneca.png";
+import jeLogo from "../assets/logos/jonkoping-energi.jpeg";
+import ffLogo from "../assets/logos/finansforbundet.png";
+import icaLogo from "../assets/logos/ica-maxi.png";
+import ox2Logo from "../assets/logos/ox2.png";
+
+const events = (await upcomingEvents()).map(toBookable);
+const courses = events.filter((e) => e.slug.startsWith("grundutbildning") || e.slug.startsWith("fordjupning"));
+
+const products = [
+  {
+    name: "Personprofil",
+    href: "/personprofil/",
+    photo: personPhoto,
+    alt: "En hand håller en mobiltelefon med en personprofil på skärmen.",
+    text: "Personprofilen synliggör en persons framträdande styrkor, hur personen tenderar att agera i olika situationer och hur hen anpassar sig till krav och förväntningar. Den är grunden för PulsAnalys och används bland annat i personlig utveckling, coaching, ledarskapsutveckling och kommunikationsträning.",
+  },
+  {
+    name: "Teamprofil",
+    href: "/teamprofil/",
+    photo: teamProfilePhoto,
+    alt: "En bärbar dator visar flera profilgrafer bredvid en mobiltelefon och en kopp kaffe.",
+    text: "Teamprofilen samlar gruppens personprofiler i en tydlig graf som kan jämföras med en gemensam kravprofil. Hur använder vi våra styrkor som team, och vad behöver vi arbeta med för att nå våra mål?",
+  },
+  {
+    name: "Rekryteringsprofil",
+    href: "/rekryteringsprofil/",
+    photo: recruitPhoto,
+    alt: "Två kollegor sitter i en soffa och går igenom ett underlag på en bärbar dator.",
+    text: "Rekryteringsprofilen gör företagets behov synliga utifrån de egenskaper som redan finns i arbetsgruppen. Kandidaternas personprofiler kan sedan matchas mot den bilden.",
+  },
+  {
+    name: "360-profil",
+    href: "/360-profil/",
+    photo: threeSixtyPhoto,
+    alt: "Händer sätter upp gula lappar med anteckningar på en vägg.",
+    text: "360-profilen visar hur andra uppfattar en persons beteende och öppnar för samtal om hur kollegor ser på dina styrkor. Ett verktyg för feedback, teamutveckling och konflikthantering – och för referenstagning och chefsbedömning vid rekrytering.",
+  },
+];
+
+const clients = [
+  { src: azLogo, alt: "AstraZeneca" },
+  { src: jeLogo, alt: "Jönköping Energi" },
+  { src: ffLogo, alt: "Finansförbundet" },
+  { src: icaLogo, alt: "ICA Maxi" },
+  { src: ox2Logo, alt: "OX2" },
+];
+
+const quotes = [
+  { text: "Förutom Pulsprofiler i olika sammanhang som del av utveckling av team/chefer har vi fokuserat på PulsAnalys 360 i våra Development center – ett assessment för blivande Sektionschefer. Superbra komplement till case och övningar.", name: "Mikael Hansen", org: "AstraZeneca" },
+  { text: "PulsAnalys är ett enkelt och lättanvänt redskap som hjälper oss att rekrytera rätt person till rätt plats. PulsAnalys hjälper oss att förbättra kommunikationen i företaget samt identifiera utvecklingsområden hos våra medarbetare.", name: "Pia Antill", org: "Birka Cruises AB" },
+  { text: "Vi har under 5 års tid anlitat PulsAnalys angående personprofiler och egenskaper för att skapa starka självständiga team och vi märker tydligt att personerna får en ökad förståelse om sina kollegor och sig själva samt vad teamet behöver för att bli effektivare.", name: "Tommy Smedberg", org: "Wästbygg" },
+  { text: "PulsAnalys erbjuder ett bra hjälpmedel vid rekrytering. Det är lätt att använda, intressant och ger ökad förståelse för hur andra reagerar och agerar. Verktyget lyfter fram personens starka sidor.", name: "Inger Eriksson", org: "Eckerö Rederi AB" },
+  { text: "PulsAnalys är ett enkelt och funktionellt verktyg som ger ett kompletterande samtalsunderlag vid rekrytering och teamutveckling av personal. Skapar en djupare dialog och förståelse för personens styrkor och svagheter.", name: "Linnéa Persson", org: "Faiveley Transport Nordic AB" },
+  { text: "Utbildningen i PulsAnalys DISC har för mig inneburit ett helt nytt sätt att kunna identifiera personers styrkor och hur olika egenskaper behövs för att skapa ett effektivt team.", name: "Robert Hallgren", org: "The Generation AB" },
+  { text: "Jag ville ha ett enkelt och digitalt verktyg i mitt arbete som HR-konsult och Executive Coach. PulsAnalys bidrar till förstärkt kommunikation i organisationer samt att verktyget lyfter olika styrkor hos individen.", name: "Jessica Hill Holm", org: "Hill Holm Coaching & Consulting" },
+  { text: "Vi fick värdefulla insikter och verktyg för att vi som grupp kunde arbeta framåt och på bästa sätt ta oss an våra uppsatta mål utifrån våra styrkor.", name: "Linda Hanserius", org: "Järfälla kommun" },
+];
+---
+
+<Base title="PulsAnalys DISC – ett kommunikationsverktyg som förenklar vardagen"
+  description="PulsAnalys visar beteendemönster utifrån DISC-teorin. Personprofil, teamprofil, rekryteringsprofil och 360-profil, utbildning och certifiering i DISC.">
+
+  <section class="hero" aria-labelledby="hero-rubrik">
+    <div class="wrap hero-text">
+      <h1 id="hero-rubrik">Ett kommunikations&shy;verktyg som förenklar vardagen</h1>
+      <div class="hero-side">
+        <p class="lead">PulsAnalys visar beteendemönster utifrån DISC-teorin. Ett enkelt verktyg för att förstå sig själv och varandra bättre på jobbet.</p>
+        <div class="actions">
+          <a class="button" href="/utbildningar-och-forelasningar/">Se kommande utbildningar</a>
+          <a class="text-link" href="/vad-ar-pulsanalys/">Så fungerar PulsAnalys</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="photo hero-photo">
+        <Picture src={teamPhoto} formats={["avif", "webp"]} widths={[640, 960, 1320, 1980]}
+          sizes="(min-width: 1440px) 1320px, calc(100vw - 2 * clamp(1.25rem, 5vw, 4rem))"
+          alt="Fyra kollegor står lutade över ett bord och studerar profilgrafer tillsammans."
+          loading="eager" fetchpriority="high" />
+      </div>
+    </div>
+  </section>
+
+  <ProfileGraph />
+
+  <section class="steps section" aria-labelledby="steg-rubrik">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="steg-rubrik">Tre steg till bättre kommunikation</h2>
+        <p class="lead">Att förstå varandra är svårt. Att förstå varandra på jobbet är ännu svårare. Så här kommer du och ditt företag igång med PulsAnalys.</p>
+      </div>
+      <ol class="step-list">
+        <li>
+          <h3>Grundutbildning DISC</h3>
+          <p>För att själv kunna använda verktyget går du vår grundutbildning. Vi lägger stor vikt vid återkopplingen – målet är att utveckla och lyfta människor.</p>
+        </li>
+        <li>
+          <h3>Certifiering</h3>
+          <p>I utbildningen ingår tio profiler att träna på. När du har klarat certifieringen kan du använda alla våra verktyg i systemet.</p>
+        </li>
+        <li>
+          <h3>Abonnemang</h3>
+          <p>Välj ett abonnemang som passar dig och ditt företag. Du gör ett obegränsat antal profiler i alla våra produkter.</p>
+        </li>
+      </ol>
+      <p class="more"><a class="text-link" href="/vad-ar-pulsanalys/">Läs mer om de tre stegen</a></p>
+    </div>
+  </section>
+
+  <section class="courses section" aria-labelledby="kurs-rubrik">
+    <div class="wrap courses-grid">
+      <div class="photo courses-photo">
+        <Picture src={cardsPhoto} formats={["avif", "webp"]} widths={[480, 720, 1000, 1320]}
+          sizes="(min-width: 60rem) 40vw, 100vw"
+          alt="Färgade kort med orden pådrivande, utåtriktad, lyhörd och systematisk ligger på ett bord bredvid en kurspärm." />
+      </div>
+      <div class="courses-text">
+        <h2 id="kurs-rubrik">Utbildning i DISC för framtida chefer, konsulter och rekryterare</h2>
+        <p class="lead">För att själv arbeta med PulsAnalys DISC erbjuder vi grundutbildning och fördjupningsutbildning. Med kurserna och ett abonnemang skapar du själv profiler och använder alla våra produkter.</p>
+
+        <h3 class="list-title">Kommande kurser</h3>
+        {courses.length > 0 ? (
+          <ul class="dates">
+            {courses.map((e) => (
+              <li>
+                <a href={`/utbildningar-och-forelasningar/${e.slug}/`}>
+                  <span class="date">{e.dateLabel}</span>
+                  <span class="what">{e.title}</span>
+                  <span class="where">{e.place}, kl. {e.time}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>Nya datum publiceras snart. Kontakta oss så berättar vi när nästa kurs startar.</p>
+        )}
+        <p class="more"><a class="text-link" href="/kurser/">Om kurserna</a> <span aria-hidden="true">·</span> <a class="text-link" href="/utbildningar-och-forelasningar/">Alla datum</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="products section" aria-labelledby="produkt-rubrik">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="produkt-rubrik">Fyra profiler, ett gemensamt språk</h2>
+        <p class="lead">Alla produkter bygger på samma personprofil. Med ett abonnemang gör du obegränsat antal profiler i alla fyra.</p>
+      </div>
+      <ul class="product-list">
+        {products.map((p) => (
+          <li class="product">
+            <div class="photo">
+              <Picture src={p.photo} formats={["avif", "webp"]} widths={[480, 720, 960]}
+                sizes="(min-width: 60rem) 30vw, 100vw" alt={p.alt} />
+            </div>
+            <div class="product-text">
+              <h3>{p.name}</h3>
+              <p>{p.text}</p>
+              <a class="text-link" href={p.href}>Läs om {p.name.toLowerCase()}<span class="visually-hidden"> – {p.name}</span></a>
+            </div>
+          </li>
+        ))}
+      </ul>
+      <p class="more">Vill du hellre att vi gör profilerna åt er? <a class="text-link" href="/konsulttjanster/">Se våra konsulttjänster</a></p>
+    </div>
+  </section>
+
+  <section class="talks section" aria-labelledby="forelasning-rubrik">
+    <div class="wrap talks-grid">
+      <div class="talks-text">
+        <h2 id="forelasning-rubrik">Kostnadsfria inspirationsföreläsningar</h2>
+        <p class="lead">Under föreläsningen ger vi dig tips och erfarenheter om hur du kan tänka när du möter andra människor i arbetslivet.</p>
+        <p class="more"><a class="button" href="/webbinarier/">Se kommande föreläsningar</a></p>
+      </div>
+      <div class="photo talks-photo">
+        <Picture src={lecturePhoto} formats={["avif", "webp"]} widths={[640, 960, 1320, 1960]}
+          sizes="(min-width: 60rem) 60vw, 100vw"
+          alt="En publik sitter i en ljus lokal och lyssnar på en föreläsning om DISC." />
+      </div>
+    </div>
+  </section>
+
+  <section class="clients section" aria-labelledby="kund-rubrik">
+    <div class="wrap">
+      <h2 id="kund-rubrik" class="small-head">Några av våra kunder</h2>
+      <ul class="logo-row">
+        {clients.map((c) => (
+          <li><Picture src={c.src} formats={["webp"]} widths={[240, 360]} sizes="12rem" alt={c.alt} /></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="quotes section" aria-labelledby="omdome-rubrik">
+    <div class="wrap">
+      <div class="quotes-head">
+        <h2 id="omdome-rubrik">Vad våra kunder säger</h2>
+        <a class="text-link" href="/omdomen/">Alla omdömen</a>
+      </div>
+    </div>
+    <div class="rail" tabindex="0" role="region" aria-label="Omdömen, rulla i sidled">
+      <ul>
+        {quotes.map((q) => (
+          <li>
+            <figure>
+              <blockquote><p>{q.text}</p></blockquote>
+              <figcaption><span class="who">{q.name}</span> <span class="org">{q.org}</span></figcaption>
+            </figure>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="distributor section" aria-labelledby="distributor-rubrik">
+    <div class="wrap distributor-grid">
+      <div class="photo distributor-photo">
+        <Picture src={distributorPhoto} formats={["avif", "webp"]} widths={[400, 655]}
+          sizes="(min-width: 60rem) 25vw, 60vw"
+          alt="Två kollegor står bredvid varandra i ett ljust kontor och tittar på en mobiltelefon." />
+      </div>
+      <div>
+        <h2 id="distributor-rubrik">Bli distributör</h2>
+        <p class="lead">Arbetar du som coach, konsult eller rekryterare och behöver ett verktyg för att mäta beteenden? Med PulsAnalys breddar du ditt erbjudande och ger dina kunder ett större mervärde.</p>
+        <p class="more"><a class="text-link" href="/distributor/">Så blir du distributör</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" aria-labelledby="kontakt-rubrik">
+    <div class="wrap contact-inner">
+      <h2 id="kontakt-rubrik">Vill du veta mer?</h2>
+      <p class="lead">Kontakta oss så berättar vi hur PulsAnalys kan hjälpa er.</p>
+      <p class="contact-lines">
+        <a href="tel:+46706762375">070-676 23 75</a>
+        <a href="mailto:info@pulsanalys.se">info@pulsanalys.se</a>
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .section { padding-block: var(--section); }
+  .section-head { display: grid; gap: 1.25rem; margin-bottom: clamp(2.5rem, 5vw, 4.5rem); }
+  @media (min-width: 60rem) {
+    .section-head { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); align-items: end; column-gap: var(--gutter); }
+  }
+  .section-head h2 { max-width: 18ch; }
+  .more { margin-top: 2rem; }
+  .photo { overflow: hidden; border-radius: var(--radius-photo); background: var(--mist); }
+  .photo :global(img) { width: 100%; height: 100%; object-fit: cover; }
+
+  /* Hero */
+  .hero { padding-top: clamp(2.5rem, 7vw, 6.5rem); }
+  .hero-text { display: grid; gap: clamp(1.5rem, 3vw, 2.5rem); }
+  @media (min-width: 60rem) {
+    .hero-text { grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); align-items: end; column-gap: var(--gutter); }
+  }
+  .hero h1 { max-width: 20ch; font-size: clamp(2.4rem, 1.5rem + 3.6vw, 4.35rem); }
+  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; margin-top: 1.75rem; }
+  .hero-photo { margin-top: clamp(2.5rem, 6vw, 5rem); aspect-ratio: 4 / 5; }
+  @media (min-width: 40rem) { .hero-photo { aspect-ratio: 16 / 9; } }
+  .hero-photo :global(img) { object-position: 50% 30%; }
+
+  /* Steps */
+  .step-list {
+    list-style: none;
+    counter-reset: step;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 2.5rem var(--gutter);
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+  .step-list li { counter-increment: step; border-top: 2px solid var(--navy); padding-top: 1.25rem; }
+  .step-list li::before {
+    content: counter(step);
+    display: block;
+    font-size: clamp(2.5rem, 2rem + 2vw, 4rem);
+    font-weight: 300;
+    line-height: 1;
+    color: var(--navy);
+    margin-bottom: 1rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .step-list h3 { margin-bottom: 0.5rem; }
+  .step-list p { max-width: 38ch; }
+
+  /* Courses */
+  .courses { background: var(--mist); }
+  .courses-grid { display: grid; gap: clamp(2.5rem, 5vw, 5rem); align-items: start; }
+  @media (min-width: 60rem) {
+    .courses-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+    .courses-photo { position: sticky; top: 6rem; }
+  }
+  .courses-photo { aspect-ratio: 4 / 5; }
+  .courses-text h2 { max-width: 20ch; }
+  .courses-text .lead { margin-top: 1.25rem; }
+  .list-title { margin-top: 2.75rem; margin-bottom: 0.75rem; font-size: 1.15rem; }
+  .dates { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .dates a {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.1rem 1.5rem;
+    padding: 1.1rem 0.25rem;
+    border-bottom: 1px solid var(--line);
+    text-decoration: none;
+    color: var(--ink);
+    transition: background-color 160ms var(--ease);
+  }
+  @media (min-width: 40rem) {
+    .dates a { grid-template-columns: 13rem minmax(0, 1fr); }
+    .dates .where { grid-column: 2; }
+  }
+  .dates a:hover, .dates a:focus-visible { background: rgb(46 62 96 / 0.06); }
+  .date { font-weight: 600; color: var(--navy); font-variant-numeric: tabular-nums; }
+  .what { font-weight: 600; }
+  .where { color: var(--muted); font-size: 0.95rem; }
+
+  /* Products */
+  .product-list { list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(3rem, 6vw, 5.5rem); }
+  .product { display: grid; gap: 1.5rem; align-items: center; }
+  @media (min-width: 60rem) {
+    .product { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); column-gap: clamp(2rem, 6vw, 6rem); }
+    .product:nth-child(even) .photo { order: 2; }
+  }
+  .product .photo { aspect-ratio: 3 / 2; }
+  .product-text h3 { font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.25rem); letter-spacing: -0.02em; margin-bottom: 0.75rem; }
+  .product-text p { max-width: 52ch; margin-bottom: 1.25rem; }
+
+  /* Lectures */
+  .talks { background: var(--navy); color: #fff; }
+  .talks h2 { color: #fff; }
+  .talks .lead { color: #e6e9f0; margin-top: 1.25rem; }
+  .talks .button { background: #fff; color: var(--navy); }
+  .talks .button:hover { background: #e6e9f0; }
+  .talks :focus-visible { outline-color: #fff; }
+  .talks-grid { display: grid; gap: clamp(2.5rem, 5vw, 5rem); align-items: center; }
+  @media (min-width: 60rem) { .talks-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); } }
+  .talks-photo { aspect-ratio: 16 / 10; }
+
+  /* Clients */
+  .clients { padding-block: clamp(3rem, 6vw, 5rem); }
+  .small-head { font-size: 1rem; letter-spacing: 0; color: var(--muted); font-weight: 500; }
+  .logo-row {
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+    gap: 2rem 3rem;
+    align-items: center;
+  }
+  .logo-row :global(img) {
+    width: auto;
+    max-width: 100%;
+    max-height: 3rem;
+    margin-inline: auto;
+    filter: grayscale(1) contrast(1.1);
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+  }
+
+  /* Quotes */
+  .quotes { background: var(--mist); }
+  .quotes-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 2.5rem; }
+  .rail {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: max(var(--margin), (100% - var(--max)) / 2);
+    padding-bottom: 1.5rem;
+    scrollbar-color: var(--navy) transparent;
+  }
+  .rail:focus-visible { outline-offset: -3px; }
+  .rail ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 max(var(--margin), (100% - var(--max)) / 2);
+    display: flex;
+    gap: var(--gutter);
+    width: max-content;
+  }
+  .rail li { scroll-snap-align: start; width: min(82vw, 30rem); flex: none; }
+  .rail figure { margin: 0; height: 100%; display: flex; flex-direction: column; justify-content: space-between; gap: 1.5rem; padding-top: 1.25rem; border-top: 2px solid var(--navy); }
+  blockquote { margin: 0; }
+  blockquote p { font-size: 1.2rem; line-height: 1.5; color: var(--ink); }
+  blockquote p::before { content: "”"; }
+  blockquote p::after { content: "”"; }
+  .who { display: block; font-weight: 600; color: var(--navy); }
+  .org { color: var(--muted); font-size: 0.95rem; }
+
+  /* Distributor */
+  .distributor-grid { display: grid; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+  @media (min-width: 60rem) { .distributor-grid { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); } }
+  .distributor-photo { aspect-ratio: 3 / 4; max-width: 24rem; }
+  .distributor .lead { margin-top: 1.25rem; }
+
+  /* Contact */
+  .contact { padding-block: var(--section); border-top: 1px solid var(--line); }
+  .contact-inner { display: grid; justify-items: center; text-align: center; gap: 1.25rem; }
+  .contact .lead { margin-inline: auto; }
+  .contact-lines { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 2.5rem; font-size: clamp(1.4rem, 1.1rem + 1.4vw, 2.25rem); font-weight: 600; letter-spacing: -0.01em; }
+  .contact-lines a { text-decoration-thickness: 1px; }
+
+  /* Large photos settle into place as they enter. Transform only. */
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-photo :global(img), .talks-photo :global(img), .product .photo :global(img) {
+        animation: settle linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 45%;
+      }
+    }
+  }
+  @keyframes settle {
+    from { transform: scale(var(--settle-from, 1.06)); }
+    to { transform: scale(1); }
+  }
+  @media (max-width: 40rem) {
+    .photo { --settle-from: 1.03; }
+  }
+</style>
