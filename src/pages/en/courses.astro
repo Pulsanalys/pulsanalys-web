@@ -9,7 +9,7 @@ import DateList from "../../components/DateList.astro";
 const courses = (await getCollection("courses")).filter((c) => c.id.startsWith("en/")).sort((a, b) => a.data.order - b.data.order);
 ---
 
-<Base title="DISC courses – basic, advanced and leadership training | PulsAnalys DISC"
+<Base title="DISC courses and certification | PulsAnalys DISC"
   description="DISC courses: basic training with certification, an advanced course and leadership training. Online and in person.">
   <PageHero heading="DISC courses"
     lead="Basic training and certification give you what you need to work with PulsAnalys. You can then go deeper into all our tools. The courses are also available online." />

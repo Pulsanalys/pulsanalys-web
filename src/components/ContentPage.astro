@@ -7,13 +7,16 @@ import CtaBand from "./CtaBand.astro";
 import DateList from "./DateList.astro";
 import PeopleList from "./PeopleList.astro";
 import JsonLd from "./JsonLd.astro";
+import Icon from "./Icon.astro";
 import { UI, href, langOf } from "../lib/i18n.ts";
 
 
 const { item } = Astro.props as { item: ContentItem };
 const lang = langOf(Astro.currentLocale);
 const t = UI[lang].page;
-const { Content } = await render(item.entry);
+const { Content, headings } = await render(item.entry);
+const toc = headings.filter((h) => h.depth === 2);
+const c = UI[lang].cta;
 const site = "PulsAnalys DISC";
 const sameLang = (id: string) => (lang === "en") === id.startsWith("en/");
 const otherProducts = item.kind === "product"
@@ -24,7 +27,7 @@ const otherProducts = item.kind === "product"
 {item.kind === "product" && (() => {
   const d = item.entry.data;
   return (
-    <Base title={`${d.title} – ${d.tagline} | ${site}`} description={d.description}>
+    <Base title={`${d.title} | ${site}`} description={d.description}>
       <PageHero heading={d.title} lead={d.summary} photo={d.photo} alt={d.alt} crumb={{ href: href(lang, "/produkter/"), label: t.products }}>
         <p class="tagline">{d.tagline}</p>
       </PageHero>
@@ -81,7 +84,21 @@ const otherProducts = item.kind === "product"
         </div>
       </PageHero>
       <section class="section">
-        <div class="wrap"><div class="prose"><Content /></div></div>
+        <div class="wrap with-aside">
+          <div class="prose"><Content /></div>
+          <aside class="side">
+            <div class="aside-card">
+              <h2 class="aside-title">{d.title}</h2>
+              {d.price && <p class="aside-price"><span>{t.price}</span>{d.price}</p>}
+              <a class="button" href={href(lang, d.bookingPage)}>{t.seeDates}</a>
+            </div>
+            <div class="contact-card">
+              <h2>{c.heading}</h2>
+              <a href="tel:+46706762375"><Icon name="phone" />070-676 23 75</a>
+              <a href="mailto:info@pulsanalys.se"><Icon name="mail" />info@pulsanalys.se</a>
+            </div>
+          </aside>
+        </div>
       </section>
       <section class="section tint">
         <div class="wrap">
@@ -122,13 +139,28 @@ const otherProducts = item.kind === "product"
       <PageHero heading={d.heading} lead={d.lead} photo={d.photo} alt={d.alt} />
       {(item.entry.body?.trim() || d.faq) && (
         <section class="section">
-          <div class="wrap">
-            {d.faq && (
-              <div class="faq">
-                {d.faq.map((f) => (<details><summary>{f.q}</summary><div class="answer"><p>{f.a}</p></div></details>))}
+          <div class="wrap with-aside">
+            <div>
+              {d.faq && (
+                <div class="faq">
+                  {d.faq.map((f) => (<details><summary>{f.q}</summary><div class="answer"><p>{f.a}</p></div></details>))}
+                </div>
+              )}
+              <div class="prose"><Content /></div>
+            </div>
+            <aside class="side">
+              {toc.length >= 3 && (
+                <nav class="aside-card toc" aria-label={t.onPage}>
+                  <h2 class="aside-title">{t.onPage}</h2>
+                  <ul>{toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ul>
+                </nav>
+              )}
+              <div class="contact-card">
+                <h2>{c.heading}</h2>
+                <a href="tel:+46706762375"><Icon name="phone" />070-676 23 75</a>
+                <a href="mailto:info@pulsanalys.se"><Icon name="mail" />info@pulsanalys.se</a>
               </div>
-            )}
-            <div class="prose"><Content /></div>
+            </aside>
           </div>
         </section>
       )}

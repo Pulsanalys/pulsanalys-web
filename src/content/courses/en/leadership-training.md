@@ -2,7 +2,7 @@
 title: Leadership Training
 order: 3
 tagline: Eight online sessions on your strengths and your team's
-description: Online leadership training with PulsAnalys DISC – eight 60-minute sessions on strengths, communication, teams, feedback and difficult conversations. Ends with a diploma.
+description: Online leadership training with PulsAnalys DISC – eight 60-minute sessions on strengths, communication, teams and feedback. Ends with a diploma.
 summary: Training for leaders focused on understanding your own strengths and those of your team – for more engagement, motivation, effectiveness and profitability.
 photo: ../../../assets/photos/ledarskap.jpg
 alt: A group of colleagues gathered round a table with a laptop.

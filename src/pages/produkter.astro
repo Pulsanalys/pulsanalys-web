@@ -9,7 +9,7 @@ import lecturePhoto from "../assets/photos/forelasning.jpg";
 const products = (await getCollection("products")).filter((p) => !p.id.startsWith("en/")).sort((a, b) => a.data.order - b.data.order);
 ---
 
-<Base title="Produkter – personprofil, teamprofil, rekryteringsprofil och 360-profil | PulsAnalys DISC"
+<Base title="Produkter – fyra profiler i DISC | PulsAnalys DISC"
   description="Vi erbjuder flera kommunikationsverktyg och profiler. Läs om personprofil, teamprofil, rekryteringsprofil, 360-profil och våra konsulttjänster.">
   <PageHero heading="Fyra profiler, ett gemensamt språk"
     lead="Alla våra produkter bygger på samma personprofil. Med ett abonnemang gör du obegränsat antal profiler i alla fyra – eller så gör våra konsulter dem åt er." />

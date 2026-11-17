@@ -16,7 +16,7 @@ const { Content } = await render(entry);
 const d = entry.data;
 ---
 
-<Base title={`${d.title}, ${event.dateLabel} – PulsAnalys DISC`}
+<Base title={`${d.title}, ${event.dateLabel}`.length > 44 ? `${d.title} | PulsAnalys` : `${d.title}, ${event.dateLabel} | PulsAnalys`}
   description={`${d.title} ${event.dateLabel}, ${d.place}. Anmäl dig här.`}>
   <section class="page-hero">
     <div class="wrap">

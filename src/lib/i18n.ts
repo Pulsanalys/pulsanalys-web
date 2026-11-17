@@ -126,7 +126,7 @@ export const UI = {
     quoteLang: "",
     page: {
       products: "Produkter", courses: "Kurser", calendar: "Utbildningar och föreläsningar", blog: "Blogg",
-      usedFor: "Används till", moreProfiles: "Fler profiler",
+      usedFor: "Används till", onPage: "På den här sidan", moreProfiles: "Fler profiler",
       learnTool: "Lär dig verktyget – Grundutbildning DISC", letUs: "Låt oss göra profilerna åt er",
       seeDates: "Se datum och anmäl dig", programme: "Utbildningsprogram", upcoming: "Kommande datum", price: "Pris",
     },
@@ -177,7 +177,7 @@ export const UI = {
     quoteLang: "Quoted in Swedish",
     page: {
       products: "Products", courses: "Courses", calendar: "Courses and lectures", blog: "Blog",
-      usedFor: "Used for", moreProfiles: "More profiles",
+      usedFor: "Used for", onPage: "On this page", moreProfiles: "More profiles",
       learnTool: "Learn the tool – Basic DISC Training", letUs: "Let us create the profiles for you",
       seeDates: "See dates and book", programme: "Programme", upcoming: "Upcoming dates", price: "Price",
     },

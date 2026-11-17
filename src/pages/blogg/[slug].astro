@@ -14,9 +14,9 @@ const d = entry.data;
 const fmt = new Intl.DateTimeFormat("sv-SE", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 ---
 
-<Base title={`${d.title} | PulsAnalys DISC`} description={d.description}>
+<Base title={d.title.length > 42 ? d.title : `${d.title} | PulsAnalys DISC`} description={d.description}>
   <JsonLd data={{ "@context": "https://schema.org", "@type": "BlogPosting", headline: d.title, datePublished: d.date.toISOString().slice(0, 10), publisher: { "@type": "Organization", name: "PulsAnalys AB" } }} />
-  <PageHero heading={d.title} crumb={{ href: "/blogg/", label: "Blogg" }}>
+  <PageHero heading={d.title} photo={d.photo} alt={d.alt ?? ""} crumb={{ href: "/blogg/", label: "Blogg" }}>
     <p class="muted post-date"><time datetime={d.date.toISOString().slice(0, 10)}>{fmt.format(d.date)}</time></p>
   </PageHero>
   <section class="section">

@@ -2,7 +2,7 @@
 title: Recruitment Profile
 order: 3
 tagline: A recruitment tool that genuinely helps
-description: The Recruitment Profile creates a shared picture of the role to be filled – a requirements profile with the soft skills that matter, to match candidates against.
+description: The Recruitment Profile creates a shared picture of the role to be filled – a requirements profile with the soft skills that matter, to match candidates to.
 summary: The Recruitment Profile makes the organisation's needs visible based on the qualities already in the team. Candidates' Personal Profiles can then be matched against that picture.
 photo: ../../../assets/photos/rekryteringsprofil.jpg
 alt: Two colleagues on a sofa reviewing material on a laptop.

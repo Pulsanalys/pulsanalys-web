@@ -1,8 +1,8 @@
 ---
 title: Consulting services
 heading: Consulting services
-description: Our consultants have many years' experience in leadership, recruitment and team development. From a few hours to larger projects – tailored to your organisation.
-lead: Our consultants have many years' experience and broad expertise. We help with everything from a few hours' work to larger, more extensive projects. Contact us and we will tailor a solution for your organisation.
+description: Our consultants have long experience in leadership, recruitment and team development. From a few hours to larger projects – tailored to your organisation.
+lead: Our consultants have long experience and broad expertise. We help with everything from a few hours' work to larger, more extensive projects. Contact us and we will tailor a solution for your organisation.
 photo: ../../../assets/photos/forelasning.jpg
 alt: An audience in a bright room listening to a lecture about DISC.
 ---

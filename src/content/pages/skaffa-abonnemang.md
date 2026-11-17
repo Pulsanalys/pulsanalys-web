@@ -1,7 +1,7 @@
 ---
 title: Skaffa abonnemang
 heading: Skaffa abonnemang
-description: Med ett abonnemang på PulsAnalys gör ni ett obegränsat antal person-, team-, rekryterings- och 360-profiler. Kontakta oss för ett förslag som passar ert företag.
+description: Med ett abonnemang på PulsAnalys gör ni ett obegränsat antal person-, team-, rekryterings- och 360-profiler. Kontakta oss för ett förslag som passar er.
 lead: Med ett abonnemang gör ni ett obegränsat antal profiler i alla våra produkter. Kontakta oss så hjälper vi dig att hitta det abonnemang som passar ditt företag bäst.
 ---
 
