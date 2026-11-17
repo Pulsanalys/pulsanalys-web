@@ -6,6 +6,7 @@ import "../styles/home.css";
 import ProfileGraph from "./ProfileGraph.astro";
 import DateList from "./DateList.astro";
 import CtaBand from "./CtaBand.astro";
+import ConsultingSection from "./ConsultingSection.astro";
 import { upcomingEvents } from "../lib/events.ts";
 import { dateRange, href, type Lang } from "../lib/i18n.ts";
 
@@ -194,7 +195,9 @@ const clients = [
     </div>
   </section>
 
-  <section class="products section" aria-labelledby="produkt-rubrik">
+  <ConsultingSection lang={lang} />
+
+  <section class="products section tint" aria-labelledby="produkt-rubrik">
     <div class="wrap">
       <div class="section-head">
         <h2 id="produkt-rubrik">{T.productsH}</h2>

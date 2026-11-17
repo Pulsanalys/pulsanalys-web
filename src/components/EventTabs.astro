@@ -1,0 +1,271 @@
+---
+import { getEntry } from "astro:content";
+import DateList from "./DateList.astro";
+import { upcomingEvents } from "../lib/events.ts";
+import type { Lang } from "../lib/i18n.ts";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const en = lang === "en";
+
+const grund = await getEntry("courses", en ? "en/basic-disc-training" : "grundutbildning-disc");
+const fordj = await getEntry("courses", en ? "en/advanced-disc-training" : "fordjupning-disc");
+
+const T = en
+  ? {
+      label: "Choose what you want to sign up for",
+      all: "All dates",
+      allText: "Every upcoming course, lecture and event in date order. Choose a date to read more and sign up.",
+      price: "Price",
+      empty: "There is nothing scheduled here right now. Contact us and we will tell you when the next date is set.",
+    }
+  : {
+      label: "Välj vad du vill anmäla dig till",
+      all: "Alla datum",
+      allText: "Alla kommande utbildningar, föreläsningar och event i datumordning. Välj ett datum för att läsa mer och anmäla dig.",
+      price: "Pris",
+      empty: "Just nu finns inga planerade datum här. Kontakta oss så berättar vi när nästa tillfälle blir av.",
+    };
+
+const groups = [
+  {
+    id: en ? "basic-training" : "grundutbildning",
+    type: "grundutbildning",
+    tab: en ? "Basic training" : "Grundutbildning",
+    title: grund?.data.title ?? "",
+    text: grund?.data.summary ?? "",
+    price: grund?.data.price,
+    link: en ? "/en/basic-disc-training/" : "/grundutbildning-disc/",
+    linkText: en ? "About the basic training" : "Om grundutbildningen",
+  },
+  {
+    id: en ? "advanced-training" : "fordjupning",
+    type: "fordjupningskurs",
+    tab: en ? "Advanced course" : "Fördjupning",
+    title: fordj?.data.title ?? "",
+    text: en
+      ? "For you who have completed the basic training and are certified in PulsAnalys DISC. " + (fordj?.data.summary ?? "")
+      : "För dig som har gått grundutbildningen och är certifierad i PulsAnalys DISC. " + (fordj?.data.summary ?? ""),
+    price: fordj?.data.price,
+    link: en ? "/en/advanced-disc-training/" : "/fordjupning-disc/",
+    linkText: en ? "About the advanced course" : "Om fördjupningskursen",
+  },
+  {
+    id: en ? "lectures" : "forelasningar",
+    type: "forelasning",
+    tab: en ? "Lectures" : "Föreläsningar",
+    title: en ? "Free inspirational lectures" : "Kostnadsfria inspirationsföreläsningar",
+    text: en
+      ? "Our lecturer Mia Wernersson talks about DISC and the personality colours for better communication. You get tips and experience on how to think when you meet other people at work."
+      : "Vår föreläsare Mia Wernersson berättar om DISC och personlighetsfärgerna för en bättre kommunikation. Du får tips och erfarenheter om hur du kan tänka när du möter andra människor i arbetslivet.",
+    link: en ? "/en/webinars/" : "/webbinarier/",
+    linkText: en ? "About the lectures" : "Om föreläsningarna",
+  },
+  {
+    id: en ? "events" : "event",
+    type: "event",
+    tab: en ? "Events" : "Event",
+    title: en ? "Events" : "Event",
+    text: en
+      ? "Networking events, client meetings and other occasions where we meet, get inspired and share experience. Sign up for what suits you – we hope to see you soon!"
+      : "Mingel, kundträffar och andra event där vi får mötas, inspireras och utbyta erfarenheter. Anmäl dig till det som passar dig – vi hoppas att vi ses snart!",
+    link: en ? "/en/events/" : "/event/",
+    linkText: en ? "About our events" : "Om våra event",
+  },
+] as const;
+
+const events = await upcomingEvents();
+const count = (type?: string) => events.filter((e) => !type || e.data.type === type).length;
+const allId = en ? "all" : "alla";
+---
+
+<section class="section event-tabs" data-tabs>
+  <div class="wrap">
+    <nav class="tab-bar" aria-label={T.label}>
+      <ul class="tab-list">
+        <li><a class="tab" href={`#${allId}`} data-tab={allId}><span>{T.all}</span><span class="count">{count()}</span></a></li>
+        {groups.map((g) => (
+          <li><a class="tab" href={`#${g.id}`} data-tab={g.id}><span>{g.tab}</span><span class="count">{count(g.type)}</span></a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="tab-panel" id={allId}>
+      <div class="panel-grid">
+        <div class="panel-intro">
+          <h2>{T.all}</h2>
+          <p>{T.allText}</p>
+        </div>
+        <DateList empty={T.empty} />
+      </div>
+    </div>
+
+    {groups.map((g) => (
+      <div class="tab-panel" id={g.id}>
+        <div class="panel-grid">
+          <div class="panel-intro">
+            <h2>{g.title}</h2>
+            <p>{g.text}</p>
+            {"price" in g && g.price && <p class="panel-price"><span>{T.price}</span>{g.price}</p>}
+            <a class="text-link" href={g.link}>{g.linkText}</a>
+          </div>
+          <DateList types={[g.type]} empty={T.empty} />
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .event-tabs { padding-top: clamp(2rem, 4vw, 3rem); }
+  .tab-bar {
+    position: sticky;
+    top: 4.75rem;
+    z-index: 5;
+    margin: 0 calc(-1 * var(--margin)) clamp(2rem, 4vw, 3rem);
+    padding: 0.75rem var(--margin);
+    background: rgb(255 255 255 / 0.92);
+    backdrop-filter: saturate(1.4) blur(14px);
+    -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  }
+  .tab-list {
+    list-style: none;
+    margin: 0;
+    padding: 0.35rem;
+    display: flex;
+    gap: 0.35rem;
+    width: max-content;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    background: var(--mist);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+  .tab-list::-webkit-scrollbar { display: none; }
+  /* Phones: every option visible at once, one per row. */
+  @media (max-width: 40rem) {
+    .tab-bar { position: static; margin-inline: 0; padding: 0; background: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
+    .tab-list { display: grid; grid-template-columns: 1fr; gap: 0.25rem; width: 100%; border-radius: var(--r-m); }
+    .tab { width: 100%; justify-content: space-between; border-radius: calc(var(--r-m) - 5px); }
+    .tab-panel { scroll-margin-top: 6rem; }
+  }
+  .tab-list li { flex: none; }
+  .tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-height: 2.75rem;
+    padding: 0.55rem 0.7rem 0.55rem 1.15rem;
+    border-radius: 999px;
+    color: var(--soft);
+    font-weight: 600;
+    font-size: 0.9688rem;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 160ms var(--ease), color 160ms var(--ease), box-shadow 160ms var(--ease);
+  }
+  .tab:hover { color: var(--navy-deep); background: rgb(255 255 255 / 0.7); }
+  .tab[aria-selected="true"] { background: var(--navy); color: #fff; box-shadow: 0 1px 2px rgb(17 27 53 / 0.2), 0 8px 18px -10px rgb(17 27 53 / 0.6); }
+  .count {
+    display: inline-grid;
+    place-items: center;
+    min-width: 1.6rem;
+    height: 1.6rem;
+    padding: 0 0.45rem;
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--navy-deep);
+    font-size: 0.8125rem;
+    font-variant-numeric: tabular-nums;
+    border: 1px solid var(--line);
+  }
+  .tab[aria-selected="true"] .count { background: rgb(255 255 255 / 0.16); color: #fff; border-color: transparent; }
+
+  .tab-panel { scroll-margin-top: 10rem; }
+  .tab-panel + .tab-panel { margin-top: var(--section); }
+  [data-tabs].is-enhanced .tab-panel + .tab-panel { margin-top: 0; }
+  .panel-grid { display: grid; gap: 2rem clamp(2.5rem, 5vw, 5rem); align-items: start; }
+  @media (min-width: 60rem) { .panel-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); } }
+  .panel-intro { display: grid; gap: 1rem; justify-items: start; }
+  .panel-intro::before { content: ""; width: 4.5rem; height: 4px; border-radius: 4px; background: var(--pulse); }
+  .panel-intro h2 { font-size: clamp(1.6rem, 1.35rem + 1vw, 2.2rem); }
+  .panel-intro p { color: var(--soft); max-width: 46ch; }
+  .panel-price { font-weight: 650; font-size: 1.2rem; color: var(--navy-deep) !important; }
+  .panel-price span { display: block; font-size: var(--step-small); font-weight: 500; color: var(--muted); }
+  .panel-grid :global(.dates-max) { max-width: none; }
+  .panel-grid :global(.empty) { max-width: none; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    [data-tabs].is-enhanced .tab-panel:not([hidden]) { animation: panel-in 260ms var(--ease); }
+  }
+  @keyframes panel-in {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: none; }
+  }
+</style>
+
+<script>
+  // Without JavaScript the tabs are jump links and every list is shown.
+  // With it they become real tabs: arrow keys move between them and the address keeps the choice.
+  for (const root of document.querySelectorAll<HTMLElement>("[data-tabs]")) {
+    const list = root.querySelector<HTMLElement>(".tab-list");
+    const tabs = [...root.querySelectorAll<HTMLAnchorElement>("[data-tab]")];
+    const panels = tabs.map((t) => document.getElementById(t.dataset.tab!)!);
+    if (!list || tabs.length === 0 || panels.some((p) => !p)) continue;
+
+    list.setAttribute("role", "tablist");
+    list.querySelectorAll("li").forEach((li) => li.setAttribute("role", "presentation"));
+    tabs.forEach((tab, i) => {
+      tab.setAttribute("role", "tab");
+      tab.id = `tab-${tab.dataset.tab}`;
+      tab.setAttribute("aria-controls", panels[i].id);
+      panels[i].setAttribute("role", "tabpanel");
+      panels[i].setAttribute("aria-labelledby", tab.id);
+    });
+    root.classList.add("is-enhanced");
+
+    const select = (i: number, opts: { focus?: boolean; push?: boolean } = {}) => {
+      tabs.forEach((tab, n) => {
+        const on = n === i;
+        tab.setAttribute("aria-selected", String(on));
+        tab.tabIndex = on ? 0 : -1;
+        panels[n].hidden = !on;
+      });
+      tabs[i].scrollIntoView({ block: "nearest", inline: "nearest" });
+      if (opts.focus) tabs[i].focus();
+      // Bring the start of the new list into view if the reader had scrolled past it.
+      if (opts.push) {
+        const bar = root.querySelector<HTMLElement>(".tab-bar")!.getBoundingClientRect();
+        if (panels[i].getBoundingClientRect().top < bar.bottom) {
+          const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+          panels[i].scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
+        }
+      }
+      if (opts.push) history.replaceState(null, "", `#${panels[i].id}`);
+    };
+
+    const fromHash = () => Math.max(0, panels.findIndex((p) => `#${p.id}` === decodeURIComponent(location.hash)));
+    select(fromHash());
+
+    tabs.forEach((tab, i) => {
+      tab.addEventListener("click", (e) => {
+        e.preventDefault();
+        select(i, { push: true });
+      });
+      tab.addEventListener("keydown", (e) => {
+        const last = tabs.length - 1;
+        const next =
+          e.key === "ArrowRight" ? (i === last ? 0 : i + 1)
+          : e.key === "ArrowLeft" ? (i === 0 ? last : i - 1)
+          : e.key === "Home" ? 0
+          : e.key === "End" ? last
+          : -1;
+        if (next < 0) return;
+        e.preventDefault();
+        select(next, { focus: true, push: true });
+      });
+    });
+    window.addEventListener("hashchange", () => select(fromHash()));
+  }
+</script>

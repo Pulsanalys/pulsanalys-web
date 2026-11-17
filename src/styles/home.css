@@ -106,7 +106,7 @@
 .consult { color: var(--soft); margin-top: 2.5rem; }
 
 /* Lectures: one photograph, text on a navy veil */
-.talks-band { padding-bottom: var(--section); }
+.talks-band { padding-block: var(--section); }
 .talks {
   position: relative;
   overflow: hidden;

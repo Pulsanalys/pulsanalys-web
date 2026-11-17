@@ -2,28 +2,15 @@
 import Base from "../../layouts/Base.astro";
 import PageHero from "../../components/PageHero.astro";
 import CtaBand from "../../components/CtaBand.astro";
-import DateList from "../../components/DateList.astro";
-
-const groups = [
-  { title: "Basic DISC Training", type: "grundutbildning", link: "/en/basic-disc-training/", linkText: "About the basic training" },
-  { title: "Advanced DISC Training", type: "fordjupningskurs", link: "/en/advanced-disc-training/", linkText: "About the advanced course" },
-  { title: "Lectures and webinars", type: "forelasning", link: "/en/webinars/", linkText: "About the lectures" },
-  { title: "Events", type: "event", link: "/en/events/", linkText: "About our events" },
-] as const;
+import ConsultingSection from "../../components/ConsultingSection.astro";
+import EventTabs from "../../components/EventTabs.astro";
 ---
 
-<Base title="Courses and lectures – upcoming dates | PulsAnalys DISC"
-  description="All upcoming courses and inspirational lectures. Choose a date to read more and sign up.">
-  <PageHero heading="Courses and lectures"
-    lead="All upcoming courses, lectures and events. Choose a date to read more and sign up. The courses are held in Swedish, and the booking pages are in Swedish." />
-  {groups.map((g, i) => (
-    <section class={`section${i % 2 === 1 ? " tint" : ""}`}>
-      <div class="wrap">
-        <div class="section-head"><h2>{g.title}</h2></div>
-        <DateList types={[g.type]} />
-        <p class="more"><a class="text-link" href={g.link}>{g.linkText}</a></p>
-      </div>
-    </section>
-  ))}
+<Base title="Courses and lectures | PulsAnalys DISC"
+  description="All upcoming PulsAnalys courses, lectures and events. Choose a date to read more and sign up.">
+  <PageHero heading="Book a course"
+    lead="Basic training with certification, an advanced course, free lectures and events. Choose what interests you and see the upcoming dates. Courses and booking pages are in Swedish." />
+  <EventTabs lang="en" />
+  <ConsultingSection lang="en" tint />
   <CtaBand />
 </Base>

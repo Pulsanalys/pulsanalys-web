@@ -36,18 +36,6 @@
     "roleEn": "Systems developer"
   },
   {
-    "id": "nathalie-bagger",
-    "name": "Nathalie Bagger",
-    "role": "Ekonomiansvarig",
-    "email": "nathalie@eliteredovisning.se",
-    "phone": "070-851 06 69",
-    "linkedin": "https://www.linkedin.com/in/nathalie-johansdotter/",
-    "photo": "../../assets/people/nathalie-bagger.jpg",
-    "group": "kontakt",
-    "order": 4,
-    "roleEn": "Head of finance"
-  },
-  {
     "id": "konsult-jessica-hill-holm",
     "name": "Jessica Hill Holm",
     "role": "Konsult",

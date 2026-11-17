@@ -1,0 +1,102 @@
+---
+import { getEntry, render } from "astro:content";
+import { href, type Lang } from "../lib/i18n.ts";
+
+interface Props { lang: Lang; tint?: boolean }
+const { lang, tint = false } = Astro.props;
+const en = lang === "en";
+
+const entry = await getEntry("pages", en ? "en/consulting-services" : "konsulttjanster");
+const { headings } = entry ? await render(entry) : { headings: [] };
+const page = href(lang, "/konsulttjanster/");
+
+// One line per service, in the order the consulting page lists them.
+const lines = en
+  ? [
+      "Inspirational lectures designed for your organisation.",
+      "Training for your workplace that helps people understand each other at work.",
+      "Understand what drives and motivates the people you lead.",
+      "A complete picture of candidates' soft skills and how they fit the team.",
+      "Team days – one of our most popular consulting services.",
+      "Build understanding and untie the knots in your workplace.",
+    ]
+  : [
+      "Inspirationsföreläsningar som skräddarsys för just ert företag.",
+      "Utbildningar för er arbetsplats som hjälper er att förstå varandra bättre.",
+      "Förstå vad dina medarbetare drivs och motiveras av.",
+      "En helhetsbild av kandidaternas mjuka värden och hur de passar i gruppen.",
+      "Teamdagar – en av våra populäraste konsulttjänster.",
+      "Skapa förståelse och lös upp knutarna på arbetsplatsen.",
+    ];
+const services = headings.filter((h) => h.depth === 2).map((h, i) => ({ ...h, line: lines[i] ?? "" }));
+
+const T = en
+  ? {
+      heading: "Consulting services",
+      lead: "Our consultants have long experience and broad expertise. We help with everything from a few hours' work to larger projects, and tailor a solution for your organisation.",
+      cta: "Contact us about a tailored solution",
+      all: "About our consulting services",
+    }
+  : {
+      heading: "Konsulttjänster",
+      lead: "Våra konsulter har mångårig erfarenhet och stor kompetens. Vi hjälper till med allt från några enstaka timmar till större projekt, och skräddarsyr en lösning som passar ert företag.",
+      cta: "Kontakta oss om en skräddarsydd lösning",
+      all: "Om våra konsulttjänster",
+    };
+---
+
+<section class:list={["section", "consulting", { tint }]} aria-labelledby="konsult-rubrik">
+  <div class="wrap consulting-grid">
+    <div class="consulting-intro">
+      <span class="pulse-rule" aria-hidden="true"></span>
+      <h2 id="konsult-rubrik">{T.heading}</h2>
+      <p class="lead">{T.lead}</p>
+      <div class="actions">
+        <a class="button" href={href(lang, "/kontakta-oss/")}>{T.cta}</a>
+        <a class="text-link" href={page}>{T.all}</a>
+      </div>
+    </div>
+    <ul class="service-grid">
+      {services.map((s) => (
+        <li>
+          <h3><a href={`${page}#${s.slug}`}>{s.text}</a></h3>
+          <p>{s.line}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .consulting-grid { display: grid; gap: clamp(2.5rem, 5vw, 5rem); align-items: start; }
+  @media (min-width: 62rem) {
+    .consulting-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+    .consulting-intro { position: sticky; top: 7rem; }
+  }
+  .consulting-intro h2 { margin-top: 1.75rem; }
+  .consulting-intro .lead { margin-top: 1.25rem; }
+  .service-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--gutter); }
+  @media (min-width: 36rem) { .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .service-grid li {
+    position: relative;
+    display: grid;
+    align-content: start;
+    gap: 0.55rem;
+    padding: clamp(1.4rem, 2.4vw, 1.9rem);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--r-m);
+    box-shadow: var(--shadow-s);
+    transition: transform 200ms var(--ease), box-shadow 200ms var(--ease), border-color 200ms var(--ease);
+  }
+  .service-grid li:hover { transform: translateY(-3px); box-shadow: var(--shadow-m); border-color: #c9d0dd; }
+  .service-grid li::before { content: ""; width: 2.25rem; height: 3px; border-radius: 3px; background: var(--navy); margin-bottom: 0.6rem; }
+  .service-grid li:nth-child(4n + 1)::before { background: #b62c64; }
+  .service-grid li:nth-child(4n + 2)::before { background: #d6a626; }
+  .service-grid li:nth-child(4n + 3)::before { background: #5f8a4c; }
+  .service-grid li:nth-child(4n + 4)::before { background: #4f8e9b; }
+  .service-grid h3 { font-size: 1.125rem; }
+  .service-grid h3 a { color: inherit; text-decoration: none; }
+  .service-grid h3 a::after { content: ""; position: absolute; inset: 0; border-radius: var(--r-m); }
+  .service-grid p { color: var(--soft); font-size: var(--step-small); line-height: 1.55; }
+</style>
