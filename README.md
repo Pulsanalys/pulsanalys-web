@@ -31,7 +31,7 @@ Settings (Cloudflare → Workers → pulsanalys-web → Settings):
 |---|---|---|
 | `TURNSTILE_SECRET_KEY` | Secret | From the Turnstile widget |
 | `PUBLIC_TURNSTILE_SITE_KEY` | Build variable | From the Turnstile widget |
-| `PUBLIC_STAGING` | Build variable | `true` on the review address |
+| `PUBLIC_STAGING` | Build variable | Leave unset on the review address (noindex is the default). Set to `false` at launch |
 | `MAIL_FROM` | Variable (`wrangler.jsonc`) | Sender on a domain onboarded to Cloudflare Email Service |
 
 ## Commands

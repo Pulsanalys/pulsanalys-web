@@ -1,0 +1,78 @@
+# 301 redirects from the old WordPress site. The full table is docs/URL-MAP.csv.
+# /anmalan/?eventid=N and /bokning/?eventid=N are handled in worker/index.ts.
+
+# Blog posts moved under /blogg/
+/2021/:month/:day/:slug/ /blogg/:slug/ 301
+/2021/:month/:day/:slug /blogg/:slug/ 301
+
+# Past course and lecture dates (custom post types)
+/grundutbildningar/* /grundutbildning/ 301
+/grundutbildningar /grundutbildning/ 301
+/grundutbildning-slid/* /grundutbildning/ 301
+/grundutbildning-slid /grundutbildning/ 301
+/grundutbildningar-po/* /grundutbildning/ 301
+/grundutbildningar-po /grundutbildning/ 301
+/grund-polish-slide/* /grundutbildning/ 301
+/grund-polish-slide /grundutbildning/ 301
+/fordjupnings-kurs/* /fordjupningskurser/ 301
+/fordjupnings-kurs /fordjupningskurser/ 301
+/fordjupningskurs-sli/* /fordjupningskurser/ 301
+/fordjupningskurs-sli /fordjupningskurser/ 301
+/forelasningar/* /webbinarier/ 301
+/forelasningar /webbinarier/ 301
+/inspirations-homepag/* /webbinarier/ 301
+/inspirations-homepag /webbinarier/ 301
+/inspirations-slide/* /webbinarier/ 301
+/inspirations-slide /webbinarier/ 301
+/inspirationsforelasningar/ /webbinarier/ 301
+/inspirationsforelasningar /webbinarier/ 301
+/utbildningar-och-inspirationsforelasningar/ /utbildningar-och-forelasningar/ 301
+/utbildningar-och-inspirationsforelasningar /utbildningar-och-forelasningar/ 301
+/events/* /event/ 301
+/events /event/ 301
+
+# Old prefix
+/pulsanalys2019/pulscertifiering-disc/ /grundutbildning-disc/ 301
+/pulsanalys2019/:page/ /:page/ 301
+
+# Pages that were placeholders, broken or duplicates
+/privacy-policy/ /en/privacy-policy/ 301
+/privacy-policy /en/privacy-policy/ 301
+/foretag/ /skaffa-abonnemang/ 301
+/foretag /skaffa-abonnemang/ 301
+/studenter/ /kontakta-oss/ 301
+/studenter /kontakta-oss/ 301
+/6-anvandare/ /skaffa-abonnemang/ 301
+/6-anvandare /skaffa-abonnemang/ 301
+/1000-anstallda/ /skaffa-abonnemang/ 301
+/1000-anstallda /skaffa-abonnemang/ 301
+/abonnemangsresultat/ /skaffa-abonnemang/ 301
+/abonnemangsresultat /skaffa-abonnemang/ 301
+/cvgeneratorn/ / 301
+/cvgeneratorn / 301
+/author/* /blogg/ 301
+/category/* /blogg/ 301
+/tag/* /blogg/ 301
+/feed/ /blogg/ 301
+/feed /blogg/ 301
+
+# English
+/en/products-and-services/ /en/products/ 301
+/en/immersion-disc/ /en/advanced-disc-training/ 301
+/en/training-courses-and-lectures/ /en/courses-and-lectures/ 301
+/en/basic-education/ /en/basic-disc-training/dates/ 301
+/en/advanced-courses/ /en/advanced-disc-training/dates/ 301
+/en/lectures/ /en/webinars/ 301
+/en/what-is-pulseanalysis/ /en/what-is-pulsanalys/ 301
+/en/contact-us-for-more-information/ /en/contact-us/ 301
+/en/privacy-policy-2/ /en/privacy-policy/ 301
+/en/basic-disc-course/ /en/basic-disc-training/ 301
+/en/basic-course/ /en/basic-disc-training/dates/ 301
+/basic-courses/ /en/basic-disc-training/dates/ 301
+/en/companies/ /en/get-a-subscription/ 301
+/en/students/ /en/contact-us/ 301
+/en/6-users/ /en/get-a-subscription/ 301
+/en/1000-employees/ /en/get-a-subscription/ 301
+/en/subscription-results/ /en/get-a-subscription/ 301
+/en/cv-generators/ /en/ 301
+/en/booking/ /en/courses-and-lectures/ 301

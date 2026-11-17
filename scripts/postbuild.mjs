@@ -1,8 +1,9 @@
 // Writes the files whose content depends on the environment:
-// on the review address (PUBLIC_STAGING=true) every page is noindex and robots.txt blocks crawling.
+// until launch (PUBLIC_STAGING is not "false") every page is noindex and robots.txt blocks crawling.
 import { readFile, writeFile } from "node:fs/promises";
 
-const staging = process.env.PUBLIC_STAGING === "true";
+// Noindex is the default; only an explicit PUBLIC_STAGING=false (at launch) lets search engines in.
+const staging = process.env.PUBLIC_STAGING !== "false";
 const site = (process.env.SITE_URL ?? "https://pulsanalys.se").replace(/\/$/, "");
 
 if (staging) {

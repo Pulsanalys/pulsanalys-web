@@ -12,7 +12,7 @@ interface Props {
 }
 
 const { title, description, lang = "sv" } = Astro.props;
-const staging = import.meta.env.PUBLIC_STAGING === "true";
+const staging = import.meta.env.PUBLIC_STAGING !== "false";
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
