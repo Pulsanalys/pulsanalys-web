@@ -8,7 +8,8 @@ interface Props {
 }
 
 const { event, terms } = Astro.props;
-const siteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? "1x00000000000000000000AA";
+// Public site key for the "pulsanalys-web" Turnstile widget. The secret key lives only in Cloudflare (TURNSTILE_SECRET_KEY).
+const siteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? "0x4AAAAAAGEOSsuUBie8k7i-";
 const heading = event.booking === "intresseanmalan" ? "Anmäl ditt intresse" : "Anmäl dig";
 const submitLabel = event.booking === "intresseanmalan" ? "Skicka intresseanmälan" : "Skicka anmälan";
 ---
