@@ -1,0 +1,28 @@
+---
+import { toBookable, upcomingEvents } from "../lib/events.ts";
+
+interface Props {
+  types?: ("grundutbildning" | "fordjupningskurs" | "forelasning" | "event")[];
+  empty?: string;
+}
+const { types, empty = "Det finns inga inbokade datum just nu. Kontakta oss så berättar vi när nästa tillfälle blir." } = Astro.props;
+const events = (await upcomingEvents())
+  .filter((e) => !types || types.includes(e.data.type))
+  .map(toBookable);
+---
+
+{events.length > 0 ? (
+  <ul class="dates">
+    {events.map((e) => (
+      <li>
+        <a href={`/utbildningar-och-forelasningar/${e.slug}/`}>
+          <span class="date">{e.dateLabel}</span>
+          <span class="what">{e.title}</span>
+          <span class="where">{e.place}, kl. {e.time}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+) : (
+  <p class="empty">{empty}</p>
+)}

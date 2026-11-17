@@ -1,0 +1,35 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import PeopleList from "../components/PeopleList.astro";
+import JsonLd from "../components/JsonLd.astro";
+---
+
+<Base title="Kontakta oss | PulsAnalys DISC"
+  description="PulsAnalys AB finns i Stockholm. Nå oss på 070-676 23 75 eller info@pulsanalys.se. Kundsupport: support@pulsanalys.se.">
+  <JsonLd data={{
+    "@context": "https://schema.org", "@type": "Organization", name: "PulsAnalys AB", url: "https://pulsanalys.se",
+    email: "info@pulsanalys.se", telephone: "+46706762375", taxID: "556600-3868",
+    address: { "@type": "PostalAddress", streetAddress: "Wollmar Yxkullsgatan 7", postalCode: "118 50", addressLocality: "Stockholm", addressCountry: "SE" },
+    sameAs: ["https://www.linkedin.com/company/pulsanalys-ab/", "https://www.facebook.com/PulsAnalysAb/", "https://www.instagram.com/pulsanalysab/"],
+  }} />
+  <PageHero heading="Kontakta oss" lead="Ring eller mejla oss så berättar vi hur PulsAnalys kan hjälpa er. Är du redan kund och behöver hjälp med systemet når du kundsupporten på support@pulsanalys.se." />
+  <section class="section tint">
+    <div class="wrap">
+      <dl class="facts">
+        <div><dt>Telefon</dt><dd><a href="tel:+46706762375">070-676 23 75</a></dd></div>
+        <div><dt>E-post</dt><dd><a href="mailto:info@pulsanalys.se">info@pulsanalys.se</a></dd></div>
+        <div><dt>Kundsupport</dt><dd><a href="mailto:support@pulsanalys.se">support@pulsanalys.se</a></dd></div>
+        <div><dt>Besöks- och fakturaadress</dt><dd>Wollmar Yxkullsgatan 7<br />118 50 Stockholm</dd></div>
+        <div><dt>Organisationsnummer</dt><dd>556600-3868</dd></div>
+        <div><dt>Karta</dt><dd><a href="https://maps.google.com/?q=Wollmar+Yxkullsgatan+7,+118+50+Stockholm">Visa på karta</a></dd></div>
+      </dl>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><h2>Träffa vårt team</h2></div>
+      <PeopleList groups={["team", "kontakt"]} />
+    </div>
+  </section>
+</Base>

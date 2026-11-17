@@ -1,0 +1,17 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import CtaBand from "../components/CtaBand.astro";
+import DateList from "../components/DateList.astro";
+---
+
+<Base title="Event | PulsAnalys DISC" description="Kommande mingel, kundträffar och andra event med PulsAnalys.">
+  <PageHero heading="Event" lead="Här samlar vi kommande mingel, kundträffar, föreläsningar och andra event där vi får mötas, inspireras och utbyta erfarenheter. Läs mer och anmäl dig till det som passar dig – vi hoppas att vi ses snart!" crumb={{ href: "/utbildningar-och-forelasningar/", label: "Utbildningar och föreläsningar" }} />
+  <section class="section tint">
+    <div class="wrap">
+      <DateList types={["event"]} empty="Det finns inga inbokade event just nu." />
+      
+    </div>
+  </section>
+  <CtaBand />
+</Base>

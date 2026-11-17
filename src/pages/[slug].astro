@@ -1,0 +1,157 @@
+---
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import { Picture } from "astro:assets";
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import CtaBand from "../components/CtaBand.astro";
+import DateList from "../components/DateList.astro";
+import PeopleList from "../components/PeopleList.astro";
+import JsonLd from "../components/JsonLd.astro";
+
+type Entry =
+  | { kind: "product"; entry: CollectionEntry<"products"> }
+  | { kind: "course"; entry: CollectionEntry<"courses"> }
+  | { kind: "page"; entry: CollectionEntry<"pages"> };
+
+export async function getStaticPaths() {
+  const [products, courses, pages] = await Promise.all([
+    getCollection("products"), getCollection("courses"), getCollection("pages"),
+  ]);
+  return [
+    ...products.map((entry) => ({ params: { slug: entry.id }, props: { item: { kind: "product", entry } } })),
+    ...courses.map((entry) => ({ params: { slug: entry.id }, props: { item: { kind: "course", entry } } })),
+    ...pages.map((entry) => ({ params: { slug: entry.id }, props: { item: { kind: "page", entry } } })),
+  ];
+}
+
+const { item } = Astro.props as { item: Entry };
+const { Content } = await render(item.entry);
+const site = "PulsAnalys DISC";
+const otherProducts = item.kind === "product"
+  ? (await getCollection("products")).filter((p) => p.id !== item.entry.id).sort((a, b) => a.data.order - b.data.order)
+  : [];
+---
+
+{item.kind === "product" && (() => {
+  const d = item.entry.data;
+  return (
+    <Base title={`${d.title} – ${d.tagline} | ${site}`} description={d.description}>
+      <PageHero heading={d.title} lead={d.summary} photo={d.photo} alt={d.alt} crumb={{ href: "/produkter/", label: "Produkter" }}>
+        <p class="tagline">{d.tagline}</p>
+      </PageHero>
+      <section class="section tint">
+        <div class="wrap split-text-only">
+          <div class="prose"><Content /></div>
+          <aside>
+            <h2 class="aside-title">Används till</h2>
+            <ul class="ticks one-col">{d.uses.map((u) => <li>{u}</li>)}</ul>
+          </aside>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head"><h2>{d.stepsTitle}</h2></div>
+          <ol class="numbered steps-cols">{d.steps.map((s) => <li><p>{s}</p></li>)}</ol>
+          <p class="more">
+            <a class="button" href="/grundutbildning-disc/">Lär dig verktyget – Grundutbildning DISC</a>
+            <a class="text-link" href="/konsulttjanster/">Låt oss göra profilerna åt er</a>
+          </p>
+        </div>
+      </section>
+      <section class="section tint">
+        <div class="wrap">
+          <div class="section-head"><h2>Fler profiler</h2></div>
+          <ul class="card-grid">
+            {otherProducts.map((p) => (
+              <li>
+                <h3><a href={`/${p.id}/`}>{p.data.title}</a></h3>
+                <p>{p.data.summary}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+      <CtaBand />
+    </Base>
+  );
+})()}
+
+{item.kind === "course" && (() => {
+  const d = item.entry.data;
+  return (
+    <Base title={`${d.title} | ${site}`} description={d.description}>
+      <JsonLd data={{
+        "@context": "https://schema.org", "@type": "Course", name: d.title, description: d.description,
+        provider: { "@type": "Organization", name: "PulsAnalys AB", sameAs: "https://pulsanalys.se" },
+        inLanguage: "sv",
+      }} />
+      <PageHero heading={d.title} lead={d.summary} photo={d.photo} alt={d.alt} crumb={{ href: "/kurser/", label: "Kurser" }}>
+        <div class="actions">
+          <a class="button" href={d.bookingPage}>Se datum och anmäl dig</a>
+          {d.price && <span class="price">{d.price}</span>}
+        </div>
+      </PageHero>
+      <section class="section tint">
+        <div class="wrap"><div class="prose"><Content /></div></div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head"><h2>Utbildningsprogram</h2></div>
+          <ul class="card-grid">
+            {d.programme.map((block) => (
+              <li>
+                <h3>{block.title}</h3>
+                <ul class="plain">{block.items.map((i) => <li>{i}</li>)}</ul>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+      {d.eventType && (
+        <section class="section tint">
+          <div class="wrap">
+            <div class="section-head"><h2>Kommande datum</h2>{d.price && <p class="lead">Pris: {d.price}</p>}</div>
+            <DateList types={[d.eventType]} />
+          </div>
+        </section>
+      )}
+      <CtaBand />
+    </Base>
+  );
+})()}
+
+{item.kind === "page" && (() => {
+  const d = item.entry.data;
+  return (
+    <Base title={`${d.title} | ${site}`} description={d.description}>
+      {d.faq && (
+        <JsonLd data={{
+          "@context": "https://schema.org", "@type": "FAQPage",
+          mainEntity: d.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+        }} />
+      )}
+      <PageHero heading={d.heading} lead={d.lead} photo={d.photo} alt={d.alt} />
+      {(item.entry.body?.trim() || d.faq) && (
+        <section class="section tint">
+          <div class="wrap">
+            {d.faq && (
+              <dl class="faq">
+                {d.faq.map((f) => (<div><dt>{f.q}</dt><dd>{f.a}</dd></div>))}
+              </dl>
+            )}
+            <div class="prose"><Content /></div>
+          </div>
+        </section>
+      )}
+      {d.people && (
+        <section class="section">
+          <div class="wrap">
+            {d.peopleHeading && <div class="section-head"><h2>{d.peopleHeading}</h2></div>}
+            <PeopleList groups={[d.people]} />
+          </div>
+        </section>
+      )}
+      <CtaBand />
+    </Base>
+  );
+})()}

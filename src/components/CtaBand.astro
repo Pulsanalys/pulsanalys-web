@@ -1,0 +1,18 @@
+---
+interface Props { heading?: string; text?: string }
+const {
+  heading = "Vill du veta mer?",
+  text = "Kontakta oss så berättar vi hur PulsAnalys kan hjälpa er.",
+} = Astro.props;
+---
+
+<section class="cta-band" aria-labelledby="cta-rubrik">
+  <div class="wrap cta-band-inner">
+    <h2 id="cta-rubrik">{heading}</h2>
+    <p class="lead">{text}</p>
+    <p class="lines">
+      <a href="tel:+46706762375">070-676 23 75</a>
+      <a href="mailto:info@pulsanalys.se">info@pulsanalys.se</a>
+    </p>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+---
+import { Picture } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  heading: string;
+  lead?: string;
+  photo?: ImageMetadata;
+  alt?: string;
+  crumb?: { href: string; label: string };
+}
+const { heading, lead, photo, alt = "", crumb } = Astro.props;
+---
+
+<section class="page-hero">
+  <div class={`wrap page-hero-grid${photo ? " has-photo" : ""}`}>
+    <div>
+      {crumb && <p class="crumb"><a href={crumb.href}>{crumb.label}</a></p>}
+      <h1>{heading}</h1>
+      {lead && <p class="lead">{lead}</p>}
+      <slot />
+    </div>
+    {photo && (
+      <div class="photo">
+        <Picture src={photo} formats={["avif", "webp"]} widths={[480, 720, 1000]}
+          sizes="(min-width: 60rem) 40vw, 100vw" alt={alt} loading="eager" fetchpriority="high" />
+      </div>
+    )}
+  </div>
+</section>

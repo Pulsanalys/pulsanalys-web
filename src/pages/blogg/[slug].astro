@@ -1,0 +1,26 @@
+---
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import JsonLd from "../../components/JsonLd.astro";
+
+export async function getStaticPaths() {
+  return (await getCollection("posts")).map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props as { entry: CollectionEntry<"posts"> };
+const { Content } = await render(entry);
+const d = entry.data;
+const fmt = new Intl.DateTimeFormat("sv-SE", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+---
+
+<Base title={`${d.title} | PulsAnalys DISC`} description={d.description}>
+  <JsonLd data={{ "@context": "https://schema.org", "@type": "BlogPosting", headline: d.title, datePublished: d.date.toISOString().slice(0, 10), publisher: { "@type": "Organization", name: "PulsAnalys AB" } }} />
+  <PageHero heading={d.title} crumb={{ href: "/blogg/", label: "Blogg" }}>
+    <p class="muted post-date"><time datetime={d.date.toISOString().slice(0, 10)}>{fmt.format(d.date)}</time></p>
+  </PageHero>
+  <section class="section tint">
+    <div class="wrap"><article class="prose post"><Content /></article></div>
+  </section>
+  <CtaBand />
+</Base>

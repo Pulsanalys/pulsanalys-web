@@ -1,0 +1,17 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import CtaBand from "../components/CtaBand.astro";
+import DateList from "../components/DateList.astro";
+---
+
+<Base title="Grundutbildningar DISC | PulsAnalys DISC" description="Kommande grundutbildningar med certifiering i DISC och PulsAnalys. Välj ett datum och anmäl dig.">
+  <PageHero heading="Grundutbildningar DISC" lead="Kurserna genomförs på plats eller digitalt. Välj ett datum för att läsa mer och anmäla dig." crumb={{ href: "/utbildningar-och-forelasningar/", label: "Utbildningar och föreläsningar" }} />
+  <section class="section tint">
+    <div class="wrap">
+      <DateList types={["grundutbildning"]} empty="Det finns inga inbokade grundutbildningar just nu. Kontakta oss så berättar vi när nästa kurs startar." />
+      <p class="more"><a class="text-link" href="/grundutbildning-disc/">Om Grundutbildning DISC</a></p>
+    </div>
+  </section>
+  <CtaBand />
+</Base>
