@@ -5,27 +5,53 @@
  * Without scroll-driven animation support, or with reduced motion, the three graphs
  * are shown side by side instead.
  */
-const factors = [
-  { key: "d", letter: "D", name: "Pådrivande" },
-  { key: "i", letter: "I", name: "Utåtriktad" },
-  { key: "s", letter: "S", name: "Lyhörd" },
-  { key: "c", letter: "C", name: "Systematisk" },
-] as const;
+interface Props { lang?: "sv" | "en" }
+const { lang = "sv" } = Astro.props;
+
+const T = {
+  sv: {
+    names: { d: "Pådrivande", i: "Utåtriktad", s: "Lyhörd", c: "Systematisk" },
+    heading: "En graf som visar tre sidor av samma person",
+    intro: "Personprofilen mäter var du trivs som allra bäst, hur du anpassar dig i en arbetssituation och hur du anpassar dig under press.",
+    states: [
+      { title: "Grundbeteende", text: "Det sociala jaget – där du trivs som allra bäst." },
+      { title: "I arbetssituationen", text: "Hur du anpassar dig till krav och förväntningar på jobbet." },
+      { title: "Under press", text: "Hur du anpassar dig när det blir pressat." },
+    ],
+    note: "Exempel på en profil. Vi använder ett helt neutralt språk och det finns inga bra eller dåliga profiler.",
+    of: "av 100",
+  },
+  en: {
+    names: { d: "Driving", i: "Outgoing", s: "Attentive", c: "Systematic" },
+    heading: "One graph showing three sides of the same person",
+    intro: "The Personal Profile measures where you are at your most comfortable, how you adapt in a work situation and how you adapt under pressure.",
+    states: [
+      { title: "Basic behaviour", text: "The social self – where you are at your most comfortable." },
+      { title: "In the work situation", text: "How you adapt to demands and expectations at work." },
+      { title: "Under pressure", text: "How you adapt when the pressure is on." },
+    ],
+    note: "An example profile. We use entirely neutral language, and there are no good or bad profiles.",
+    of: "out of 100",
+  },
+}[lang];
+
+const factors = (["d", "i", "s", "c"] as const).map((key) => ({ key, letter: key.toUpperCase(), name: T.names[key] }));
 
 // Example values (0–100), one set per state. Illustrative only.
-const states = [
-  { title: "Grundbeteende", text: "Det sociala jaget – där du trivs som allra bäst.", values: { d: 68, i: 52, s: 30, c: 44 } },
-  { title: "I arbetssituationen", text: "Hur du anpassar dig till krav och förväntningar på jobbet.", values: { d: 56, i: 40, s: 38, c: 70 } },
-  { title: "Under press", text: "Hur du anpassar dig när det blir pressat.", values: { d: 82, i: 26, s: 22, c: 58 } },
+const values = [
+  { d: 68, i: 52, s: 30, c: 44 },
+  { d: 56, i: 40, s: 38, c: 70 },
+  { d: 82, i: 26, s: 22, c: 58 },
 ];
+const states = T.states.map((st, n) => ({ ...st, values: values[n] }));
 ---
 
 <section class="profile" aria-labelledby="profil-rubrik">
   <div class="sticky">
     <div class="wrap layout">
       <div class="text">
-        <h2 id="profil-rubrik">En graf som visar tre sidor av samma person</h2>
-        <p class="intro">Personprofilen mäter var du trivs som allra bäst, hur du anpassar dig i en arbetssituation och hur du anpassar dig under press.</p>
+        <h2 id="profil-rubrik">{T.heading}</h2>
+        <p class="intro">{T.intro}</p>
         <ul class="states">
           {states.map((s, n) => (
             <li class={`state state-${n + 1}`}>
@@ -34,7 +60,7 @@ const states = [
             </li>
           ))}
         </ul>
-        <p class="note">Exempel på en profil. Vi använder ett helt neutralt språk och det finns inga bra eller dåliga profiler.</p>
+        <p class="note">{T.note}</p>
       </div>
 
       <div class="graphs">
@@ -54,7 +80,7 @@ const states = [
         {states.map((s) => (
           <figure class="graph static">
             <div class="bars" role="img"
-              aria-label={`${s.title}: ${factors.map((f) => `${f.name} ${s.values[f.key]} av 100`).join(", ")}`}>
+              aria-label={`${s.title}: ${factors.map((f) => `${f.name} ${s.values[f.key]} ${T.of}`).join(", ")}`}>
               {factors.map((f) => (
                 <div class="factor">
                   <div class="track">
@@ -74,7 +100,8 @@ const states = [
 </section>
 
 <style>
-  .profile { background: var(--mist); }
+  .profile { background: var(--navy-deep); color: #fff; }
+  h2, h3, figcaption, .letter { color: #fff; }
   .sticky { padding-block: var(--section); }
   .layout {
     display: grid;
@@ -85,9 +112,9 @@ const states = [
     .layout { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
   }
   h2 { max-width: 16ch; }
-  .intro { font-size: var(--step-lead); line-height: 1.45; margin-top: 1.25rem; max-width: 40ch; }
+  .intro { font-size: var(--step-lead); line-height: 1.5; margin-top: 1.25rem; max-width: 40ch; color: #cdd5e6; }
   .states { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: 1.25rem; }
-  .state { position: relative; padding-left: 1rem; border-left: 2px solid var(--line); }
+  .state { position: relative; padding-left: 1.25rem; border-left: 2px solid rgb(255 255 255 / 0.18); }
   .state::before {
     content: "";
     position: absolute;
@@ -95,18 +122,18 @@ const states = [
     top: 0;
     bottom: 0;
     width: 2px;
-    background: var(--navy);
+    background: #e7cf58;
     opacity: 0;
   }
   .state h3 { font-size: 1.15rem; }
-  .state p { color: var(--muted); margin-top: 0.15rem; }
-  .note { margin-top: 2rem; font-size: var(--step-small); color: var(--muted); max-width: 44ch; }
+  .state p { color: #b9c3d9; margin-top: 0.15rem; }
+  .note { margin-top: 2rem; font-size: 0.875rem; color: #a9b4cc; max-width: 44ch; }
 
   .graphs { display: grid; gap: 2rem var(--gutter); grid-template-columns: repeat(auto-fit, minmax(11.5rem, 1fr)); }
   .bars, .graph.live { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
   .graph.live { display: none; gap: clamp(0.75rem, 2vw, 1.75rem); }
   figure { margin: 0; }
-  figcaption { margin-top: 0.75rem; font-weight: 600; color: var(--navy); }
+  figcaption { margin-top: 0.75rem; font-weight: 600; }
 
   .factor { display: grid; grid-template-rows: auto auto auto; align-content: start; justify-items: center; gap: 0.35rem; min-width: 0; }
   .track {
@@ -114,23 +141,25 @@ const states = [
     width: 100%;
     height: 9rem;
     background:
-      linear-gradient(var(--line), var(--line)) 0 50% / 100% 1px no-repeat,
-      var(--paper);
-    border-bottom: 2px solid var(--navy);
+      linear-gradient(rgb(255 255 255 / 0.16), rgb(255 255 255 / 0.16)) 0 50% / 100% 1px no-repeat,
+      rgb(255 255 255 / 0.05);
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid rgb(255 255 255 / 0.7);
     overflow: hidden;
   }
   .fill {
     position: absolute;
     inset: 0 18%;
+    border-radius: 6px 6px 0 0;
     transform-origin: 50% 100%;
     transform: scaleY(var(--v, var(--s1)));
   }
-  .fill-d { background: var(--d); }
-  .fill-i { background: var(--i); }
-  .fill-s { background: var(--s); }
-  .fill-c { background: var(--c); }
-  .letter { font-weight: 700; color: var(--navy); line-height: 1; }
-  .name { font-size: 0.75rem; color: var(--muted); text-align: center; hyphens: auto; overflow-wrap: normal; max-width: 100%; }
+  .fill-d { background: #d2574f; }
+  .fill-i { background: #e7cf58; }
+  .fill-s { background: #85b074; }
+  .fill-c { background: #79b4c7; }
+  .letter { font-weight: 700; line-height: 1; margin-top: 0.35rem; }
+  .name { font-size: 0.75rem; color: #b9c3d9; text-align: center; hyphens: auto; overflow-wrap: normal; max-width: 100%; }
 
   /* Pinned, scroll-driven version. */
   @supports (animation-timeline: view()) {

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import { Picture } from "astro:assets";
+import { langOf } from "../lib/i18n.ts";
 
 interface Props { groups: ("team" | "kontakt" | "konsult" | "distributor")[] }
 const { groups } = Astro.props;
@@ -8,6 +9,7 @@ const people = (await getCollection("people", (p) => groups.includes(p.data.grou
   .sort((a, b) => groups.indexOf(a.data.group) - groups.indexOf(b.data.group) || a.data.order - b.data.order);
 const tel = (n: string) => "+46" + n.replace(/\D/g, "").replace(/^0/, "");
 const withPhotos = people.some((p) => p.data.photo);
+const en = langOf(Astro.currentLocale) === "en";
 ---
 
 <ul class={withPhotos ? "people" : "people people-compact"}>
@@ -19,7 +21,7 @@ const withPhotos = people.some((p) => p.data.photo);
         </div>
       )}
       <h3>{p.name}</h3>
-      <p class="role">{p.area ? (p.group === "distributor" ? p.area : `${p.role}, ${p.area}`) : p.role}</p>
+      <p class="role">{(() => { const role = en ? p.roleEn ?? p.role : p.role; return p.area ? (p.group === "distributor" ? p.area : `${role}, ${p.area}`) : role; })()}</p>
       <p class="contact">
         {p.email && <a href={`mailto:${p.email}`}>{p.email}</a>}
         {p.phone && <a href={`tel:${tel(p.phone)}`}>{p.phone}</a>}

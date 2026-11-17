@@ -138,3 +138,15 @@ Still to design in the build stage: 404 page, form error states in context, empt
 No purple/blue gradient hero, glowing blobs, glass cards, emoji icons, stock illustrations,
 three-icon feature rows, identical rounded cards with soft shadows, eyebrow labels over
 every heading, or a different colour on one word of a headline.
+
+## Design system v2 (2026-11-17)
+
+Replaces the first layout after Hussein's review ("amateur, not aligned, no quality").
+
+- One left-aligned grid (max 1240px). Section heading, then lead beneath it – never heading left and lead right.
+- Surfaces: white, mist `#f3f5f9`, deep navy `#111b35`. Cards are white, 18px radius, hairline border, soft layered shadow; large media 28px radius.
+- Brand device: the four logo colours as a short rule (`.pulse-rule`, `--pulse`) – hero, aside cards, closing contact panel. Never as decoration elsewhere.
+- Links that lead somewhere are `.text-link` (no underline, moving chevron). Underlines only inside running text.
+- Components: `feature` cards (photo on top) for products, courses and blog; `dates` rows with a navy date tile; `quote-card`; `tile-card` for contact details; `faq` accordion; `cta-panel` closes every page.
+- Homepage: split hero with next-course card, client logos directly under the hero, profile graph on deep navy, steps as joined cards, schedule card, lecture banner with photograph, quote rail.
+- Homepage markup lives in `src/components/Home.astro` for both languages.

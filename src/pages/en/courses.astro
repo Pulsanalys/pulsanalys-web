@@ -1,0 +1,43 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import DateList from "../../components/DateList.astro";
+
+const courses = (await getCollection("courses")).filter((c) => c.id.startsWith("en/")).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base title="DISC courses – basic, advanced and leadership training | PulsAnalys DISC"
+  description="DISC courses: basic training with certification, an advanced course and leadership training. Online and in person.">
+  <PageHero heading="DISC courses"
+    lead="Basic training and certification give you what you need to work with PulsAnalys. You can then go deeper into all our tools. The courses are also available online." />
+  <section class="section">
+    <div class="wrap">
+      <ul class="feature-grid three">
+        {courses.map((c) => (
+          <li class="feature">
+            <div class="photo">
+              <Picture src={c.data.photo} formats={["avif", "webp"]} widths={[480, 720, 960]} sizes="(min-width: 60rem) 40vw, 100vw" alt={c.data.alt} />
+            </div>
+            <div class="feature-body">
+              <h2>{c.data.title}</h2>
+              <p>{c.data.summary}</p>
+              {c.data.price && <p class="meta">{c.data.price}</p>}
+              <a class="text-link" href={`/en/${c.id.slice(3)}/`}>Read about {c.data.title}</a>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+  <section class="section tint">
+    <div class="wrap">
+      <div class="section-head"><h2>Upcoming courses</h2></div>
+      <DateList types={["grundutbildning", "fordjupningskurs"]} />
+      <p class="more"><a class="text-link" href="/en/courses-and-lectures/">All courses and lectures</a></p>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

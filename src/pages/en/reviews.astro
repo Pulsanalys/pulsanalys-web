@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const quotes = (await getCollection("testimonials")).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base title="Reviews from our clients | PulsAnalys DISC"
+  description="What do clients think of PulsAnalys? Reviews from companies and organisations we have worked with over the years.">
+  <PageHero heading="Reviews" lead="What do our clients think? These are reviews from companies and organisations we have worked with over the years, quoted in Swedish as they were written." />
+  <section class="section">
+    <div class="wrap">
+      <ul class="quote-list">
+        {quotes.map(({ data: q }) => (
+          <li>
+            <figure class="quote-card">
+              <blockquote lang="sv"><p>{q.text}</p></blockquote>
+              <figcaption><span class="who">{q.name}</span> {q.org && <span class="org">{q.org}</span>}</figcaption>
+            </figure>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

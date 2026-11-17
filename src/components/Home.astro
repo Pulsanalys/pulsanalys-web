@@ -1,0 +1,270 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Base from "../layouts/Base.astro";
+import "../styles/home.css";
+import ProfileGraph from "./ProfileGraph.astro";
+import DateList from "./DateList.astro";
+import CtaBand from "./CtaBand.astro";
+import { upcomingEvents } from "../lib/events.ts";
+import { dateRange, href, type Lang } from "../lib/i18n.ts";
+
+import teamPhoto from "../assets/photos/team-vid-bordet.jpg";
+import lecturePhoto from "../assets/photos/forelasning.jpg";
+import cardsPhoto from "../assets/photos/disc-kort.jpg";
+import distributorPhoto from "../assets/photos/distributor.jpg";
+
+import azLogo from "../assets/logos/astrazeneca.png";
+import jeLogo from "../assets/logos/jonkoping-energi.jpeg";
+import ffLogo from "../assets/logos/finansforbundet.png";
+import icaLogo from "../assets/logos/ica-maxi.png";
+import ox2Logo from "../assets/logos/ox2.png";
+import barillaLogo from "../assets/logos/barilla.png";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const en = lang === "en";
+
+const T = {
+  sv: {
+    title: "PulsAnalys DISC – ett kommunikationsverktyg som förenklar vardagen",
+    description: "PulsAnalys visar beteendemönster utifrån DISC-teorin. Personprofil, teamprofil, rekryteringsprofil och 360-profil, utbildning och certifiering i DISC.",
+    h1: "Ett kommunikations­verktyg som förenklar vardagen",
+    lead: "PulsAnalys visar beteendemönster utifrån DISC-teorin. Ett enkelt verktyg för att förstå sig själv och varandra bättre på jobbet.",
+    cta1: "Se kommande utbildningar", cta2: "Så fungerar PulsAnalys",
+    heroAlt: "Fyra kollegor står lutade över ett bord och studerar profilgrafer tillsammans.",
+    next: "Nästa utbildning",
+    clients: "Några av våra kunder",
+    stepsH: "Tre steg till bättre kommunikation",
+    stepsLead: "Att förstå varandra är svårt. Att förstå varandra på jobbet är ännu svårare. Så här kommer du och ditt företag igång med PulsAnalys.",
+    steps: [
+      ["Grundutbildning DISC", "För att själv kunna använda verktyget går du vår grundutbildning. Vi lägger stor vikt vid återkopplingen – målet är att utveckla och lyfta människor."],
+      ["Certifiering", "I utbildningen ingår tio profiler att träna på. När du har klarat certifieringen kan du använda alla våra verktyg i systemet."],
+      ["Abonnemang", "Välj ett abonnemang som passar dig och ditt företag. Du gör ett obegränsat antal profiler i alla våra produkter."],
+    ],
+    stepsMore: "Läs mer om de tre stegen",
+    coursesAlt: "Färgade kort med orden pådrivande, utåtriktad, lyhörd och systematisk ligger på ett bord bredvid en kurspärm.",
+    coursesH: "Utbildning i DISC för framtida chefer, konsulter och rekryterare",
+    coursesLead: "För att själv arbeta med PulsAnalys DISC erbjuder vi grundutbildning och fördjupningsutbildning. Med kurserna och ett abonnemang skapar du själv profiler och använder alla våra produkter.",
+    coursesList: "Kommande kurser", coursesAbout: "Om kurserna", coursesAll: "Alla datum",
+    coursesEmpty: "Nya datum publiceras snart. Kontakta oss så berättar vi när nästa kurs startar.",
+    productsH: "Fyra profiler, ett gemensamt språk",
+    productsLead: "Alla produkter bygger på samma personprofil. Med ett abonnemang gör du obegränsat antal profiler i alla fyra.",
+    readAbout: (name: string) => `Läs om ${name.toLowerCase()}`,
+    consultQ: "Vill du hellre att vi gör profilerna åt er?", consultLink: "Se våra konsulttjänster",
+    talksH: "Kostnadsfria inspirations­föreläsningar",
+    talksLead: "Under föreläsningen ger vi dig tips och erfarenheter om hur du kan tänka när du möter andra människor i arbetslivet.",
+    talksCta: "Se kommande föreläsningar",
+    talksAlt: "En publik sitter i en ljus lokal och lyssnar på en föreläsning om DISC.",
+    quotesH: "Vad våra kunder säger", quotesAll: "Alla omdömen", quotesLabel: "Omdömen, rulla i sidled",
+    distH: "Bli distributör",
+    distLead: "Arbetar du som coach, konsult eller rekryterare och behöver ett verktyg för att mäta beteenden? Med PulsAnalys breddar du ditt erbjudande och ger dina kunder ett större mervärde.",
+    distLink: "Så blir du distributör",
+    distAlt: "En man i ljus skjorta ler framför en bärbar dator.",
+  },
+  en: {
+    title: "PulsAnalys DISC – a communication tool that makes everyday work easier",
+    description: "PulsAnalys shows behavioural patterns based on DISC theory. Personal, team, recruitment and 360 profiles, plus DISC training and certification.",
+    h1: "A communication tool that makes everyday work easier",
+    lead: "PulsAnalys shows behavioural patterns based on DISC theory. A simple tool for understanding yourself and each other better at work.",
+    cta1: "See upcoming courses", cta2: "How PulsAnalys works",
+    heroAlt: "Four colleagues leaning over a table, studying profile graphs together.",
+    next: "Next course",
+    clients: "Some of our clients",
+    stepsH: "Three steps to better communication",
+    stepsLead: "Understanding each other is hard. Understanding each other at work is harder still. This is how you and your organisation get started with PulsAnalys.",
+    steps: [
+      ["Basic DISC Training", "To use the tool yourself, you take our basic training. We put great weight on the feedback session – the goal is to develop and lift people up."],
+      ["Certification", "The training includes ten profiles to practise on. Once you are certified, you can use all the tools in the system."],
+      ["Subscription", "Choose a subscription that suits you and your organisation, and create an unlimited number of profiles in all our products."],
+    ],
+    stepsMore: "More about the three steps",
+    coursesAlt: "Coloured cards with the Swedish words for driving, outgoing, attentive and systematic on a table next to a course binder.",
+    coursesH: "DISC training for future managers, consultants and recruiters",
+    coursesLead: "To work with PulsAnalys DISC yourself, take our basic and advanced training. With the courses and a subscription you create profiles yourself and use all our products.",
+    coursesList: "Upcoming courses", coursesAbout: "About the courses", coursesAll: "All dates",
+    coursesEmpty: "New dates are coming soon. Contact us and we will tell you when the next course starts.",
+    productsH: "Four profiles, one shared language",
+    productsLead: "Every product builds on the same Personal Profile. With a subscription you create an unlimited number of profiles in all four.",
+    readAbout: (name: string) => `Read about the ${name}`,
+    consultQ: "Would you rather we created the profiles for you?", consultLink: "See our consulting services",
+    talksH: "Free inspirational lectures",
+    talksLead: "In the lecture we share tips and experience on how to think when you meet other people at work.",
+    talksCta: "See upcoming lectures",
+    talksAlt: "An audience in a bright room listening to a lecture about DISC.",
+    quotesH: "What our clients say", quotesAll: "All reviews (in Swedish)", quotesLabel: "Reviews, scroll sideways",
+    distH: "Become a distributor",
+    distLead: "Do you work as a coach, consultant or recruiter and need a tool for measuring behaviour? With PulsAnalys you broaden your offer and give your clients more value.",
+    distLink: "How to become a distributor",
+    distAlt: "A man in a light shirt smiling in front of a laptop.",
+  },
+}[lang];
+
+const next = (await upcomingEvents()).find((e) => e.data.type === "grundutbildning" || e.data.type === "fordjupningskurs");
+const products = (await getCollection("products"))
+  .filter((p) => p.id.startsWith("en/") === en)
+  .sort((a, b) => a.data.order - b.data.order)
+  .map((p) => ({ ...p.data, url: en ? `/en/${p.id.slice(3)}/` : `/${p.id}/` }));
+const quotes = (await getCollection("testimonials", (q) => q.data.home)).sort((a, b) => a.data.order - b.data.order);
+
+const clients = [
+  { src: azLogo, alt: "AstraZeneca" },
+  { src: jeLogo, alt: "Jönköping Energi" },
+  { src: ffLogo, alt: "Finansförbundet" },
+  { src: icaLogo, alt: "ICA Maxi" },
+  { src: barillaLogo, alt: "Barilla" },
+  { src: ox2Logo, alt: "OX2" },
+];
+---
+
+<Base title={T.title} description={T.description}>
+  <section class="hero" aria-labelledby="hero-rubrik">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <span class="pulse-rule" aria-hidden="true"></span>
+        <h1 id="hero-rubrik">{T.h1}</h1>
+        <p class="lead">{T.lead}</p>
+        <div class="actions">
+          <a class="button" href={href(lang, "/utbildningar-och-forelasningar/")}>{T.cta1}</a>
+          <a class="text-link" href={href(lang, "/vad-ar-pulsanalys/")}>{T.cta2}</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="photo hero-photo">
+          <Picture src={teamPhoto} formats={["avif", "webp"]} widths={[640, 960, 1320]}
+            sizes="(min-width: 60rem) 52vw, 100vw" alt={T.heroAlt} loading="eager" fetchpriority="high" />
+        </div>
+        {next && (
+          <a class="next-card" href={`/utbildningar-och-forelasningar/${next.id}/`} hreflang={en ? "sv" : undefined}>
+            <span class="next-label">{T.next}</span>
+            <span class="next-title">{next.data.title}</span>
+            <span class="next-meta">{dateRange(next.data.start, next.data.end, lang)} · {next.data.place}</span>
+          </a>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <section class="clients" aria-labelledby="kund-rubrik">
+    <div class="wrap clients-inner">
+      <h2 id="kund-rubrik" class="small-head">{T.clients}</h2>
+      <ul class="logo-row">
+        {clients.map((c) => (
+          <li><Picture src={c.src} formats={["webp"]} widths={[240, 360]} sizes="10rem" alt={c.alt} /></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <ProfileGraph lang={lang} />
+
+  <section class="steps section" aria-labelledby="steg-rubrik">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="steg-rubrik">{T.stepsH}</h2>
+        <p class="lead">{T.stepsLead}</p>
+      </div>
+      <ol class="step-list">
+        {T.steps.map(([title, text]) => (
+          <li><h3>{title}</h3><p>{text}</p></li>
+        ))}
+      </ol>
+      <p class="more"><a class="text-link" href={href(lang, "/vad-ar-pulsanalys/")}>{T.stepsMore}</a></p>
+    </div>
+  </section>
+
+  <section class="courses section tint" aria-labelledby="kurs-rubrik">
+    <div class="wrap courses-grid">
+      <div class="courses-text">
+        <h2 id="kurs-rubrik">{T.coursesH}</h2>
+        <p class="lead">{T.coursesLead}</p>
+        <div class="photo courses-photo">
+          <Picture src={cardsPhoto} formats={["avif", "webp"]} widths={[480, 720, 1000]}
+            sizes="(min-width: 60rem) 45vw, 100vw" alt={T.coursesAlt} />
+        </div>
+      </div>
+      <div class="schedule">
+        <h3 class="list-title">{T.coursesList}</h3>
+        <DateList types={["grundutbildning", "fordjupningskurs"]} empty={T.coursesEmpty} />
+        <p class="more">
+          <a class="text-link" href={href(lang, "/kurser/")}>{T.coursesAbout}</a>
+          <a class="text-link" href={href(lang, "/utbildningar-och-forelasningar/")}>{T.coursesAll}</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="products section" aria-labelledby="produkt-rubrik">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="produkt-rubrik">{T.productsH}</h2>
+        <p class="lead">{T.productsLead}</p>
+      </div>
+      <ul class="feature-grid">
+        {products.map((p) => (
+          <li class="feature">
+            <div class="photo">
+              <Picture src={p.photo} formats={["avif", "webp"]} widths={[480, 720, 960]}
+                sizes="(min-width: 46rem) 46vw, 100vw" alt={p.alt} />
+            </div>
+            <div class="feature-body">
+              <h3>{p.title}</h3>
+              <p>{p.summary}</p>
+              <a class="text-link" href={p.url}>{T.readAbout(p.title)}</a>
+            </div>
+          </li>
+        ))}
+      </ul>
+      <p class="more consult"><span>{T.consultQ}</span> <a class="text-link" href={href(lang, "/konsulttjanster/")}>{T.consultLink}</a></p>
+    </div>
+  </section>
+
+  <section class="talks-band" aria-labelledby="forelasning-rubrik">
+    <div class="wrap">
+      <div class="talks">
+        <Picture src={lecturePhoto} formats={["avif", "webp"]} widths={[640, 960, 1320, 1960]}
+          sizes="(min-width: 1320px) 1240px, 100vw" alt={T.talksAlt} />
+        <div class="talks-text">
+          <h2 id="forelasning-rubrik">{T.talksH}</h2>
+          <p class="lead">{T.talksLead}</p>
+          <p class="more"><a class="button light" href={href(lang, "/webbinarier/")}>{T.talksCta}</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quotes section tint" aria-labelledby="omdome-rubrik">
+    <div class="wrap quotes-head">
+      <h2 id="omdome-rubrik">{T.quotesH}</h2>
+      <a class="text-link" href={href(lang, "/omdomen/")}>{T.quotesAll}</a>
+    </div>
+    <div class="rail" tabindex="0" role="region" aria-label={T.quotesLabel}>
+      <ul>
+        {quotes.map(({ data: q }) => (
+          <li>
+            <figure class="quote-card">
+              <blockquote lang={en ? "sv" : undefined}><p>{q.short ?? q.text}</p></blockquote>
+              <figcaption><span class="who">{q.name}</span> <span class="org">{q.org}</span></figcaption>
+            </figure>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="distributor-rubrik">
+    <div class="wrap split reverse">
+      <div class="photo">
+        <Picture src={distributorPhoto} formats={["avif", "webp"]} widths={[480, 720, 1000]}
+          sizes="(min-width: 60rem) 45vw, 100vw" alt={T.distAlt} />
+      </div>
+      <div>
+        <h2 id="distributor-rubrik">{T.distH}</h2>
+        <p class="lead">{T.distLead}</p>
+        <p class="more"><a class="text-link" href={href(lang, "/distributor/")}>{T.distLink}</a></p>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>

@@ -19,7 +19,7 @@ const fmt = new Intl.DateTimeFormat("sv-SE", { day: "numeric", month: "long", ye
   <PageHero heading={d.title} crumb={{ href: "/blogg/", label: "Blogg" }}>
     <p class="muted post-date"><time datetime={d.date.toISOString().slice(0, 10)}>{fmt.format(d.date)}</time></p>
   </PageHero>
-  <section class="section tint">
+  <section class="section">
     <div class="wrap"><article class="prose post"><Content /></article></div>
   </section>
   <CtaBand />

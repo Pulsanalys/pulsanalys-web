@@ -1,0 +1,140 @@
+/* Homepage (both languages). */
+
+.hero { background: var(--mist); padding-block: clamp(2.5rem, 5vw, 5rem) clamp(4rem, 7vw, 6.5rem); }
+.hero-grid { display: grid; gap: clamp(2.5rem, 5vw, 4.5rem); align-items: center; }
+@media (min-width: 60rem) { .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.hero h1 { font-size: clamp(2.4rem, 1.5rem + 2.9vw, 3.6rem); margin-top: 1.75rem; hyphens: manual; text-wrap: wrap; }
+.hero .lead { margin-top: 1.5rem; max-width: 44ch; }
+.hero .actions { margin-top: 2.25rem; }
+.hero-media { position: relative; }
+.hero-photo { aspect-ratio: 5 / 4; border-radius: var(--r-l); box-shadow: var(--shadow-m); }
+.hero-photo img { object-position: 50% 20%; }
+.next-card {
+  position: relative;
+  display: grid;
+  gap: 0.15rem;
+  width: min(100% - 2rem, 21rem);
+  margin: -3rem 0 0 1rem;
+  padding: 1.1rem 3rem 1.1rem 1.35rem;
+  background: var(--paper);
+  border-radius: var(--r-m);
+  box-shadow: var(--shadow-m);
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 200ms var(--ease);
+}
+.next-card:hover { transform: translateY(-3px); }
+.next-card::before { content: ""; position: absolute; left: 1.35rem; top: 0; width: 3.5rem; height: 4px; border-radius: 0 0 4px 4px; background: var(--pulse); }
+.next-card::after {
+  content: "";
+  position: absolute;
+  right: 1.4rem;
+  top: 50%;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-top: 2px solid var(--navy);
+  border-right: 2px solid var(--navy);
+  transform: translateY(-50%) rotate(45deg);
+}
+.next-label { font-size: 0.85rem; font-weight: 600; color: var(--muted); }
+.next-title { font-weight: 650; font-size: 1.125rem; color: var(--navy-deep); }
+.next-meta { font-size: var(--step-small); color: var(--soft); }
+@media (min-width: 60rem) {
+  .next-card { position: absolute; left: -2.5rem; bottom: -2rem; margin: 0; }
+}
+
+/* Clients */
+.clients { border-bottom: 1px solid var(--line); padding-block: clamp(2rem, 4vw, 3rem); }
+.clients-inner { display: grid; gap: 1.5rem 3rem; align-items: center; }
+@media (min-width: 60rem) { .clients-inner { grid-template-columns: auto minmax(0, 1fr); } }
+.small-head { font-size: var(--step-small); letter-spacing: 0; color: var(--muted); font-weight: 600; }
+.logo-row { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.75rem 2rem; align-items: center; }
+@media (min-width: 46rem) { .logo-row { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.logo-row img { width: auto; max-width: 100%; max-height: 2.5rem; margin-inline: auto; filter: grayscale(1) contrast(1.1); mix-blend-mode: multiply; opacity: 0.7; }
+
+/* Steps */
+.step-list { list-style: none; counter-reset: step; margin: 0; padding: 0; display: grid; gap: var(--gutter); }
+@media (min-width: 52rem) { .step-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.step-list li {
+  counter-increment: step;
+  position: relative;
+  padding: clamp(1.5rem, 2.5vw, 2.25rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--r-m);
+  box-shadow: var(--shadow-s);
+}
+.step-list li::before {
+  content: counter(step);
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+/* A line joins the three steps on wide screens. */
+@media (min-width: 52rem) {
+  .step-list li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: calc(clamp(1.5rem, 2.5vw, 2.25rem) + 1.5rem);
+    left: calc(clamp(1.5rem, 2.5vw, 2.25rem) + 3.75rem);
+    right: calc(-1 * var(--gutter) - clamp(1.5rem, 2.5vw, 2.25rem) + 0.75rem);
+    height: 2px;
+    background: repeating-linear-gradient(90deg, #c3cad8 0 6px, transparent 6px 12px);
+    z-index: 1;
+  }
+}
+.step-list h3 { margin-bottom: 0.6rem; }
+.step-list p { color: var(--soft); }
+
+/* Courses */
+.courses-grid { display: grid; gap: clamp(2.5rem, 5vw, 5rem); align-items: start; }
+@media (min-width: 60rem) { .courses-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.courses-text .lead { margin-top: 1.25rem; }
+.courses-photo { margin-top: 2.25rem; border-radius: var(--r-l); box-shadow: var(--shadow-m); aspect-ratio: 16 / 10; }
+.schedule { background: var(--paper); border-radius: var(--r-l); padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: var(--shadow-m); }
+.schedule .dates a { background: var(--mist); border-color: transparent; }
+.schedule .dates a:hover { background: var(--paper); border-color: var(--navy); }
+.list-title { margin-bottom: 1.25rem; }
+
+.consult { color: var(--soft); margin-top: 2.5rem; }
+
+/* Lectures: one photograph, text on a navy veil */
+.talks-band { padding-bottom: var(--section); }
+.talks {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-l);
+  background: var(--navy-deep);
+  color: #fff;
+  display: grid;
+  min-height: clamp(24rem, 42vw, 32rem);
+  align-items: end;
+}
+.talks picture, .talks img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.talks::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgb(17 27 53 / 0.94) 0%, rgb(17 27 53 / 0.78) 42%, rgb(17 27 53 / 0.15) 100%); }
+@media (max-width: 46rem) { .talks::after { background: linear-gradient(0deg, rgb(17 27 53 / 0.95) 35%, rgb(17 27 53 / 0.35) 100%); } }
+.talks-text { position: relative; z-index: 1; padding: clamp(1.75rem, 5vw, 4.5rem); max-width: 40rem; }
+.talks h2 { color: #fff; hyphens: manual; }
+.talks .lead { color: #dbe1ee; margin-top: 1.1rem; }
+.talks :focus-visible { outline-color: #fff; }
+
+/* Quotes */
+.quotes-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 1rem 2rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
+.rail {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: max(var(--margin), (100% - var(--max)) / 2);
+  padding-block: 0.5rem 2rem;
+  scrollbar-color: #aab3c6 transparent;
+  scrollbar-width: thin;
+}
+.rail:focus-visible { outline-offset: -3px; }
+.rail ul { list-style: none; margin: 0; padding: 0 max(var(--margin), (100% - var(--max)) / 2); display: flex; gap: var(--gutter); width: max-content; }
+.rail li { scroll-snap-align: start; width: min(84vw, 26rem); flex: none; }

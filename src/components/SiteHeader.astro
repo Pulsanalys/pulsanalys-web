@@ -1,24 +1,21 @@
 ---
 import Logo from "./Logo.astro";
+import { UI, counterpart, href, langOf } from "../lib/i18n.ts";
 
-const nav = [
-  { href: "/produkter/", label: "Produkter" },
-  { href: "/kurser/", label: "Kurser" },
-  { href: "/utbildningar-och-forelasningar/", label: "Anmäl dig" },
-  { href: "/konsulttjanster/", label: "Konsulttjänster" },
-  { href: "/om-oss/", label: "Om oss" },
-  { href: "/kontakta-oss/", label: "Kontakt" },
-];
+const lang = langOf(Astro.currentLocale);
+const t = UI[lang];
+const nav = t.nav.map(([path, label]) => ({ href: href(lang, path), label }));
 const current = Astro.url.pathname;
+const other = counterpart(current)[t.otherLang.lang];
 ---
 
 <header class="site-header">
   <div class="wrap bar">
-    <a class="home" href="/" aria-label="PulsAnalys – till startsidan">
+    <a class="home" href={href(lang, "/")} aria-label={t.home}>
       <Logo class="logo" />
     </a>
 
-    <nav class="primary" aria-label="Huvudmeny">
+    <nav class="primary" aria-label={t.mainNav}>
       <ul>
         {nav.map((item) => (
           <li><a href={item.href} aria-current={current.startsWith(item.href) ? "page" : undefined}>{item.label}</a></li>
@@ -26,14 +23,16 @@ const current = Astro.url.pathname;
       </ul>
     </nav>
 
-    <a class="login" href="https://clientarea.pulsanalys.com/">Logga in</a>
+    <a class="lang" href={other} hreflang={t.otherLang.lang} lang={t.otherLang.lang}>{t.otherLang.label}</a>
+    <a class="login" href="https://clientarea.pulsanalys.com/">{t.login}</a>
 
     <details class="menu">
-      <summary><span>Meny</span></summary>
-      <nav aria-label="Huvudmeny, mobil">
+      <summary><span>{t.menu}</span></summary>
+      <nav aria-label={t.mainNav}>
         <ul>
           {nav.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
-          <li><a href="https://clientarea.pulsanalys.com/">Logga in</a></li>
+          <li><a href="https://clientarea.pulsanalys.com/">{t.login}</a></li>
+          <li><a href={other} hreflang={t.otherLang.lang} lang={t.otherLang.lang}>{t.otherLang.label}</a></li>
         </ul>
       </nav>
     </details>
@@ -52,7 +51,9 @@ const current = Astro.url.pathname;
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: rgb(255 255 255 / 0.96);
+    background: rgb(255 255 255 / 0.92);
+    backdrop-filter: saturate(1.4) blur(14px);
+    -webkit-backdrop-filter: saturate(1.4) blur(14px);
     border-bottom: 1px solid var(--line);
     opacity: 1;
   }
@@ -60,17 +61,20 @@ const current = Astro.url.pathname;
     display: flex;
     align-items: center;
     gap: 2rem;
-    min-height: 4.5rem;
+    min-height: 4.75rem;
   }
-  .home { display: block; flex: none; color: var(--navy); }
+  .home { display: block; flex: none; color: var(--navy-deep); }
   .home :global(.logo) { width: clamp(9.5rem, 8rem + 4vw, 11.5rem); }
 
   .primary { margin-left: auto; }
   .primary ul, .menu ul { list-style: none; margin: 0; padding: 0; }
   .primary ul { display: flex; gap: clamp(1rem, 2vw, 1.75rem); }
+  .lang { font-size: 0.9688rem; font-weight: 550; text-decoration: none; flex: none; color: var(--muted); }
+  .lang:hover, .lang:focus-visible { text-decoration: underline; }
   .primary a, .login {
-    font-size: 0.95rem;
-    font-weight: 500;
+    font-size: 0.9688rem;
+    font-weight: 550;
+    color: var(--ink);
     text-decoration: none;
     padding-block: 0.5rem;
     background: linear-gradient(currentColor, currentColor) 0 100% / 0 1.5px no-repeat;
@@ -81,13 +85,14 @@ const current = Astro.url.pathname;
 
   .login {
     flex: none;
-    padding: 0.45rem 1rem;
+    padding: 0.6rem 1.25rem;
     border: 1px solid var(--navy);
     border-radius: 999px;
-    background: none;
+    background: var(--navy);
+    color: #fff;
     transition: background-color 160ms var(--ease), color 160ms var(--ease);
   }
-  .login:hover, .login:focus-visible { background: var(--navy); color: #fff; }
+  .login:hover, .login:focus-visible { background: var(--navy-deep); color: #fff; }
 
   .menu { display: none; margin-left: auto; }
   .menu summary {
@@ -120,6 +125,7 @@ const current = Astro.url.pathname;
     background: var(--paper);
     border-bottom: 1px solid var(--line);
     padding: 0.5rem var(--margin) 1.5rem;
+    box-shadow: var(--shadow-m);
   }
   .menu nav a {
     display: block;
@@ -131,21 +137,8 @@ const current = Astro.url.pathname;
   }
 
   @media (max-width: 66rem) {
-    .primary, .login { display: none; }
+    .primary, .login, .lang { display: none; }
     .menu { display: block; }
   }
 
-  @supports (animation-timeline: scroll()) {
-    @media (prefers-reduced-motion: no-preference) {
-      .site-header::before {
-        animation: header-solid linear both;
-        animation-timeline: scroll(root);
-        animation-range: 0 80px;
-      }
-    }
-  }
-  @keyframes header-solid {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
 </style>

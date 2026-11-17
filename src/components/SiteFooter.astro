@@ -1,45 +1,39 @@
 ---
 import Logo from "./Logo.astro";
+import { UI, href, langOf } from "../lib/i18n.ts";
 const year = new Date().getFullYear();
+const lang = langOf(Astro.currentLocale);
+const f = UI[lang].footer;
 ---
 
 <footer class="site-footer">
   <div class="wrap grid">
     <div class="brand">
       <Logo class="logo" />
-      <p>Wollmar Yxkullsgatan 7<br />118 50 Stockholm</p>
-      <p>Org.nr 556600-3868</p>
+      <p>PulsAnalys AB<br />Wollmar Yxkullsgatan 7<br />118 50 Stockholm</p>
+      <p>{f.orgNr} 556600-3868</p>
     </div>
 
     <div>
-      <h2 class="label">Kontakt</h2>
+      <h2 class="label">{f.contact}</h2>
       <ul>
         <li><a href="tel:+46706762375">070-676 23 75</a></li>
         <li><a href="mailto:info@pulsanalys.se">info@pulsanalys.se</a></li>
-        <li><a href="mailto:support@pulsanalys.se">support@pulsanalys.se</a> (kundsupport)</li>
+        <li><a href="mailto:support@pulsanalys.se">support@pulsanalys.se</a><br /><span class="note">{f.support}</span></li>
       </ul>
     </div>
 
-    <nav aria-label="Sidfot">
-      <h2 class="label">Webbplatsen</h2>
+    <nav aria-label={f.site}>
+      <h2 class="label">{f.site}</h2>
       <ul>
-        <li><a href="/produkter/">Produkter</a></li>
-        <li><a href="/kurser/">Kurser</a></li>
-        <li><a href="/utbildningar-och-forelasningar/">Anmäl dig</a></li>
-        <li><a href="/skaffa-abonnemang/">Skaffa abonnemang</a></li>
-        <li><a href="/omdomen/">Omdömen</a></li>
-        <li><a href="/distributor/">Bli distributör</a></li>
+        {f.siteLinks.map(([path, label]) => <li><a href={href(lang, path)}>{label}</a></li>)}
       </ul>
     </nav>
 
-    <nav aria-label="Om PulsAnalys">
-      <h2 class="label">PulsAnalys</h2>
+    <nav aria-label={f.company}>
+      <h2 class="label">{f.company}</h2>
       <ul>
-        <li><a href="/om-oss/">Om oss</a></li>
-        <li><a href="/kontakta-oss/">Kontakta oss</a></li>
-        <li><a href="/vad-ar-disc/">Vad är DISC?</a></li>
-        <li><a href="/blogg/">Blogg</a></li>
-        <li><a href="/integritetspolicy/">Integritetspolicy</a></li>
+        {f.companyLinks.map(([path, label]) => <li><a href={href(lang, path)}>{label}</a></li>)}
       </ul>
     </nav>
   </div>
@@ -55,41 +49,32 @@ const year = new Date().getFullYear();
 </footer>
 
 <style>
-  .site-footer {
-    background: var(--navy);
-    color: #e6e9f0;
-    padding-block: clamp(3.5rem, 7vw, 6rem) 2rem;
-    font-size: 0.95rem;
-  }
-  .site-footer a { color: #fff; text-decoration-color: rgb(255 255 255 / 0.4); }
-  .site-footer a:hover { text-decoration-color: #fff; }
+  .site-footer { background: var(--navy-deep); color: #c3cce0; padding-block: clamp(3.5rem, 6vw, 5.5rem) 2rem; font-size: var(--step-small); }
+  .site-footer a { color: #e8ecf5; text-decoration: none; }
+  .site-footer a:hover { color: #fff; text-decoration: underline; }
   .site-footer :focus-visible { outline-color: #fff; }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    gap: 2.5rem var(--gutter);
+  .grid { display: grid; gap: 2.5rem var(--gutter); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .brand { grid-column: 1 / -1; color: #fff; }
+  @media (min-width: 56rem) {
+    .grid { grid-template-columns: minmax(0, 4fr) repeat(3, minmax(0, 2.5fr)); }
+    .brand { grid-column: auto; }
   }
-  .brand { color: #fff; }
   .brand :global(.logo) { width: 11rem; margin-bottom: 1.5rem; }
-  .brand p { color: #e6e9f0; }
-  .label {
-    font-size: 0.95rem;
-    letter-spacing: 0;
-    color: #fff;
-    margin-bottom: 0.75rem;
-  }
+  .brand p { color: #c3cce0; margin: 0; line-height: 1.7; }
+  .brand p + p { margin-top: 0.75rem; }
+  .label { font-size: var(--step-small); font-weight: 600; letter-spacing: 0; color: #fff; margin-bottom: 1rem; }
   ul { list-style: none; margin: 0; padding: 0; }
-  li + li { margin-top: 0.4rem; }
+  li + li { margin-top: 0.55rem; }
   .legal {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
-    margin-top: 3.5rem;
+    margin-top: clamp(2.5rem, 5vw, 4rem);
     padding-top: 1.5rem;
-    border-top: 1px solid rgb(255 255 255 / 0.2);
-    font-size: var(--step-small);
+    border-top: 1px solid rgb(255 255 255 / 0.14);
+    font-size: 0.875rem;
   }
-  .social { display: flex; gap: 1.25rem; }
+  .social { display: flex; gap: 1.5rem; }
   .social li + li { margin-top: 0; }
 </style>

@@ -1,18 +1,22 @@
 ---
+import Icon from "./Icon.astro";
+import { UI, langOf } from "../lib/i18n.ts";
 interface Props { heading?: string; text?: string }
-const {
-  heading = "Vill du veta mer?",
-  text = "Kontakta oss så berättar vi hur PulsAnalys kan hjälpa er.",
-} = Astro.props;
+const t = UI[langOf(Astro.currentLocale)].cta;
+const { heading = t.heading, text = t.text } = Astro.props;
 ---
 
 <section class="cta-band" aria-labelledby="cta-rubrik">
-  <div class="wrap cta-band-inner">
-    <h2 id="cta-rubrik">{heading}</h2>
-    <p class="lead">{text}</p>
-    <p class="lines">
-      <a href="tel:+46706762375">070-676 23 75</a>
-      <a href="mailto:info@pulsanalys.se">info@pulsanalys.se</a>
-    </p>
+  <div class="wrap">
+    <div class="cta-panel">
+      <div>
+        <h2 id="cta-rubrik">{heading}</h2>
+        <p class="lead">{text}</p>
+      </div>
+      <ul class="cta-lines">
+        <li><a href="tel:+46706762375"><Icon name="phone" /><span><span class="label">{t.phone}</span><span class="value">070-676 23 75</span></span><span class="go" aria-hidden="true"></span></a></li>
+        <li><a href="mailto:info@pulsanalys.se"><Icon name="mail" /><span><span class="label">{t.email}</span><span class="value">info@pulsanalys.se</span></span><span class="go" aria-hidden="true"></span></a></li>
+      </ul>
+    </div>
   </div>
 </section>

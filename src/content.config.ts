@@ -97,9 +97,10 @@ const people = defineCollection({
   schema: ({ image }) => z.object({
     name: z.string(),
     role: z.string(),
+    roleEn: z.string().optional(),
     email: z.string().optional(),
     phone: z.string().optional(),
-    linkedin: z.string().url().optional(),
+    linkedin: z.url().optional(),
     photo: image().optional(),
     group: z.enum(["team", "kontakt", "konsult", "distributor"]),
     area: z.string().optional(),

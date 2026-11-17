@@ -1,0 +1,35 @@
+---
+import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
+import PeopleList from "../../components/PeopleList.astro";
+import JsonLd from "../../components/JsonLd.astro";
+import Icon from "../../components/Icon.astro";
+---
+
+<Base title="Contact us | PulsAnalys DISC"
+  description="PulsAnalys AB is based in Stockholm. Reach us on +46 70-676 23 75 or info@pulsanalys.se. Customer support: support@pulsanalys.se.">
+  <JsonLd data={{
+    "@context": "https://schema.org", "@type": "Organization", name: "PulsAnalys AB", url: "https://pulsanalys.se",
+    email: "info@pulsanalys.se", telephone: "+46706762375", taxID: "556600-3868",
+    address: { "@type": "PostalAddress", streetAddress: "Wollmar Yxkullsgatan 7", postalCode: "118 50", addressLocality: "Stockholm", addressCountry: "SE" },
+    sameAs: ["https://www.linkedin.com/company/pulsanalys-ab/", "https://www.facebook.com/PulsAnalysAb/", "https://www.instagram.com/pulsanalysab/"],
+  }} />
+  <PageHero heading="Contact us" lead="Call or email us and we will tell you how PulsAnalys can help you. Already a customer and need help with the system? Reach customer support at support@pulsanalys.se." />
+  <section class="section">
+    <div class="wrap">
+      <ul class="tiles">
+        <li class="tile-card"><span class="icon"><Icon name="phone" /></span><span class="label">Phone</span><a class="value" href="tel:+46706762375">+46 70-676 23 75</a></li>
+        <li class="tile-card"><span class="icon"><Icon name="mail" /></span><span class="label">Email</span><a class="value" href="mailto:info@pulsanalys.se">info@pulsanalys.se</a></li>
+        <li class="tile-card"><span class="icon"><Icon name="support" /></span><span class="label">Customer support</span><a class="value" href="mailto:support@pulsanalys.se">support@pulsanalys.se</a><span class="hint">For existing customers</span></li>
+        <li class="tile-card"><span class="icon"><Icon name="pin" /></span><span class="label">Visiting and invoice address</span><a class="value" href="https://maps.google.com/?q=Wollmar+Yxkullsgatan+7,+118+50+Stockholm">Wollmar Yxkullsgatan 7<br />118 50 Stockholm</a><span class="hint">Show on map</span></li>
+      </ul>
+      <p class="fineprint">PulsAnalys AB · Company registration number 556600-3868</p>
+    </div>
+  </section>
+  <section class="section tint">
+    <div class="wrap">
+      <div class="section-head"><h2>Meet our team</h2></div>
+      <PeopleList groups={["team", "kontakt"]} />
+    </div>
+  </section>
+</Base>

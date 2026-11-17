@@ -6,36 +6,36 @@ import PageHero from "../components/PageHero.astro";
 import CtaBand from "../components/CtaBand.astro";
 import lecturePhoto from "../assets/photos/forelasning.jpg";
 
-const products = (await getCollection("products")).sort((a, b) => a.data.order - b.data.order);
+const products = (await getCollection("products")).filter((p) => !p.id.startsWith("en/")).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Base title="Produkter – personprofil, teamprofil, rekryteringsprofil och 360-profil | PulsAnalys DISC"
   description="Vi erbjuder flera kommunikationsverktyg och profiler. Läs om personprofil, teamprofil, rekryteringsprofil, 360-profil och våra konsulttjänster.">
   <PageHero heading="Fyra profiler, ett gemensamt språk"
     lead="Alla våra produkter bygger på samma personprofil. Med ett abonnemang gör du obegränsat antal profiler i alla fyra – eller så gör våra konsulter dem åt er." />
-  <section class="section tint">
+  <section class="section">
     <div class="wrap">
-      <ul class="row-list">
-        {products.map((p, i) => (
-          <li class={`split${i % 2 ? " reverse" : ""}`}>
+      <ul class="feature-grid">
+        {products.map((p) => (
+          <li class="feature">
             <div class="photo">
               <Picture src={p.data.photo} formats={["avif", "webp"]} widths={[480, 720, 960]} sizes="(min-width: 60rem) 40vw, 100vw" alt={p.data.alt} />
             </div>
-            <div>
+            <div class="feature-body">
               <h2>{p.data.title}</h2>
-              <p class="lead">{p.data.summary}</p>
-              <p class="more"><a class="text-link" href={`/${p.id}/`}>Läs om {p.data.title.toLowerCase()}</a></p>
+              <p>{p.data.summary}</p>
+              <a class="text-link" href={`/${p.id}/`}>Läs om {p.data.title.toLowerCase()}</a>
             </div>
           </li>
         ))}
-        <li class="split">
+        <li class="feature">
           <div class="photo">
             <Picture src={lecturePhoto} formats={["avif", "webp"]} widths={[480, 720, 960]} sizes="(min-width: 60rem) 40vw, 100vw" alt="En publik lyssnar på en föreläsning om DISC." />
           </div>
-          <div>
+          <div class="feature-body">
             <h2>Konsulttjänster</h2>
-            <p class="lead">Våra konsulter har mångårig erfarenhet och stor kompetens inom en rad områden. Vi hjälper till med allt från några timmar till större projekt och skräddarsyr en lösning för ditt företag.</p>
-            <p class="more"><a class="text-link" href="/konsulttjanster/">Läs om konsulttjänster</a></p>
+            <p>Våra konsulter har mångårig erfarenhet och stor kompetens inom en rad områden. Vi hjälper till med allt från några timmar till större projekt och skräddarsyr en lösning för ditt företag.</p>
+            <a class="text-link" href="/konsulttjanster/">Läs om konsulttjänster</a>
           </div>
         </li>
       </ul>

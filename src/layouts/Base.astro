@@ -3,6 +3,7 @@ import "../styles/base.css";
 import "../styles/sections.css";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
+import { UI, counterpart, hasPair, langOf } from "../lib/i18n.ts";
 import sansLatin from "@fontsource-variable/schibsted-grotesk/files/schibsted-grotesk-latin-wght-normal.woff2?url";
 
 interface Props {
@@ -11,7 +12,10 @@ interface Props {
   lang?: "sv" | "en";
 }
 
-const { title, description, lang = "sv" } = Astro.props;
+const { title, description } = Astro.props;
+const lang = Astro.props.lang ?? langOf(Astro.currentLocale);
+const pair = counterpart(Astro.url.pathname);
+const alt = (p: string) => new URL(p, Astro.site).toString();
 const staging = import.meta.env.PUBLIC_STAGING !== "false";
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -25,9 +29,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     {description && <meta name="description" content={description} />}
     {staging && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
+    {hasPair(Astro.url.pathname) && [
+      <link rel="alternate" hreflang="sv" href={alt(pair.sv)} />,
+      <link rel="alternate" hreflang="en" href={alt(pair.en)} />,
+      <link rel="alternate" hreflang="x-default" href={alt(pair.sv)} />,
+    ]}
     <link rel="preload" href={sansLatin} as="font" type="font/woff2" crossorigin />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="theme-color" content="#2e3e60" />
+    <meta name="theme-color" content="#111b35" />
     <meta property="og:title" content={title} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:url" content={canonical} />
@@ -35,7 +44,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <slot name="head" />
   </head>
   <body>
-    <a class="skip" href="#main">Hoppa till innehållet</a>
+    <a class="skip" href="#main">{UI[lang].skip}</a>
     <SiteHeader />
     <main id="main" tabindex="-1">
       <slot />

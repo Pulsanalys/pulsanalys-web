@@ -1,35 +1,43 @@
 @import "@fontsource-variable/schibsted-grotesk/wght.css";
 
 :root {
-  --ink: #1f2a44;
-  --navy: #2e3e60;
-  --navy-deep: #24314d;
-  --muted: #5a6274;
+  --ink: #14203a;
+  --navy: #1d2c52;
+  --navy-deep: #111b35;
+  --soft: #3a4662;
+  --muted: #56617b;
   --paper: #ffffff;
-  --mist: #f1f3f2;
-  --line: #d8dddb;
+  --mist: #f3f5f9;
+  --line: #e1e6ee;
   --field: #8a92a0;
   --error: #a1255c;
-  --success: #49736a;
-  --d: #ac3f3c;
-  --i: #b8891f;
+  --success: #3f6d63;
+  --d: #b8433f;
+  --i: #d6a626;
   --s: #5f8a4c;
-  --c: #60949e;
+  --c: #4f8e9b;
 
   --font: "Schibsted Grotesk Variable", "Helvetica Neue", Arial, sans-serif;
-  --step-display: clamp(2.4rem, 1.5rem + 4vw, 4.75rem);
-  --step-h2: clamp(2rem, 1.5rem + 2.1vw, 3.25rem);
-  --step-h3: clamp(1.25rem, 1.15rem + 0.45vw, 1.5rem);
-  --step-lead: clamp(1.2rem, 1.1rem + 0.45vw, 1.45rem);
-  --step-body: clamp(1.0625rem, 1.04rem + 0.1vw, 1.125rem);
-  --step-small: 0.875rem;
+  --step-display: clamp(2.5rem, 1.7rem + 3.3vw, 4rem);
+  --step-h1: clamp(2.25rem, 1.7rem + 2.4vw, 3.5rem);
+  --step-h2: clamp(1.85rem, 1.5rem + 1.5vw, 2.75rem);
+  --step-h3: clamp(1.2rem, 1.13rem + 0.3vw, 1.375rem);
+  --step-lead: clamp(1.125rem, 1.07rem + 0.3vw, 1.3125rem);
+  --step-body: 1.0625rem;
+  --step-small: 0.9375rem;
 
   --margin: clamp(1.25rem, 5vw, 4rem);
-  --gutter: clamp(1rem, 2vw, 2rem);
-  --max: 1320px;
-  --section: clamp(4rem, 10vw, 9rem);
-  --radius-photo: 6px;
+  --gutter: clamp(1.25rem, 2.2vw, 2rem);
+  --max: 1240px;
+  --section: clamp(4rem, 8vw, 7.5rem);
+  --r-s: 10px;
+  --r-m: 18px;
+  --r-l: 28px;
+  --radius-photo: var(--r-m);
+  --shadow-s: 0 1px 2px rgb(17 27 53 / 0.05), 0 6px 18px -8px rgb(17 27 53 / 0.14);
+  --shadow-m: 0 2px 4px rgb(17 27 53 / 0.05), 0 22px 48px -18px rgb(17 27 53 / 0.28);
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --pulse: linear-gradient(90deg, #b62c64 0 25%, #e7cf58 25% 50%, #85b074 50% 75%, #60949e 75%);
 
   color-scheme: light;
 }
@@ -42,78 +50,100 @@ html {
   color: var(--ink);
   background: var(--paper);
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  scroll-padding-top: 6rem;
 }
 
-body {
-  margin: 0;
-  font-size: var(--step-body);
-  line-height: 1.6;
-  font-feature-settings: "kern", "liga";
-}
+body { margin: 0; font-size: var(--step-body); line-height: 1.62; font-feature-settings: "kern", "liga"; }
 
 img, svg { display: block; max-width: 100%; height: auto; }
 
 h1, h2, h3 {
-  color: var(--navy);
-  font-weight: 600;
+  color: var(--navy-deep);
+  font-weight: 620;
   margin: 0;
   overflow-wrap: break-word;
-  hyphens: auto;
-  hyphenate-limit-chars: 12 5 5;
   text-wrap: balance;
 }
-h1 { font-size: var(--step-display); line-height: 1.02; letter-spacing: -0.03em; }
-h2 { font-size: var(--step-h2); line-height: 1.08; letter-spacing: -0.02em; }
-h3 { font-size: var(--step-h3); line-height: 1.2; letter-spacing: -0.01em; }
+h1 { font-size: var(--step-h1); line-height: 1.05; letter-spacing: -0.032em; }
+h2 { font-size: var(--step-h2); line-height: 1.1; letter-spacing: -0.026em; }
+h3 { font-size: var(--step-h3); line-height: 1.25; letter-spacing: -0.012em; }
 p { margin: 0; text-wrap: pretty; }
 p + p { margin-top: 1em; }
 
 a {
   color: var(--navy);
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.22em;
+  text-decoration-color: rgb(29 44 82 / 0.35);
   transition: text-decoration-color 160ms var(--ease), color 160ms var(--ease);
 }
-a:hover, a:active { text-decoration-thickness: 2px; }
+a:hover { text-decoration-color: currentColor; }
 
-:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; border-radius: 2px; }
+:focus-visible { outline: 3px solid #3f66c4; outline-offset: 3px; border-radius: 4px; }
 
 .wrap { width: min(100% - 2 * var(--margin), var(--max)); margin-inline: auto; }
-.measure { max-width: 68ch; }
-.lead { font-size: var(--step-lead); line-height: 1.45; max-width: 52ch; color: var(--ink); }
+.lead { font-size: var(--step-lead); line-height: 1.5; max-width: 56ch; color: var(--soft); }
 .muted { color: var(--muted); }
 
 .button {
   display: inline-flex;
   align-items: center;
-  gap: 0.5em;
-  min-height: 2.75rem;
-  padding: 0.75rem 1.4rem;
+  justify-content: center;
+  gap: 0.6em;
+  min-height: 3.25rem;
+  padding: 0.85rem 1.6rem;
   border: 0;
   border-radius: 999px;
   background: var(--navy);
   color: #fff;
   font: inherit;
   font-weight: 600;
+  line-height: 1.2;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 160ms var(--ease), transform 160ms var(--ease);
+  box-shadow: 0 1px 2px rgb(17 27 53 / 0.2), 0 10px 22px -12px rgb(17 27 53 / 0.6);
+  transition: background-color 160ms var(--ease), transform 160ms var(--ease), box-shadow 160ms var(--ease);
 }
-.button:hover { background: var(--navy-deep); }
-.button:active { transform: translateY(1px); }
-.button:focus-visible { outline-offset: 4px; }
+.button:hover { background: var(--navy-deep); transform: translateY(-1px); }
+.button:active { transform: translateY(0); }
+.button.light { background: #fff; color: var(--navy-deep); }
+.button.light:hover { background: #e9edf5; }
 
-.text-link { font-weight: 600; }
+/* A link that leads somewhere: no underline, a chevron that moves on hover. */
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--navy);
+}
+.text-link::after {
+  content: "";
+  flex: none;
+  width: 0.45em;
+  height: 0.45em;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 180ms var(--ease);
+}
+.text-link:hover::after { transform: translateX(0.3em) rotate(45deg); }
+.text-link:hover { color: var(--navy-deep); }
+
+.pulse-rule { display: block; width: 4.5rem; height: 4px; border-radius: 4px; background: var(--pulse); }
 
 .skip {
   position: absolute;
   left: var(--margin);
-  top: -4rem;
-  z-index: 20;
-  padding: 0.5rem 1rem;
+  top: -5rem;
+  z-index: 30;
+  padding: 0.6rem 1rem;
   background: var(--paper);
-  border: 2px solid var(--navy);
+  border-radius: var(--r-s);
+  box-shadow: var(--shadow-m);
 }
 .skip:focus { top: 0.75rem; }
 
@@ -127,12 +157,3 @@ a:hover, a:active { text-decoration-thickness: 2px; }
 }
 
 main:focus { outline: none; }
-
-/* Pages that are still on the interim single-column layout (calendar, booking). */
-.page { padding-block: clamp(2rem, 5vw, 4rem) var(--section); }
-.page > * { max-width: 46rem; }
-.page h1 { font-size: clamp(2.2rem, 1.6rem + 2.6vw, 3.5rem); margin-bottom: 1.5rem; }
-.page h2 { font-size: 1.6rem; margin-top: 2.5rem; margin-bottom: 0.75rem; }
-.prose ul { padding-left: 1.2em; }
-.prose h2 + p, .prose h3 + p { margin-top: 0.5rem; }
-.prose h3 { margin-top: 1.5rem; }

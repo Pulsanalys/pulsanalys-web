@@ -18,17 +18,23 @@ const d = entry.data;
 
 <Base title={`${d.title}, ${event.dateLabel} – PulsAnalys DISC`}
   description={`${d.title} ${event.dateLabel}, ${d.place}. Anmäl dig här.`}>
-  <article class="event wrap page">
-    <p class="crumb"><a href="/utbildningar-och-forelasningar/">Utbildningar och föreläsningar</a></p>
-    <h1>{d.title}</h1>
-    <dl class="facts">
-      <div><dt>Datum</dt><dd>{event.dateLabel}</dd></div>
-      <div><dt>Tid</dt><dd>{d.time}</dd></div>
-      <div><dt>Plats</dt><dd>{d.place}</dd></div>
-      {d.price && <div><dt>Pris</dt><dd>{d.price}</dd></div>}
-      <div><dt>Kontakt</dt><dd>{d.leader.name}, <a href={`tel:+46${d.leader.phone.replace(/\D/g, "").replace(/^0/, "")}`}>{d.leader.phone}</a></dd></div>
-    </dl>
-    <div class="prose"><Content /></div>
-    <BookingForm event={event} terms={d.terms} />
-  </article>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="/utbildningar-och-forelasningar/">Utbildningar och föreläsningar</a></p>
+      <h1>{d.title}</h1>
+      <dl class="facts event-facts">
+        <div><dt>Datum</dt><dd>{event.dateLabel}</dd></div>
+        <div><dt>Tid</dt><dd>{d.time}</dd></div>
+        <div><dt>Plats</dt><dd>{d.place}</dd></div>
+        {d.price && <div><dt>Pris</dt><dd>{d.price}</dd></div>}
+        <div><dt>Kontakt</dt><dd>{d.leader.name}, <a href={`tel:+46${d.leader.phone.replace(/\D/g, "").replace(/^0/, "")}`}>{d.leader.phone}</a></dd></div>
+      </dl>
+    </div>
+  </section>
+  <section class="section">
+    <article class="wrap event-layout">
+      <div class="prose"><Content /></div>
+      <BookingForm event={event} terms={d.terms} />
+    </article>
+  </section>
 </Base>

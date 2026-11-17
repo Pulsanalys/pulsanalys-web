@@ -1,24 +1,30 @@
 ---
 import { toBookable, upcomingEvents } from "../lib/events.ts";
+import { UI, dateParts, dateRange, langOf } from "../lib/i18n.ts";
 
 interface Props {
   types?: ("grundutbildning" | "fordjupningskurs" | "forelasning" | "event")[];
   empty?: string;
 }
-const { types, empty = "Det finns inga inbokade datum just nu. Kontakta oss så berättar vi när nästa tillfälle blir." } = Astro.props;
+const lang = langOf(Astro.currentLocale);
+const t = UI[lang].dates;
+const { types, empty = t.empty } = Astro.props;
 const events = (await upcomingEvents())
   .filter((e) => !types || types.includes(e.data.type))
-  .map(toBookable);
+  .map((e) => ({ ...toBookable(e), dateLabel: dateRange(e.data.start, e.data.end, lang), parts: dateParts(e.data.start, e.data.end, lang) }));
 ---
 
 {events.length > 0 ? (
-  <ul class="dates">
+  <ul class="dates dates-max">
     {events.map((e) => (
       <li>
-        <a href={`/utbildningar-och-forelasningar/${e.slug}/`}>
-          <span class="date">{e.dateLabel}</span>
-          <span class="what">{e.title}</span>
-          <span class="where">{e.place}, kl. {e.time}</span>
+        <a href={`/utbildningar-och-forelasningar/${e.slug}/`} hreflang={lang === "en" ? "sv" : undefined}>
+          <span class="tile"><span class="day">{e.parts.day}</span><span class="mon">{e.parts.month}</span></span>
+          <span>
+            <span class="what">{e.title}</span>
+            <span class="where">{e.place}, {t.time ? `${t.time} ` : ""}{e.time}</span>
+          </span>
+          <span class="go" aria-hidden="true"></span>
         </a>
       </li>
     ))}

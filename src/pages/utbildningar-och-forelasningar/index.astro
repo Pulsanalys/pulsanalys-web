@@ -17,10 +17,11 @@ const groups = [
   <PageHero heading="Utbildningar och föreläsningar"
     lead="Här finns alla kommande utbildningstillfällen, föreläsningar och event. Välj ett datum för att läsa mer och skicka in en anmälan." />
   {groups.map((g, i) => (
-    <section class={`section${i % 2 === 0 ? " tint" : ""}`}>
+    <section class={`section${i % 2 === 1 ? " tint" : ""}`}>
       <div class="wrap">
-        <div class="section-head"><h2>{g.title}</h2><p class="lead"><a class="text-link" href={g.link}>{g.linkText}</a></p></div>
+        <div class="section-head"><h2>{g.title}</h2></div>
         <DateList types={[g.type]} />
+        <p class="more"><a class="text-link" href={g.link}>{g.linkText}</a></p>
       </div>
     </section>
   ))}

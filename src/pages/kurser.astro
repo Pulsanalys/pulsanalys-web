@@ -6,36 +6,37 @@ import PageHero from "../components/PageHero.astro";
 import CtaBand from "../components/CtaBand.astro";
 import DateList from "../components/DateList.astro";
 
-const courses = (await getCollection("courses")).sort((a, b) => a.data.order - b.data.order);
+const courses = (await getCollection("courses")).filter((c) => !c.id.startsWith("en/")).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Base title="Kurser i DISC – grundutbildning, fördjupning och ledarskap | PulsAnalys DISC"
   description="Kurser i DISC: grundutbildning med certifiering, fördjupningskurs och ledarskapsutbildning. Online och på plats.">
   <PageHero heading="Kurser i DISC"
     lead="Med grundutbildning och certifiering får du det du behöver för att arbeta med PulsAnalys. Du kan sedan fördjupa dig i alla våra verktyg. Kurserna ges även online." />
-  <section class="section tint">
+  <section class="section">
     <div class="wrap">
-      <ul class="row-list">
-        {courses.map((c, i) => (
-          <li class={`split${i % 2 ? " reverse" : ""}`}>
+      <ul class="feature-grid three">
+        {courses.map((c) => (
+          <li class="feature">
             <div class="photo">
               <Picture src={c.data.photo} formats={["avif", "webp"]} widths={[480, 720, 960]} sizes="(min-width: 60rem) 40vw, 100vw" alt={c.data.alt} />
             </div>
-            <div>
+            <div class="feature-body">
               <h2>{c.data.title}</h2>
-              <p class="lead">{c.data.summary}</p>
-              {c.data.price && <p class="price">{c.data.price}</p>}
-              <p class="more"><a class="text-link" href={`/${c.id}/`}>Läs om {c.data.title.toLowerCase()}</a></p>
+              <p>{c.data.summary}</p>
+              {c.data.price && <p class="meta">{c.data.price}</p>}
+              <a class="text-link" href={`/${c.id}/`}>Läs om {c.data.title.toLowerCase()}</a>
             </div>
           </li>
         ))}
       </ul>
     </div>
   </section>
-  <section class="section">
+  <section class="section tint">
     <div class="wrap">
-      <div class="section-head"><h2>Kommande kurser</h2><p class="lead"><a class="text-link" href="/utbildningar-och-forelasningar/">Alla utbildningar och föreläsningar</a></p></div>
+      <div class="section-head"><h2>Kommande kurser</h2></div>
       <DateList types={["grundutbildning", "fordjupningskurs"]} />
+      <p class="more"><a class="text-link" href="/utbildningar-och-forelasningar/">Alla utbildningar och föreläsningar</a></p>
     </div>
   </section>
   <CtaBand />
